@@ -82,7 +82,7 @@ def twtt4(tweet):
     #                      *except* for a few special ones. We use a capturing
     #                      group so that re.split will keep this character.
     # #
-    #                      Then comes the # symbol itslef.
+    #                      Then comes the # symbol itself.
     # ([A-Za-z0-9_])
     #                      The following characters are the only ones allowed
     #                      to be in a twitter hashtag, so must directly follow
@@ -93,6 +93,89 @@ def twtt4(tweet):
     tweet = ''.join(re.split(hashtag_pattern, tweet))
 
     return tweet
+
+def twtt5(tweet):
+    abbrev_file = "abbrev.english"
+    non_terminal_abbrev_file = "non_terminal_abbrev.english"
+    with open(abbrev_file, "r") as f:
+        abbrevs = [line.strip() for line in f.readlines()]
+    print abbrevs
+    with open(non_terminal_abbrev_file, "r") as f:
+        non_terminal_abbrevs = [line.strip() for line in f.readlines()]
+    print non_terminal_abbrevs
+
+    def is_end_of_abbrev(tweet, i):
+        # Look for each abbreviation in turn.
+        for a in abbrevs:
+            if i < len(a) - 1:
+                continue # This abbrev doesn't even fit to the left of i
+            if tweet[i-len(a)+1:i+1] == a:
+                # Potentially found an abbrev! First check that the letter
+                # immediately before the apprev is non-alphabetic
+                if i-len(a)+1 > 0 and tweet[i-len(a)].isalpha():
+                    # Oops, not an abbreviation!
+                    continue
+                # Okay we have an abbreviation!
+                # If it's a non-terminal abbrev (i.e. one that doesn't normally
+                # occur at the end of sentence), ignore it.
+                if tweet[i-len(a)+1:i+1] in non_terminal_abbrevs:
+                    return False # Non-terminal abbrev
+                return True # Found a terminal abbrev!
+        return False # None of the abbrevs matched
+    # x = map(lambda i: is_end_of_abbrev(tweet, i), xrange(len(tweet)))
+    # return x
+    # import itertools
+    # return map(lambda b: b[1], itertools.groupby(enumerate(tweet), key=lambda a: x[a[0]]))    
+    
+    def is_decimal_place(tweet, i):
+        return (tweet[i] == "." and
+                i > 0 and
+                tweet[i-1].isdigit() and
+                i + 1 < len(tweet) and
+                tweet[i+1].isdigit())
+
+    def is_acronym(tweet, i):
+        # First find the boundaries of this token
+        start = i
+        while start > 0 and (tweet[start-1].isalpha() or tweet[start-1] == "."):
+            start -= 1
+        end = i
+        while end+1 < len(tweet) and (tweet[end+1].isalpha() or tweet[end+1] == "."):
+            end += 1
+        tok = tweet[start:end+1]
+        for (index, c) in enumerate(tok):
+            # If it's an acronym, the even characters are letters and the odd
+            # characters are .
+            if index % 2 == 0 and not c.isalpha():
+                return False
+            if index % 2 == 1 and c != ".":
+                return False
+        # If we make it through the check, it's an acronym
+        return True
+    # x = map(lambda i: is_acronym(tweet, i), xrange(len(tweet)))
+    # return x
+
+    def is_eos_punctuation(tweet, i):
+        if tweet[i] not in ".?!":
+            return False # Only .?! can end sentences
+        if is_end_of_abbrev(tweet, i):
+            # If this is an abbreviation, check if the next non-whitespace
+            # character is uppercase or not.
+            for j in xrange(i+1, len(tweet)):
+                if tweet[j].isspace():
+                    continue # Skip whitespace
+                return tweet[j].isupper()
+            # If we get here, we hit the end of the string. So this is indeed
+            # the end of sentence.
+            return True
+        if is_decimal_place(tweet, i):
+            return False
+        if is_acronym(tweet, i):
+            return False
+        return True
+            
+    # Create an array telling us which characters are end-of-sentence
+    # punctuation. To start out with, none are.
 
 def main(args):
     if len(args) != 4:
