@@ -161,6 +161,9 @@ def twtt5(tweet):
         return c in ".?!" # Only punctuation we care about for sentence endings
     
     def is_eos_punctuation(tweet, i):
+        if tweet[i] == '"' and i > 0 and is_eos_punctuation(tweet, i-1):
+            return True # Quotation marks following punctuation should also be
+                        # considered end-of-sentence
         if not is_punctuation(tweet[i]):
             return False
         abbrev = get_abbrev(tweet, i)
@@ -232,6 +235,49 @@ def twtt5(tweet):
     # separate using newlines.
     return "\n".join([s.strip() for s in sentences])
 
+# Note, this will tokenize things like !) as single tokens. Example:
+# I like it (a lot!)
+#                 ^^ These two characters are a single token
+# This is because of rule 6 in the handout - multiple punctuation should not be
+# split.
+def twtt7(tweet):
+    def tokenize(line):
+        # In general, we are just splitting on word boundaries
+        toks = [t for t in re.split("(\W+)", line) if t != ""]
+        # But we also want special handling for clitics.  Let's look for
+        # apostrophe tokens and make them into clitics as appropriate.
+        i = 1
+        while i < len(toks) - 1:
+            if toks[i] != "'":
+                i += 1
+                continue
+            # Look for whitespace on either side of the apostrophe:
+            if toks[i-1][-1].isspace() or toks[i+1][0].isspace():
+                i += 1
+                continue
+            # Okay, now look for the special clitic n't
+            if toks[i-1][-1] == "n" and toks[i+1] == "t":
+                # Make n't into its own token
+                toks = toks[:i-1] + [toks[i-1][:-1], "n't"] + toks[i+2:]
+                i += 1
+                continue
+            # Okay, if the following token is alphabetic, combine the apostrophe
+            # with the next token.
+            if toks[i+1].isalpha():
+                toks = toks[:i] + [toks[i] + toks[i+1]] + toks[i+2:]
+                i +=1
+                continue
+            i += 1
+        # Remove excess whitespace from tokens
+        toks = [t.strip() for t in toks]
+        toks = [t for t in toks if t != ""]
+        # Combine the tokens with spaces
+        return " ".join(toks)
+
+    # Tokenize each line
+    lines = tweet.split("\n")
+    return "\n".join(map(tokenize, lines))
+
 def main(args):
     if len(args) != 4:
         print "Usage: python twtt.py input_file.csv student_number output_file.twt"
@@ -248,6 +294,9 @@ def main(args):
             tweet = twtt1(tweet)
             tweet = twtt2(tweet)
             tweet = twtt3(tweet)
+            tweet = twtt4(tweet)
+            tweet = twtt5(tweet)
+            tweet = twtt7(tweet)
 
 if __name__ == "__main__":
     main(sys.argv)
