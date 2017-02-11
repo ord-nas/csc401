@@ -56,7 +56,43 @@ def twtt3(tweet):
 
 # Remove @ from Twitter user names and # from hash tags.
 def twtt4(tweet):
-    pass
+    handle_pattern = r"(^|[^A-Za-z0-9_!@#$%&*])@([A-Za-z0-9_])"
+    # (^|[^A-Za-z0-9_!@#$%&*])
+    #                      Immediately preceeding the twitter handle, there can
+    #                      be either the start of the tweet, or any character
+    #                      *except* for a few special ones. We use a capturing
+    #                      group so that re.split will keep this character.
+    # @
+    #                      Then comes the @ symbol itslef.
+    # ([A-Za-z0-9_])
+    #                      The following characters are the only ones allowed
+    #                      to be in a twitter handle, so must directly follow
+    #                      the @ symbol. Again, we use a capturing group to
+    #                      keep these characters, we only want to throw away
+    #                      the @ symbol.
+    print re.split(handle_pattern, tweet)
+    tweet = ''.join(re.split(handle_pattern, tweet))
+
+    # Hashtag is similar, but a wider range of characters are allowed to appear
+    # before the hashtag.
+    hashtag_pattern = r"(^|[^A-Za-z0-9_&])#([A-Za-z0-9_])"
+    # (^|[^A-Za-z0-9_&])
+    #                      Immediately preceeding the hashtag, there can
+    #                      be either the start of the tweet, or any character
+    #                      *except* for a few special ones. We use a capturing
+    #                      group so that re.split will keep this character.
+    # #
+    #                      Then comes the # symbol itslef.
+    # ([A-Za-z0-9_])
+    #                      The following characters are the only ones allowed
+    #                      to be in a twitter hashtag, so must directly follow
+    #                      the # symbol. Again, we use a capturing group to
+    #                      keep these characters, we only want to throw away
+    #                      the # symbol.
+    print re.split(hashtag_pattern, tweet)
+    tweet = ''.join(re.split(hashtag_pattern, tweet))
+
+    return tweet
 
 def main(args):
     if len(args) != 4:
