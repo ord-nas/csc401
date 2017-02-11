@@ -1,5 +1,6 @@
 import re
 import sys
+import itertools
     
 def get_tweet_test(csv_line):
     m = re.match(r'^"[^,]*","[^,]*","[^,]*","[^,]*","[^,]*","(.*)"$', csv_line)
@@ -104,7 +105,8 @@ def twtt5(tweet):
         non_terminal_abbrevs = [line.strip() for line in f.readlines()]
     print non_terminal_abbrevs
 
-    def is_end_of_abbrev(tweet, i):
+    # Returns None if not, otherwise returns the abbrev
+    def get_abbrev(tweet, i):
         # Look for each abbreviation in turn.
         for a in abbrevs:
             if i < len(a) - 1:
@@ -116,12 +118,12 @@ def twtt5(tweet):
                     # Oops, not an abbreviation!
                     continue
                 # Okay we have an abbreviation!
-                # If it's a non-terminal abbrev (i.e. one that doesn't normally
-                # occur at the end of sentence), ignore it.
-                if tweet[i-len(a)+1:i+1] in non_terminal_abbrevs:
-                    return False # Non-terminal abbrev
-                return True # Found a terminal abbrev!
-        return False # None of the abbrevs matched
+                # # If it's a non-terminal abbrev (i.e. one that doesn't normally
+                # # occur at the end of sentence), ignore it.
+                # if tweet[i-len(a)+1:i+1] in non_terminal_abbrevs:
+                #     return False # Non-terminal abbrev
+                return tweet[i-len(a)+1:i+1] # Found a terminal abbrev!
+        return None # None of the abbrevs matched
     # x = map(lambda i: is_end_of_abbrev(tweet, i), xrange(len(tweet)))
     # return x
     # import itertools
@@ -155,12 +157,19 @@ def twtt5(tweet):
     # x = map(lambda i: is_acronym(tweet, i), xrange(len(tweet)))
     # return x
 
+    def is_punctuation(c):
+        return c in ".?!" # Only punctuation we care about for sentence endings
+    
     def is_eos_punctuation(tweet, i):
-        if tweet[i] not in ".?!":
-            return False # Only .?! can end sentences
-        if is_end_of_abbrev(tweet, i):
-            # If this is an abbreviation, check if the next non-whitespace
-            # character is uppercase or not.
+        if not is_punctuation(tweet[i]):
+            return False
+        abbrev = get_abbrev(tweet, i)
+        if abbrev:
+            # If it's a non-terminal abbreviation, then this is not eos.
+            if abbrev in non_terminal_abbrevs:
+                return False
+            # Otherwise, check if the next non-whitespace character is uppercase
+            # or not.
             for j in xrange(i+1, len(tweet)):
                 if tweet[j].isspace():
                     continue # Skip whitespace
@@ -173,9 +182,55 @@ def twtt5(tweet):
         if is_acronym(tweet, i):
             return False
         return True
+
+    # Takes the text, and partitions it based on split_conditions.
+    # split_conditions is an iterable that is as long as text. Whenever there is a
+    # boundary between nonequal elements in split_conditions, that will result
+    # in a split in the test. For example:
+    #    text             = "Hello there"
+    #    split_conditions = "aabbbccccdd"
+    #    output           = ["He", "llo", " the", "re"]
+    def split_on(text, split_conditions):
+        joined = zip(text, split_conditions)
+        groups = itertools.groupby(joined, key=lambda x: x[1])
+        groups = [''.join([x[0] for x in g]) for (k, g) in groups]
+        return groups
             
     # Create an array telling us which characters are end-of-sentence
     # punctuation. To start out with, none are.
+    eos = [is_eos_punctuation(tweet, i) for i in xrange(len(tweet))]
+    print tweet
+    print ''.join(["^" if e else " " for e in eos])
+
+    # Now let's split the tweet based on eos punctuation
+    splits = split_on(tweet, eos)
+
+    # Okay, now a sentence is defined to be: a string terminated by *one or
+    # more* eos punctuation symbols, *possibly separated by whitespace*. That
+    # is, the following is only one sentence:
+    # "Man I hate Mondays . . ."
+    # (Ellipsis separated by spaces doesn't get treated as multiple empty
+    # sentences)
+    # So let's break into sentences:
+    sentences = []
+    current_sentence = ""
+    for s in splits:
+        # Punctuation and whitespace always get attached to the preceeding
+        # sentence.
+        if is_punctuation(s[0]) or s.strip() == "":
+            current_sentence += s
+        else:
+            # Otherwise, this starts a new sentence
+            if current_sentence:
+                # Push the current sentence onto the list
+                sentences.append(current_sentence)
+            current_sentence = s
+    # At the end, push the last sentence onto the list
+    sentences.append(current_sentence)
+
+    # Strip extra whitespace off the beginning and end of sentences, and
+    # separate using newlines.
+    return "\n".join([s.strip() for s in sentences])
 
 def main(args):
     if len(args) != 4:
