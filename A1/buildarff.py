@@ -16,6 +16,13 @@ def parse(tweet):
     # into a flat list of tokens.
     return sum(parse_individual_sentences(tweet), [])
 
+def average(values):
+    if not values:
+        return 0 # No values; avoid division by zero
+    else:
+        # Otherwise compute average
+        return float(sum(values)) / len(values)
+
 def feat1(tweet):
     global first_person
     return sum([1 for (tok, pos) in parse(tweet) if tok in first_person])
@@ -48,6 +55,66 @@ def feat6(tweet):
                 sentence[i+2][1] == "VB"):
                 count += 1
     return count
+
+def feat7(tweet):
+    # We choose to count commas that are part of double punctuation
+    # (e.g. ..., ). Also, double commas count twice (e.g. ,, counts as two
+    # commas).
+    return sum([tok.count(",") for (tok, pos) in parse(tweet)])
+
+def feat8(tweet):
+    # Similar to above, we count these even if they are part of double
+    # punctuation.
+    return sum([tok.count(":") + tok.count(";") for (tok, pos) in parse(tweet)])
+
+def feat9(tweet):
+    # Similar to above, we count these even if they are part of double
+    # punctuation (or hyphenated words).
+    return sum([tok.count("-") for (tok, pos) in parse(tweet)])
+
+def feat10(tweet):
+    # Similar to above, we count these even if they are part of double
+    # punctuation. We only count () parentheses (not square brackets [] or angle
+    # brackets <>).
+    return sum([tok.count("(") + tok.count(")") for (tok, pos) in parse(tweet)])
+
+def feat11(tweet):
+    # We will say that an ellipses is a *single* token consisting of *3 or more*
+    # periods.
+    return sum([1 for (tok, pos) in parse(tweet)
+                if len(tok) >= 3 and all([c == "." for c in tok])])
+
+def feat12(tweet):
+    return sum([1 for (tok, pos) in parse(tweet) if pos in ["NN", "NNS"]])
+
+def feat13(tweet):
+    return sum([1 for (tok, pos) in parse(tweet) if pos in ["NNP", "NNPS"]])
+
+def feat14(tweet):
+    return sum([1 for (tok, pos) in parse(tweet) if pos in ["RB", "RBR", "RBS"]])
+
+def feat15(tweet):
+    return sum([1 for (tok, pos) in parse(tweet) if pos in ["WDT", "WP", "WP$", "WRB"]])
+
+def feat16(tweet):
+    global slang
+    return sum([1 for (tok, pos) in parse(tweet) if tok in slang])
+
+def feat17(tweet):
+    return sum([1 for (tok, pos) in parse(tweet) if len(tok) >= 2 and tok.isupper()])
+
+def feat18(tweet):
+    sentence_lengths = [len(s) for s in parse_individual_sentences(tweet)]
+    return average(sentence_lengths)
+
+def feat19(tweet):
+    # Punctuation tokens have non-alphabetic POS, so we can filter them out
+    # using .isalpha()
+    token_lengths = [len(tok) for (tok, pos) in parse(tweet) if tok.isalpha()]
+    return average(token_lengths)
+
+def feat20(tweet):
+    return len(parse_individual_sentences(tweet))
 
 def read_word_list(filename):
     with open(filename, "r") as f:
