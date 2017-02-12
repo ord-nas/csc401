@@ -1,3 +1,31 @@
+import re
+import sys
+
+arff_header = """@relation tweet_polarity
+
+@attribute feat1 numeric
+@attribute feat2 numeric
+@attribute feat3 numeric
+@attribute feat4 numeric
+@attribute feat5 numeric
+@attribute feat6 numeric
+@attribute feat7 numeric
+@attribute feat8 numeric
+@attribute feat9 numeric
+@attribute feat10 numeric
+@attribute feat11 numeric
+@attribute feat12 numeric
+@attribute feat13 numeric
+@attribute feat14 numeric
+@attribute feat15 numeric
+@attribute feat16 numeric
+@attribute feat17 numeric
+@attribute feat18 numeric
+@attribute feat19 numeric
+@attribute feat20 numeric
+
+@data
+"""
 
 def parse_individual_sentences(tweet):
     def separate_word_and_pos(atom):
@@ -9,7 +37,7 @@ def parse_individual_sentences(tweet):
     # Return a list of lists of tuples.
     # output[i][j][0] represents the word in the ith sentence, jth token.
     # output[i][j][1] represents the POS in the ith sentence, jth token.
-    return [map(separate_word_and_pos, line.split()) for line in tweet.split("\n")]
+    return [map(separate_word_and_pos, line.split()) for line in tweet.split("\n") if line]
 
 def parse(tweet):
     # Same as parse_individual_sentences, but all the sentences are combined
@@ -120,22 +148,68 @@ def read_word_list(filename):
     with open(filename, "r") as f:
         return [line.strip().lower() for line in f.readlines() if line.strip() != ""]
         
+def extract_features(tweet, polarity):
+    # Get the feature-extracting functions
+    feat_fns = [globals()["feat%d" % i] for i in xrange(1, 21)]
+    # Return a comma-separated list of features + polarity
+    features = [f(tweet) for f in feat_fns] + [polarity]
+    return ",".join(map(str, features))
+    
 def main(args):
     global first_person, second_person, third_person, slang
     
     if len(args) not in [3, 4]:
-        print "Usage: python buildarff.py input_file.twt output_file.arff [num_data_points]"
+        print "Usage: python buildarff.py input_file.twt output_file.arff [max_per_class]"
         return
 
     input_file = args[1]
     output_file = args[2]
-    num_data_points = args[3] if len(args) == 4 else None
+    max_per_class = int(args[3]) if len(args) == 4 else float('inf')
 
     # Read word lists
     first_person = read_word_list("First-person")
     second_person = read_word_list("Second-person")
     third_person = read_word_list("Third-person")
     slang = read_word_list("Slang")
-            
+
+
+    with open(input_file, "r") as in_file, \
+         open(output_file, "w") as out_file:
+        # Header
+        out_file.write(arff_header)
+
+        # Extract features from tweets and write to arff file.
+        class_counts = {}
+        tweet = ""
+        polarity = None
+        for line in in_file:
+            # Check for a marker indicating a new tweet ...
+            m = re.match("^<A=([0-9]+)>\n$", line)
+            if m:
+                # Check that we haven't exceeded the maximum number of tweets of
+                # this polarity
+                if tweet and class_counts.get(polarity, 0) < max_per_class:
+                    # Extract features from the current tweet and write to the
+                    # arff file.
+                    assert polarity is not None
+                    arff_line = extract_features(tweet, polarity)
+                    out_file.write(arff_line + "\n")
+                    class_counts[polarity] = class_counts.get(polarity, 0) + 1
+                # Prepare for the next tweet
+                tweet = ""
+                polarity = int(m.group(1))
+            else:
+                # Otherwise, add this line to current tweet
+                tweet += line
+        # At the end, process the last tweet if applicable
+        if tweet and class_counts.get(polarity, 0) < max_per_class:
+            # Extract features from the current tweet and write to the
+            # arff file.
+            assert polarity is not None
+            arff_line = extract_features(tweet, polarity)
+            out_file.write(arff_line + "\n")
+            class_counts[polarity] = class_counts.get(polarity, 0) + 1
+
+                
 if __name__ == "__main__":
     main(sys.argv)
