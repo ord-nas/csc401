@@ -1,7 +1,9 @@
 import re
 import sys
 import itertools
-    
+
+import NLPlib
+
 def get_tweet_test(csv_line):
     m = re.match(r'^"[^,]*","[^,]*","[^,]*","[^,]*","[^,]*","(.*)"$', csv_line)
     assert m
@@ -200,7 +202,7 @@ def twtt5(tweet):
         return groups
             
     # Create an array telling us which characters are end-of-sentence
-    # punctuation. To start out with, none are.
+    # punctuation.
     eos = [is_eos_punctuation(tweet, i) for i in xrange(len(tweet))]
     print tweet
     print ''.join(["^" if e else " " for e in eos])
@@ -249,10 +251,12 @@ def twtt7(tweet):
         i = 1
         while i < len(toks) - 1:
             if toks[i] != "'":
+                # Not an apostrophe - skip
                 i += 1
                 continue
             # Look for whitespace on either side of the apostrophe:
             if toks[i-1][-1].isspace() or toks[i+1][0].isspace():
+                # Not a clitic - skip
                 i += 1
                 continue
             # Okay, now look for the special clitic n't
@@ -270,6 +274,7 @@ def twtt7(tweet):
             i += 1
         # Remove excess whitespace from tokens
         toks = [t.strip() for t in toks]
+        # Remove empty tokens
         toks = [t for t in toks if t != ""]
         # Combine the tokens with spaces
         return " ".join(toks)
@@ -278,7 +283,20 @@ def twtt7(tweet):
     lines = tweet.split("\n")
     return "\n".join(map(tokenize, lines))
 
+def twtt8(tweet):
+    global tagger
+    def tag(line):
+        toks = line.split()
+        tags = tagger.tag(toks)
+        return " ".join(["%s/%s" % (tok, tag) for (tok, tag) in zip(toks, tags)])
+
+    # Tag each line
+    lines = tweet.split("\n")
+    return "\n".join(map(tag, lines))
+
 def main(args):
+    global tagger
+    
     if len(args) != 4:
         print "Usage: python twtt.py input_file.csv student_number output_file.twt"
         return
@@ -286,6 +304,9 @@ def main(args):
     input_file = args[1]
     student_number = args[2]
     output_file = args[3]
+
+    # Initialize the tagger
+    tagger = NLPlib.NLPlib()
 
     with open(input_file, "r") as f:
         for line in f:
