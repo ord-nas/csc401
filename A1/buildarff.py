@@ -1,6 +1,7 @@
 import re
 import sys
 
+# TODO: USE DESCRIPTIVE FEATURE NAMES
 arff_header = """@relation tweet_polarity
 
 @attribute feat1 numeric
@@ -23,6 +24,7 @@ arff_header = """@relation tweet_polarity
 @attribute feat18 numeric
 @attribute feat19 numeric
 @attribute feat20 numeric
+@attribute class {0, 4}
 
 @data
 """
@@ -66,6 +68,8 @@ def feat3(tweet):
 def feat4(tweet):
     return sum([1 for (tok, pos) in parse(tweet) if pos == "CC"])
 
+# TODO: in the second tutorial, makes it seem like we need to do something
+# different here ...
 def feat5(tweet):
     return sum([1 for (tok, pos) in parse(tweet) if pos in ["VBD", "VBN"]])
 
