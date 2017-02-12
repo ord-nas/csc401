@@ -4,10 +4,10 @@ import itertools
 
 import NLPlib
 
-def get_tweet_test(csv_line):
-    m = re.match(r'^"[^,]*","[^,]*","[^,]*","[^,]*","[^,]*","(.*)"$', csv_line)
+def extract_tweet_and_polarity(csv_line):
+    m = re.match(r'^"([^,]*)","[^,]*","[^,]*","[^,]*","[^,]*","(.*)"$', csv_line)
     assert m
-    return m.group(1)
+    return (m.group(2), int(m.group(1)))
 
 # Remove html tags
 def twtt1(tweet):
@@ -18,7 +18,7 @@ def twtt1(tweet):
     # <img onclick="alert('5 > 4');"/>
     #                        ^
     #                        This is *not* the end of the tag
-    pattern = r"""<([^'>"]|"[^"]*"|'[^']*')+>"""
+    pattern = r"""<(?:[^'>"]|"[^"]*"|'[^']*')+>"""
     return ''.join(re.split(pattern, tweet))
 
 # Decode html character code
@@ -54,8 +54,8 @@ def twtt3(tweet):
     # [^\s`^(){}<>\".,!?\[\]~@$%&*|:;'"]
     #                      There are additional restrictions on what is allowed
     #                      to be the *last* chracter of the URL
-    print re.split(pattern, tweet)
-    return ''.join(re.split(pattern, tweet))
+    #print re.split(pattern, tweet, flags=re.IGNORECASE)
+    return ''.join(re.split(pattern, tweet, flags=re.IGNORECASE))
 
 # Remove @ from Twitter user names and # from hash tags.
 def twtt4(tweet):
@@ -73,7 +73,7 @@ def twtt4(tweet):
     #                      the @ symbol. Again, we use a capturing group to
     #                      keep these characters, we only want to throw away
     #                      the @ symbol.
-    print re.split(handle_pattern, tweet)
+    #print re.split(handle_pattern, tweet)
     tweet = ''.join(re.split(handle_pattern, tweet))
 
     # Hashtag is similar, but a wider range of characters are allowed to appear
@@ -92,20 +92,13 @@ def twtt4(tweet):
     #                      the # symbol. Again, we use a capturing group to
     #                      keep these characters, we only want to throw away
     #                      the # symbol.
-    print re.split(hashtag_pattern, tweet)
+    #print re.split(hashtag_pattern, tweet)
     tweet = ''.join(re.split(hashtag_pattern, tweet))
 
     return tweet
 
 def twtt5(tweet):
-    abbrev_file = "abbrev.english"
-    non_terminal_abbrev_file = "non_terminal_abbrev.english"
-    with open(abbrev_file, "r") as f:
-        abbrevs = [line.strip() for line in f.readlines()]
-    print abbrevs
-    with open(non_terminal_abbrev_file, "r") as f:
-        non_terminal_abbrevs = [line.strip() for line in f.readlines()]
-    print non_terminal_abbrevs
+    global abbrevs, non_terminal_abbrevs
 
     # Returns None if not, otherwise returns the abbrev
     def get_abbrev(tweet, i):
@@ -204,8 +197,8 @@ def twtt5(tweet):
     # Create an array telling us which characters are end-of-sentence
     # punctuation.
     eos = [is_eos_punctuation(tweet, i) for i in xrange(len(tweet))]
-    print tweet
-    print ''.join(["^" if e else " " for e in eos])
+    #print tweet
+    #print ''.join(["^" if e else " " for e in eos])
 
     # Now let's split the tweet based on eos punctuation
     splits = split_on(tweet, eos)
@@ -298,29 +291,49 @@ def twtt9(tweet, polarity):
     return "<A=%d>\n%s" % (polarity, tweet)
 
 def main(args):
-    global tagger
+    global tagger, abbrevs, non_terminal_abbrevs
     
     if len(args) != 4:
         print "Usage: python twtt.py input_file.csv student_number output_file.twt"
         return
 
     input_file = args[1]
-    student_number = args[2]
+    student_number = int(args[2])
     output_file = args[3]
 
     # Initialize the tagger
     tagger = NLPlib.NLPlib()
 
-    with open(input_file, "r") as f:
-        for line in f:
-            tweet = get_tweet_text(line)
-            # Apply each of the preprocessing transformations
-            tweet = twtt1(tweet)
-            tweet = twtt2(tweet)
-            tweet = twtt3(tweet)
-            tweet = twtt4(tweet)
-            tweet = twtt5(tweet)
-            tweet = twtt7(tweet)
+    # Read the abbreviation lists
+    abbrev_file = "abbrev.english"
+    non_terminal_abbrev_file = "non_terminal_abbrev.english"
+    with open(abbrev_file, "r") as f:
+        abbrevs = [line.strip() for line in f.readlines()]
+    #print abbrevs
+    with open(non_terminal_abbrev_file, "r") as f:
+        non_terminal_abbrevs = [line.strip() for line in f.readlines()]
+    #print non_terminal_abbrevs
 
+    # Figure out which lines to read
+    X = student_number % 80
+    A = 10000*X
+    B = 800000 + 10000*X
+    
+    with open(input_file, "r") as in_file, \
+         open(output_file, "w") as out_file:
+        for (i, line) in enumerate(in_file):
+            if (A <= i < A + 10000) or (B <= i < B + 10000):
+                (tweet, polarity) = extract_tweet_and_polarity(line)
+                # Apply each of the preprocessing transformations
+                tweet = twtt1(tweet)
+                tweet = twtt2(tweet)
+                tweet = twtt3(tweet)
+                tweet = twtt4(tweet)
+                tweet = twtt5(tweet)
+                tweet = twtt7(tweet)
+                tweet = twtt8(tweet)
+                tweet = twtt9(tweet, polarity)
+                out_file.write(tweet + "\n")
+            
 if __name__ == "__main__":
     main(sys.argv)
