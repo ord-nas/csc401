@@ -294,6 +294,9 @@ def twtt8(tweet):
     lines = tweet.split("\n")
     return "\n".join(map(tag, lines))
 
+def twtt9(tweet, polarity):
+    return "<A=%d>\n%s" % (polarity, tweet)
+
 def main(args):
     global tagger
     
