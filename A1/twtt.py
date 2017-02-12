@@ -22,6 +22,8 @@ def twtt1(tweet):
     return ''.join(re.split(pattern, tweet))
 
 # Decode html character code
+# TODO: HTML CODES THAT ARE NOT NUMBERS
+# TODO: CONSIDER USING BUILT-IN PYTHON STUFF?
 def twtt2(tweet):
     while True:
         m = re.search(r"&#([0-9]{2,3});", tweet)
@@ -97,6 +99,7 @@ def twtt4(tweet):
 
     return tweet
 
+# TODO: check for lowercase after acronyms too?
 def twtt5(tweet):
     global abbrevs, non_terminal_abbrevs
 
@@ -140,6 +143,9 @@ def twtt5(tweet):
         while end+1 < len(tweet) and (tweet[end+1].isalpha() or tweet[end+1] == "."):
             end += 1
         tok = tweet[start:end+1]
+        if len(tok) < 4:
+            return False # Acronym must be at least 4 characters long (including
+                         # periods)
         for (index, c) in enumerate(tok):
             # If it's an acronym, the even characters are letters and the odd
             # characters are .
