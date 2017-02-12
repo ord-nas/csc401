@@ -320,8 +320,11 @@ def main(args):
         non_terminal_abbrevs = [line.strip() for line in f.readlines()]
     #print non_terminal_abbrevs
 
+    with open(input_file, "r") as f:
+        line_count = sum(1 for line in f)
+    
     # Figure out which lines to read
-    X = student_number % 80
+    X = student_number % 80 if line_count > 10000 else 0
     A = 10000*X
     B = 800000 + 10000*X
     
