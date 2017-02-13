@@ -70,3 +70,39 @@ Ranked attributes:
 
 Selected attributes: 2,19,14,5,1,13,18,12,17,6,11,16,4,10,15,9,20,8,3,7 : 20
 
+Discussion
+==========
+
+At both low and high amounts of data, the top five most useful
+attributes are the same (although they change places relative to one
+another). These five attributes are: second_person, token_length,
+adverbs, past_tense, first_person.
+
+Each of these attributes kind of makes sense:
+
+1) first_person and second_person both give you an idea of who the
+speaker is talking about. Looking at the SVM output actually suggests
+that tweets about first person are more likely to be *negative*,
+whereas tweets about second person are more likely to be *positive*. I
+guess we often complain about our own lives on twitter (negative first
+person), but I am slightly surprised that second person tweets are
+more likely to be positive.
+
+2) adverbs tell you how emphatic or emotional a tweet is. SVM output
+suggests adverb use is generally *negative*.
+
+3) past_tense again gives you an idea of what the speaker is talking
+about. SVM output suggests speaking about past events is more likely
+to be *negative*.
+
+4) token_length tells you what kind of words (long or short) the tweet
+uses. SVM output suggests tweets which use longer words are more
+likely to be *positive*. This makes sense; when we are angry, we tend
+to be rather short and curt, and don't necessarily make use of complex
+vocabulary.
+
+At n=500, only a few attributes have non-zero information gain, but at
+n=10000 many more do. This makes sense ... many of the attributes will
+only be slightly correlated with the sentiment. With only a few
+training examples, it is difficult to discover the trend, whereas with
+many examples, it becomes more obvious.

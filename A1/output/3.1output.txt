@@ -7,7 +7,7 @@ weka.classifiers.trees.J48: 50.417800 %
 Best result: weka.classifiers.functions.SMO
 Training output:
 
-Time taken to build model: 1.45 seconds
+Time taken to build model: 1.57 seconds
 Time taken to test model on training data: 0.1 seconds
 
 === Error on training data ===
