@@ -24,9 +24,7 @@ models = ["weka.classifiers.functions.SMO",
           "weka.classifiers.bayes.NaiveBayes",
           "weka.classifiers.trees.J48"]
 
-confusion_matrix_pattern = r
-
-"""=== Error on test data ===
+confusion_matrix_pattern = r"""=== Error on test data ===
 .*
 === Confusion Matrix ===
 

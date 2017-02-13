@@ -67,7 +67,7 @@ def twtt3(tweet):
     # *start* of a URL token, and what counts as the *end* of a URL token? To
     # answer this, we are going to try to roughly match Twitter's actual
     # behaviour - in other words, when Twitter creates a hyperlink in a tweet,
-    # how does it determine wher the URL begins and ends?
+    # how does it determine where the URL begins and ends?
     pattern = r"""\b(?:http|www)[^\s`^(){}<>\"]*[^\s`^(){}<>\".,!?\[\]~@$%&*|:;'"]"""
     # Pattern is as follows:
     # \b
@@ -386,9 +386,7 @@ def main(args):
     # directory, but I made the list non_terminal_abbrev.english, so that's in
     # the same directory as this python file
     abbrev_file = os.path.join(word_lists_dir, "abbrev.english")
-    executable_location = os.path.dirname(os.path.realpath(__file__))
-    non_terminal_abbrev_file = os.path.join(executable_location,
-                                            "non_terminal_abbrev.english")
+    non_terminal_abbrev_file = "non_terminal_abbrev.english"
     with open(abbrev_file, "r") as f:
         abbrevs = [line.strip() for line in f.readlines()]
     with open(non_terminal_abbrev_file, "r") as f:
