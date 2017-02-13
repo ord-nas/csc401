@@ -44,15 +44,15 @@ def twtt2(tweet):
     # I had trouble just using python's built-in HTML unescape method on the
     # entire string; weird unicode errors. But if I just run it on pieces that
     # look like html escape sequences, seems fine.
+    sofar = ""
     while True:
         m = re.search(r"(&[#A-Za-z0-9]+;)", tweet)
         if not m:
             break
-        #print "ORIGINAL:", m.group(1)
         replacement = str(html_parser.unescape(m.group(1)))
-        #print "REP:", replacement
-        tweet = tweet[:m.start()] + replacement + tweet[m.end():]
-    return tweet
+        sofar += tweet[:m.start()] + replacement
+        tweet = tweet[m.end():]
+    return sofar + tweet
 
 # Remove tokens which begin with www or http
 def twtt3(tweet):
