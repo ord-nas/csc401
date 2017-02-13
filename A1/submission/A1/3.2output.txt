@@ -1,0 +1,51 @@
+Training Dataset Size | Test Set Accuracy
+======================|==================
+                  500 | 51.253500 %
+                 1000 | 52.646200 %
+                 1500 | 52.924800 %
+                 2000 | 52.924800 %
+                 2500 | 52.089100 %
+                 3000 | 52.924800 %
+                 3500 | 53.203300 %
+                 4000 | 53.481900 %
+                 4500 | 54.039000 %
+                 5000 | 52.924800 %
+                 5500 | 53.203300 %
+                 6000 | 53.481900 %
+                 6500 | 52.089100 %
+                 7000 | 52.089100 %
+                 7500 | 53.203300 %
+                 8000 | 53.203300 %
+                 8500 | 53.760400 %
+                 9000 | 53.203300 %
+                 9500 | 54.039000 %
+                10000 | 54.039000 %
+
+Discussion
+==========
+
+There is a slight trend towards higher accuracies as the size of the
+training data increases. This is to be expected: in general, more
+training data provides a more representative sample of the actual
+distribution we are trying to model, so our classifier is better able
+to generalize to unseen data.
+
+However, the trend is slight, and is very noisy. Copying the data into
+Excel reveals that training data and test set accuracy are indeed
+positively correlated, but a linear regression results in an R^2 value
+of only 0.3017. I think there are two main factors at play:
+
+1) The training process is quite noisy. This can be seen in the
+cross-validation results (3.4output.txt) - even if we hold the number
+of training datapoints fixed, the classification accuracy can vary by
+a few percentage points just based on which fold we select. This can
+be explained by noticing that the classifiers are overfitting the
+training set (which is why we see much higher training accuracy
+compared to test accuracy). This overfitting means that the classifier
+will be particular sensitive to changes in the training set.
+
+2) The actual amount of improvement caused by increased training data
+is very slight. The best accurcy is only about 54% - random guessing
+would give us about 50%. That means that the modest improvements from
+increased dataset size can be hidden by the random fluctuations due to
+training noise.

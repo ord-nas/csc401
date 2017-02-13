@@ -1,0 +1,108 @@
+Information gain results for n=500
+==================================
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.0316    5 past_tense
+ 0.0246   19 token_length
+ 0.0238   14 adverbs
+ 0.019     1 first_person
+ 0.0156    2 second_person
+ 0         7 commas
+ 0         9 dashes
+ 0         8 colons
+ 0         3 third_person
+ 0         6 future_tense
+ 0         4 coordinating_conjuctions
+ 0        17 uppercase
+ 0        16 slag
+ 0        20 num_sentences
+ 0        18 sentence_length
+ 0        11 ellipses
+ 0        10 parens
+ 0        15 wh_words
+ 0        12 common_nouns
+ 0        13 proper_nouns
+
+Selected attributes: 5,19,14,1,2,7,9,8,3,6,4,17,16,20,18,11,10,15,12,13 : 20
+
+Information gain results for n=10000
+====================================
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 21 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 0.022912    2 second_person
+ 0.017163   19 token_length
+ 0.01243    14 adverbs
+ 0.010565    5 past_tense
+ 0.008808    1 first_person
+ 0.004233   13 proper_nouns
+ 0.003324   18 sentence_length
+ 0.001409   12 common_nouns
+ 0.001205   17 uppercase
+ 0.001193    6 future_tense
+ 0.001063   11 ellipses
+ 0.001014   16 slag
+ 0.000898    4 coordinating_conjuctions
+ 0.000637   10 parens
+ 0.00062    15 wh_words
+ 0.000588    9 dashes
+ 0.000477   20 num_sentences
+ 0           8 colons
+ 0           3 third_person
+ 0           7 commas
+
+Selected attributes: 2,19,14,5,1,13,18,12,17,6,11,16,4,10,15,9,20,8,3,7 : 20
+
+Discussion
+==========
+
+At both low and high amounts of data, the top five most useful
+attributes are the same (although they change places relative to one
+another). These five attributes are: second_person, token_length,
+adverbs, past_tense, first_person.
+
+Each of these attributes kind of makes sense:
+
+1) first_person and second_person both give you an idea of who the
+speaker is talking about. Looking at the SVM output actually suggests
+that tweets about first person are more likely to be *negative*,
+whereas tweets about second person are more likely to be *positive*. I
+guess we often complain about our own lives on twitter (negative first
+person), but I am slightly surprised that second person tweets are
+more likely to be positive.
+
+2) adverbs tell you how emphatic or emotional a tweet is. SVM output
+suggests adverb use is generally *negative*.
+
+3) past_tense again gives you an idea of what the speaker is talking
+about. SVM output suggests speaking about past events is more likely
+to be *negative*.
+
+4) token_length tells you what kind of words (long or short) the tweet
+uses. SVM output suggests tweets which use longer words are more
+likely to be *positive*. This makes sense; when we are angry, we tend
+to be rather short and curt, and don't necessarily make use of complex
+vocabulary.
+
+At n=500, only a few attributes have non-zero information gain, but at
+n=10000 many more do. This makes sense ... many of the attributes will
+only be slightly correlated with the sentiment. With only a few
+training examples, it is difficult to discover the trend, whereas with
+many examples, it becomes more obvious.

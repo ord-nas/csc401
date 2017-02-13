@@ -1,0 +1,35 @@
+Summary of classifier scores (test accuracy)
+============================================
+weka.classifiers.functions.SMO: 54.039000 %
+weka.classifiers.bayes.NaiveBayes: 52.646200 %
+weka.classifiers.trees.J48: 50.417800 %
+
+Best result: weka.classifiers.functions.SMO
+Training output:
+
+Time taken to build model: 1.57 seconds
+Time taken to test model on training data: 0.1 seconds
+
+=== Error on training data ===
+
+Correctly Classified Instances       12637               63.185  %
+Incorrectly Classified Instances      7363               36.815  %
+Kappa statistic                          0.2637
+Mean absolute error                      0.3682
+Root mean squared error                  0.6068
+Relative absolute error                 73.63   %
+Root relative squared error            121.3507 %
+Total Number of Instances            20000     
+
+
+=== Error on test data ===
+
+Correctly Classified Instances         194               54.039  %
+Incorrectly Classified Instances       165               45.961  %
+Kappa statistic                          0.0787
+Mean absolute error                      0.4596
+Root mean squared error                  0.6779
+Relative absolute error                 91.922  %
+Root relative squared error            135.5891 %
+Total Number of Instances              359     
+
