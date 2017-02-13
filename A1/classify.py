@@ -229,7 +229,6 @@ def part_34(output_folder):
 
     # Transpose accuracies!
     accuracies = zip(*accuracies)
-    print "accuracies:", accuracies
 
     # Test for significance
     level = 0.05
@@ -288,11 +287,10 @@ def main(args):
          os.path.join(output_folder, "test.twt"),
          os.path.join(output_folder, "test.arff")])
 
-    #best_model = part_31(output_folder)
-    #part_32(output_folder, best_model)
-    #part_33(output_folder, best_model)
+    best_model = part_31(output_folder)
+    part_32(output_folder, best_model)
+    part_33(output_folder, best_model)
     part_34(output_folder)
-
             
 if __name__ == "__main__":
     main(sys.argv)
