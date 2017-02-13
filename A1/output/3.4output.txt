@@ -1,0 +1,102 @@
+Fold 0 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.623500 |            0.609583 |            0.641466 |            0.625525 |         0.687000 |         0.560000 |         0.623500 
+  weka.classifiers.bayes.NaiveBayes | 0.609000 |            0.590232 |            0.637626 |            0.613929 |         0.713000 |         0.505000 |         0.609000 
+         weka.classifiers.trees.J48 | 0.579000 |            0.577451 |            0.580612 |            0.579032 |         0.589000 |         0.569000 |         0.579000 
+
+Fold 1 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.627500 |            0.613333 |            0.645714 |            0.629524 |         0.690000 |         0.565000 |         0.627500 
+  weka.classifiers.bayes.NaiveBayes | 0.622500 |            0.605695 |            0.645660 |            0.625677 |         0.702000 |         0.543000 |         0.622500 
+         weka.classifiers.trees.J48 | 0.567000 |            0.568228 |            0.565815 |            0.567022 |         0.558000 |         0.576000 |         0.567000 
+
+Fold 2 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.649500 |            0.636780 |            0.664829 |            0.650804 |         0.696000 |         0.603000 |         0.649500 
+  weka.classifiers.bayes.NaiveBayes | 0.636000 |            0.622523 |            0.652809 |            0.637666 |         0.691000 |         0.581000 |         0.636000 
+         weka.classifiers.trees.J48 | 0.605000 |            0.610063 |            0.600382 |            0.605223 |         0.582000 |         0.628000 |         0.605000 
+
+Fold 3 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.621500 |            0.604651 |            0.644815 |            0.624733 |         0.702000 |         0.541000 |         0.621500 
+  weka.classifiers.bayes.NaiveBayes | 0.612000 |            0.594435 |            0.637592 |            0.616014 |         0.705000 |         0.519000 |         0.612000 
+         weka.classifiers.trees.J48 | 0.590000 |            0.595949 |            0.584746 |            0.590347 |         0.559000 |         0.621000 |         0.590000 
+
+Fold 4 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.630000 |            0.617754 |            0.645089 |            0.631421 |         0.682000 |         0.578000 |         0.630000 
+  weka.classifiers.bayes.NaiveBayes | 0.627000 |            0.607993 |            0.654126 |            0.631060 |         0.715000 |         0.539000 |         0.627000 
+         weka.classifiers.trees.J48 | 0.590500 |            0.593395 |            0.587779 |            0.590587 |         0.575000 |         0.606000 |         0.590500 
+
+Fold 5 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.622500 |            0.607362 |            0.642608 |            0.624985 |         0.693000 |         0.552000 |         0.622500 
+  weka.classifiers.bayes.NaiveBayes | 0.612000 |            0.592257 |            0.642494 |            0.617375 |         0.719000 |         0.505000 |         0.612000 
+         weka.classifiers.trees.J48 | 0.588000 |            0.584778 |            0.591476 |            0.588127 |         0.607000 |         0.569000 |         0.588000 
+
+Fold 6 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.641000 |            0.627486 |            0.657718 |            0.642602 |         0.694000 |         0.588000 |         0.641000 
+  weka.classifiers.bayes.NaiveBayes | 0.631500 |            0.617306 |            0.649602 |            0.633454 |         0.692000 |         0.571000 |         0.631500 
+         weka.classifiers.trees.J48 | 0.591500 |            0.591592 |            0.591409 |            0.591500 |         0.591000 |         0.592000 |         0.591500 
+
+Fold 7 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.658000 |            0.643376 |            0.675947 |            0.659661 |         0.709000 |         0.607000 |         0.658000 
+  weka.classifiers.bayes.NaiveBayes | 0.632500 |            0.614126 |            0.657926 |            0.636026 |         0.713000 |         0.552000 |         0.632500 
+         weka.classifiers.trees.J48 | 0.604500 |            0.601358 |            0.607843 |            0.604601 |         0.620000 |         0.589000 |         0.604500 
+
+Fold 8 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.628000 |            0.613677 |            0.646453 |            0.630065 |         0.691000 |         0.565000 |         0.628000 
+  weka.classifiers.bayes.NaiveBayes | 0.612500 |            0.595745 |            0.636364 |            0.616054 |         0.700000 |         0.525000 |         0.612500 
+         weka.classifiers.trees.J48 | 0.585000 |            0.580189 |            0.590426 |            0.585307 |         0.615000 |         0.555000 |         0.585000 
+
+Fold 9 results
+==============
+
+Classifier                          | Accuracy | Precision (class 0) | Precision (class 4) | Precision (average) | Recall (class 0) | Recall (class 4) | Recall (average) 
+------------------------------------+----------+---------------------+---------------------+---------------------+------------------+------------------+------------------
+     weka.classifiers.functions.SMO | 0.628000 |            0.615315 |            0.643820 |            0.629568 |         0.683000 |         0.573000 |         0.628000 
+  weka.classifiers.bayes.NaiveBayes | 0.606500 |            0.593013 |            0.624561 |            0.608787 |         0.679000 |         0.534000 |         0.606500 
+         weka.classifiers.trees.J48 | 0.586500 |            0.586414 |            0.586587 |            0.586500 |         0.587000 |         0.586000 |         0.586500 
+
+Significance tests
+==================
+
+weka.classifiers.functions.SMO vs. weka.classifiers.bayes.NaiveBayes: p-value 0.000245
+   (REJECT the null hypothesis at 0.050000 significance level)
+   (conclude that weka.classifiers.functions.SMO is more accurate than weka.classifiers.bayes.NaiveBayes)
+weka.classifiers.functions.SMO vs. weka.classifiers.trees.J48: p-value 0.000000
+   (REJECT the null hypothesis at 0.050000 significance level)
+   (conclude that weka.classifiers.functions.SMO is more accurate than weka.classifiers.trees.J48)
+weka.classifiers.bayes.NaiveBayes vs. weka.classifiers.trees.J48: p-value 0.000005
+   (REJECT the null hypothesis at 0.050000 significance level)
+   (conclude that weka.classifiers.bayes.NaiveBayes is more accurate than weka.classifiers.trees.J48)
