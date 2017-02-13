@@ -1,3 +1,13 @@
+"""This script performs part 3 of the assignment. It should be invoked
+as follows:
+
+python classify.py output_directory student_number
+
+The output_directory parameter should be the name of a *new* directory
+that doesn't exist yet; classify.py will create it and dump all output
+into that directory.
+"""
+
 import subprocess
 import re
 import sys
@@ -5,11 +15,18 @@ import os
 
 from scipy import stats
 
+data_dir = "/u/cs401/A1/tweets" # alternatively, "tweets" if running
+                                # on home computer.
+weka_dir = "/u/cs401/WEKA" # alternatively, "WEKA" if running on home
+                           # computer
+
 models = ["weka.classifiers.functions.SMO",
           "weka.classifiers.bayes.NaiveBayes",
           "weka.classifiers.trees.J48"]
 
-confusion_matrix_pattern = r"""=== Error on test data ===
+confusion_matrix_pattern = r
+
+"""=== Error on test data ===
 .*
 === Confusion Matrix ===
 
@@ -59,7 +76,7 @@ def part_31(output_folder):
         print "Training model %s ..." % model
         out = run(["java",
                    "-cp",
-                   "WEKA/weka.jar",
+                   os.path.join(weka_dir, "weka.jar"),
                    model,
                    "-t",
                    os.path.join(output_folder, "train.arff"),
@@ -105,7 +122,7 @@ def part_32(output_folder, model):
         print "Training model %s on %d training examples ..." % (model, n)
         out = run(["java",
                    "-cp",
-                   "WEKA/weka.jar",
+                   os.path.join(weka_dir, "weka.jar"),
                    model,
                    "-t",
                    os.path.join(output_folder, "train_%d.arff" % n),
@@ -130,7 +147,7 @@ def part_33(output_folder, model):
         f.write("Information gain results for n=%d\n" % n)
         f.write("===============================%s\n" % ("=" * len(str(n))))
         out = run(["sh",
-                   "WEKA/infogain.sh",
+                   os.path.join(weka_dir, "infogain.sh"),
                    os.path.join(output_folder, "train_%d.arff" % n)],
                   pipe_output=True)
         f.write(out)
@@ -162,9 +179,6 @@ def part_34(output_folder):
                 in_header = False
 
     num_folds = 10
-    print len(zero), len(four)
-    print "ZERO:", zero[0], "::::", zero[-1]
-    print "FOUR:", four[0], "::::", four[-1]
     assert len(zero) == len(four)
     assert len(zero) % num_folds == 0
     assert len(four) % num_folds == 0
@@ -200,7 +214,7 @@ def part_34(output_folder):
             print "Running classifier %s on fold %d ..." % (model, fold)
             out = run(["java",
                        "-cp",
-                       "WEKA/weka.jar",
+                       os.path.join(weka_dir, "weka.jar"),
                        model,
                        "-t",
                        train_file,
@@ -262,14 +276,14 @@ def main(args):
     print "Running twtt.py on training data ..."
     run(["python",
          "twtt.py",
-         "tweets/training.1600000.processed.noemoticon.csv",
+         os.path.join(data_dir, "training.1600000.processed.noemoticon.csv"),
          str(student_number),
          os.path.join(output_folder, "train.twt")])
 
     print "Running twtt.py on testing data ..."
     run(["python",
          "twtt.py",
-         "tweets/testdata.manualSUBSET.2009.06.14.csv",
+         os.path.join(data_dir, "testdata.manualSUBSET.2009.06.14.csv"),
          str(student_number),
          os.path.join(output_folder, "test.twt")])
 

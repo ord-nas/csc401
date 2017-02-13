@@ -1,5 +1,9 @@
 import re
 import sys
+import os
+
+word_lists_dir = "/u/cs401/Wordlists" # alternatively, "" if running
+                                      # on home computer.
 
 arff_header = """@relation tweet_polarity
 
@@ -173,7 +177,8 @@ def feat20(tweet):
     return len(parse_individual_sentences(tweet))
 
 def read_word_list(filename):
-    with open(filename, "r") as f:
+    path = os.path.join(word_lists_dir, filename)
+    with open(path, "r") as f:
         return [line.strip().lower() for line in f.readlines() if line.strip() != ""]
 
 def extract_features(tweet, polarity):

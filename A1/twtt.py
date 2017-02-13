@@ -1,9 +1,13 @@
 import re
 import sys
 import itertools
+import os
 import HTMLParser
 
 import NLPlib
+
+word_lists_dir = "/u/cs401/Wordlists" # alternatively, "" if running
+                                      # on home computer.
 
 # Parse the comma-separated-values line and pull out the tweet and the
 # polarity. Return a tuple of (tweet, polarity)
@@ -378,9 +382,13 @@ def main(args):
     # Initialize the HTML parser
     html_parser = HTMLParser.HTMLParser()
 
-    # Read the abbreviation lists
-    abbrev_file = "abbrev.english"
-    non_terminal_abbrev_file = "non_terminal_abbrev.english"
+    # Read the abbreviation lists. abbrev.english is in the csc401 wordlist
+    # directory, but I made the list non_terminal_abbrev.english, so that's in
+    # the same directory as this python file
+    abbrev_file = os.path.join(word_lists_dir, "abbrev.english")
+    executable_location = os.path.dirname(os.path.realpath(__file__))
+    non_terminal_abbrev_file = os.path.join(executable_location,
+                                            "non_terminal_abbrev.english")
     with open(abbrev_file, "r") as f:
         abbrevs = [line.strip() for line in f.readlines()]
     with open(non_terminal_abbrev_file, "r") as f:
