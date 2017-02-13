@@ -237,12 +237,12 @@ def part_34(output_folder):
     out_file.write("==================\n\n")
     for i in xrange(len(models)):
         for j in xrange(i+1,len(models)):
-            direction = "better" if average(accuracies[i]) > average(accuracies[j]) else "worse"
+            direction = "more" if average(accuracies[i]) > average(accuracies[j]) else "less"
             (_, p_value) = stats.ttest_rel(accuracies[i], accuracies[j])
             out_file.write("%s vs. %s: p-value %f\n"% (models[i], models[j], p_value))
             out_file.write("   (%s the null hypothesis at %f significance level)\n" % (
                 "REJECT" if p_value < level else "CANNOT REJECT", level))
-            out_file.write("   (conclude that %s is %s%s than %s)\n" % (
+            out_file.write("   (conclude that %s is %s%s accurate than %s)\n" % (
                 models[i], "" if p_value < level else "not significantly ",
                 direction, models[j]))
     out_file.close()
