@@ -44,7 +44,40 @@ function outSentence = preprocess( inSentence, language )
 %   outSentence = regexprep( outSentence, '"', ' " ');
   
   % NOTE: does not properly handle nested parens
-  outSentence = regexprep( outSentence, '(\([^)]*[^0-9)]\s*)-(\s*[^0-9])', '$1 - $2');
+  
+  % Handle dashes inside parens
+  overall = '';
+  currentParenGroup = '';
+  parenLevel = 0;
+  for i=1:length(outSentence)
+      if outSentence(i) == '('
+          parenLevel = parenLevel + 1;
+      elseif outSentence(i) == ')'
+          parenLevel = parenLevel - 1;
+          % If we just left a parenthesized statement ...
+          if parenLevel == 0
+              overall = [overall, regexprep( currentParenGroup, '-', ' - ')];
+              currentParenGroup = '';
+          elseif parenLevel == -1
+              % Throw away unmatched parens
+              parenLevel = 0;
+          end
+      end
+      % Now attach the current character to the end of the appropriate
+      % string
+      if parenLevel > 0
+          currentParenGroup = [ currentParenGroup outSentence(i) ];
+      else
+          overall = [ overall outSentence(i) ];
+      end
+  end
+  % Handle unclosed parens
+  overall = [overall, regexprep( currentParenGroup, '-', ' - ')];
+  outSentence = overall;
+  
+  %outSentence = regexprep( outSentence, '(\([^)]*[^0-9)]\s*)-(\s*[^0-9])', '$1 - $2');
+  % Handle mathematical operator subtraction
+  outSentence = regexprep( outSentence, '([0-9])-([0-9])', '$1 - $2');
   
   outSentence = regexprep( outSentence, '([.?!]+)(\s*"?\s*SENTEND$)', ' $1 $2');
 
