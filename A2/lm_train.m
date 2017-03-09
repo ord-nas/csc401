@@ -49,6 +49,28 @@ for iFile=1:length(DD)
     words = strsplit(' ', processedLine );
     
     % TODO: THE STUDENT IMPLEMENTS THE FOLLOWING
+    
+    % Unigram counts
+    for i=1:length(words)
+        w = char(words(i));       
+        if ~isfield(LM.uni, w)
+            LM.uni.(w) = 0;
+        end
+        LM.uni.(w) = LM.uni.(w) + 1;
+    end
+    
+    % Bigram counts
+    for i=1:length(words)-1
+        w1 = char(words(i));
+        w2 = char(words(i+1));
+        if ~isfield(LM.bi, w1)
+            LM.bi.(w1) = struct();
+        end
+        if ~isfield(LM.bi.(w1), w2)
+            LM.bi.(w1).(w2) = 0;
+        end
+        LM.bi.(w1).(w2) = LM.bi.(w1).(w2) + 1;
+    end
 
     % TODO: THE STUDENT IMPLEMENTED THE PRECEDING
   end
