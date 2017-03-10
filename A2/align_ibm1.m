@@ -35,6 +35,11 @@ function AM = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
   
   % Read in the training data
   [eng, fre] = read_hansard(trainDir, numSentences);
+  % TEMP
+  AM.eng = eng;
+  AM.fre = fre;
+  return
+  % END TEMP
 
   % Initialize AM uniformly 
   AM = initialize(eng, fre);
@@ -72,11 +77,29 @@ function [eng, fre] = read_hansard(mydir, numSentences)
 %
 %         eng{i} = strsplit(' ', preprocess(english_sentence, 'e'));
 %
-  %eng = {};
-  %fre = {};
-
-  % TODO: your code goes here.
-
+  eng = cell(1,numSentences);
+  fre = cell(1,numSentences);
+  
+  engFiles = dir( [ mydir, filesep, '*e'] );
+  
+  counter = 1;
+  
+  for iFile=1:length(engFiles)
+      disp(iFile); % TODO REMOVE ME
+      engName = engFiles(iFile).name;
+      freName = [engName(1:end-1), 'f'];
+      engLines = textread([mydir, filesep, engName], '%s','delimiter','\n');
+      freLines = textread([mydir, filesep, freName], '%s','delimiter','\n');
+      
+      for l=1:length(engLines)
+          eng{counter} =  strsplit(' ', preprocess(engLines{l}, 'e'));
+          fre{counter} =  strsplit(' ', preprocess(freLines{l}, 'e'));
+          counter = counter + 1;
+          if counter > numSentences
+              return
+          end
+      end
+  end
 end
 
 
