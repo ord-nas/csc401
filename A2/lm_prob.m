@@ -48,25 +48,21 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
 
   % TODO: the student implements the following
   for i=1:length(words)-1
-      w1 = char(words(i));
-      w1 = w1(1:min(63, length(w1)));
-      w2 = char(words(i+1));
-      w2 = w2(1:min(63, length(w2)));
+      w1 = asFieldname(words(i));
+      w2 = asFieldname(words(i+1));
       fprintf('Considering pair: %s %s\n', w1, w2);
       numerator = delta;
       if isfield(LM.bi, w1) && isfield(LM.bi.(w1), w2)
           numerator = numerator + LM.bi.(w1).(w2);
       end
-      denominator = delta * vocabSize;
-      if isfield(LM.uni, w1)
-          denominator = denominator + LM.uni.(w1);
-      end
-      fprintf('num/dem = %f/%f\n', numerator, denominator);
-      if denominator == 0
+      if ~isfield(LM.uni, w1)
+          % Oh no, we hit a word we've never seen before! -Inf
           logProb = -Inf;
-      else
-          logProb = logProb + log2(numerator/denominator);
+          return;
       end
+      denominator = LM.uni.(w1) + (delta * vocabSize);
+      fprintf('num/dem = %f/%f\n', numerator, denominator);
+      logProb = logProb + log2(numerator/denominator);
   end
   
   % TODO: once upon a time there was a curmudgeonly orangutan named Jub-Jub.
