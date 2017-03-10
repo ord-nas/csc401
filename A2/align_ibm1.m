@@ -39,7 +39,6 @@ function [AM, eng, fre] = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
 
   % Initialize AM uniformly 
   AM = initialize(eng, fre);
-  return;
 
   % Iterate between E and M steps
   for iter=1:maxIter,
@@ -89,8 +88,8 @@ function [eng, fre] = read_hansard(mydir, numSentences)
       freLines = textread([mydir, filesep, freName], '%s','delimiter','\n');
       
       for l=1:length(engLines)
-          eng{counter} =  strsplit(' ', preprocess(engLines{l}, 'e'));
-          fre{counter} =  strsplit(' ', preprocess(freLines{l}, 'f'));
+          eng{counter} = strsplit(' ', preprocess(engLines{l}, 'e'));
+          fre{counter} = strsplit(' ', preprocess(freLines{l}, 'f'));
           counter = counter + 1;
           if counter > numSentences
               return
@@ -109,12 +108,12 @@ function AM = initialize(eng, fre)
     
     % Now iterate over pairs of sentences:
     for i=1:length(eng)
-        e = eng{i};
-        f = fre{i};
-        for j=2:length(e)-1 % Skip SENTSTART and SENTEND
-            eWord = asFieldname(e(j));
-            for k=2:length(f)-1 % Skip SENTSTART and SENTEND
-                fWord = asFieldname(f(k));
+        E = eng{i};
+        F = fre{i};
+        for j=2:length(E)-1 % Skip SENTSTART and SENTEND
+            eWord = asFieldname(E(j));
+            for k=2:length(F)-1 % Skip SENTSTART and SENTEND
+                fWord = asFieldname(F(k));
                 % First just put a placeholder value in the alignment model
                 AM.(eWord).(fWord) = 1.0;
             end
@@ -138,15 +137,55 @@ function AM = initialize(eng, fre)
     % Known probabilities
     AM.SENTSTART.SENTSTART = 1.0;
     AM.SENTEND.SENTEND = 1.0;
-
 end
 
 function t = em_step(t, eng, fre)
-% 
-% One step in the EM algorithm.
-%
-  
-  % TODO: your code goes here
+    tcount = struct();
+    total = struct();
+    for i=1:length(eng)
+        E = eng{i}(2:end-1); % Skip SENTSTART/SENTEND
+        F = fre{i}(2:end-1); % Skip SENTSTART/SENTEND
+        [uniqueF, ~, mapping] = unique(F);
+        countsF = hist(mapping, length(uniqueF));
+        [uniqueE, ~, mapping] = unique(E);
+        countsE = hist(mapping, length(uniqueE));
+        for j=1:length(uniqueF)
+            f = asFieldname(uniqueF(j));
+            denominator = 0;
+            for k=1:length(uniqueE)
+                e = asFieldname(uniqueE(k));
+                denominator = denominator + t.(e).(f) * countsF(j);
+            end
+            for k=1:length(uniqueE)
+                e = asFieldname(uniqueE(k));
+                % update tcount
+                prev = 0;
+                if isfield(tcount, e) && isfield(tcount.(e), f)
+                    prev = tcount.(e).(f);
+                end
+                tcount.(e).(f) = prev + t.(e).(f) * countsF(j) * countsE(k) / denominator;
+                
+                % update total
+                prev = 0;
+                if isfield(total, e)
+                    prev = total.(e);
+                end
+                total.(e) = prev + t.(e).(f) * countsF(j) * countsE(k) / denominator;
+            end
+        end
+    end
+    engVocab = fieldnames(t);
+    for i=1:length(engVocab)
+        e = asFieldname(engVocab(i));
+        if strcmp(e, 'SENTSTART') || strcmp(e, 'SENTEND')
+            continue
+        end
+        freMatches = fieldnames(t.(e));
+        for j=1:length(freMatches)
+            f = asFieldname(freMatches(j));
+            t.(e).(f) = tcount.(e).(f) / total.(e);
+        end
+    end
 end
 
 
