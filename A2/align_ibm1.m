@@ -1,4 +1,5 @@
-function AM = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
+% TODO FIX SIGNATURE
+function [AM, eng, fre] = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
 %
 %  align_ibm1
 % 
@@ -35,14 +36,10 @@ function AM = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
   
   % Read in the training data
   [eng, fre] = read_hansard(trainDir, numSentences);
-  % TEMP
-  AM.eng = eng;
-  AM.fre = fre;
-  return
-  % END TEMP
 
   % Initialize AM uniformly 
   AM = initialize(eng, fre);
+  return;
 
   % Iterate between E and M steps
   for iter=1:maxIter,
@@ -93,7 +90,7 @@ function [eng, fre] = read_hansard(mydir, numSentences)
       
       for l=1:length(engLines)
           eng{counter} =  strsplit(' ', preprocess(engLines{l}, 'e'));
-          fre{counter} =  strsplit(' ', preprocess(freLines{l}, 'e'));
+          fre{counter} =  strsplit(' ', preprocess(freLines{l}, 'f'));
           counter = counter + 1;
           if counter > numSentences
               return
@@ -109,8 +106,38 @@ function AM = initialize(eng, fre)
 % Only set non-zero probabilities where word pairs appear in corresponding sentences.
 %
     AM = {}; % AM.(english_word).(foreign_word)
-
-    % TODO: your code goes here
+    
+    % Now iterate over pairs of sentences:
+    for i=1:length(eng)
+        e = eng{i};
+        f = fre{i};
+        for j=2:length(e)-1 % Skip SENTSTART and SENTEND
+            eWord = asFieldname(e(j));
+            for k=2:length(f)-1 % Skip SENTSTART and SENTEND
+                fWord = asFieldname(f(k));
+                % First just put a placeholder value in the alignment model
+                AM.(eWord).(fWord) = 1.0;
+            end
+        end
+    end
+    
+    % Now go over the alignment model and actually compute the correct
+    % probabilities
+    engVocab=fieldnames(AM);
+    for i=1:length(engVocab)
+        eWord = asFieldname(engVocab(i));
+        freMatches = fieldnames(AM.(eWord));
+        for j=1:length(freMatches)
+            fWord = asFieldname(freMatches(j));
+            % Unifromly assign probability to each french word that
+            % potentially matches the given english word
+            AM.(eWord).(fWord) = 1.0 / length(freMatches);
+        end
+    end
+    
+    % Known probabilities
+    AM.SENTSTART.SENTSTART = 1.0;
+    AM.SENTEND.SENTEND = 1.0;
 
 end
 
