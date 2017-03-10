@@ -24,26 +24,10 @@ function outSentence = preprocess( inSentence, language )
 
   % initialize outSentence
   outSentence = inSentence;
-  
-  % commas, colons and semicolons, parentheses, dashes between parentheses, mathematical operators (e.g., +, -, <, >, =), and quotation marks
 
   % perform language-agnostic changes
-  % TODO: your code here
-  %    e.g., outSentence = regexprep( outSentence, 'TODO', 'TODO');
+
   outSentence = regexprep( outSentence, '([,:;()+<>=*/"])', ' $1 ');
-%   outSentence = regexprep( outSentence, ':', ' : ');
-%   outSentence = regexprep( outSentence, ';', ' ; ');
-%   outSentence = regexprep( outSentence, '(', ' ( ');
-%   outSentence = regexprep( outSentence, ')', ' ) ');
-%   outSentence = regexprep( outSentence, '+', ' + ');
-%   outSentence = regexprep( outSentence, '<', ' < ');
-%   outSentence = regexprep( outSentence, '>', ' > ');
-%   outSentence = regexprep( outSentence, '=', ' = ');
-%   outSentence = regexprep( outSentence, '*', ' * ');
-%   outSentence = regexprep( outSentence, '/', ' / ');
-%   outSentence = regexprep( outSentence, '"', ' " ');
-  
-  % NOTE: does not properly handle nested parens
   
   % Handle dashes inside parens
   overall = '';
@@ -74,8 +58,7 @@ function outSentence = preprocess( inSentence, language )
   % Handle unclosed parens
   overall = [overall, regexprep( currentParenGroup, '-', ' - ')];
   outSentence = overall;
-  
-  %outSentence = regexprep( outSentence, '(\([^)]*[^0-9)]\s*)-(\s*[^0-9])', '$1 - $2');
+
   % Handle mathematical operator subtraction
   outSentence = regexprep( outSentence, '([0-9])-([0-9])', '$1 - $2');
   
@@ -101,8 +84,6 @@ function outSentence = preprocess( inSentence, language )
     
     % Handle puisque or lorsque contractions
     outSentence = regexprep( outSentence, '\<(puisqu|lorsqu)''(il|on)\>', '$1'' $2');
-    
-
   end
   
   % trim whitespaces down 
