@@ -62,7 +62,8 @@ function outSentence = preprocess( inSentence, language )
   % Handle mathematical operator subtraction
   outSentence = regexprep( outSentence, '([0-9])-([0-9])', '$1 - $2');
   
-  outSentence = regexprep( outSentence, '([.?!]+)(\s*"?\s*SENTEND$)', ' $1 $2');
+  % Handle end-of-sentence punctuation
+  outSentence = regexprep( outSentence, '([.?!]+)([")\s]*SENTEND$)', ' $1 $2');
 
   switch language
    case 'e'
