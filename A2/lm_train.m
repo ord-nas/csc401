@@ -41,6 +41,7 @@ disp([ dataDir, filesep, '.*', language] );
 
 for iFile=1:length(DD)
 
+  disp(iFile); % TODO REMOVE ME
   lines = textread([dataDir, filesep, DD(iFile).name], '%s','delimiter','\n');
 
   for l=1:length(lines)
@@ -52,7 +53,8 @@ for iFile=1:length(DD)
     
     % Unigram counts
     for i=1:length(words)
-        w = char(words(i));       
+        w = char(words(i));
+        w = w(1:min(63, length(w))); % truncate to 63 chars
         if ~isfield(LM.uni, w)
             LM.uni.(w) = 0;
         end
@@ -62,7 +64,9 @@ for iFile=1:length(DD)
     % Bigram counts
     for i=1:length(words)-1
         w1 = char(words(i));
+        w1 = w1(1:min(63, length(w1)));
         w2 = char(words(i+1));
+        w2 = w2(1:min(63, length(w2)));
         if ~isfield(LM.bi, w1)
             LM.bi.(w1) = struct();
         end
