@@ -16,7 +16,7 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
 %
 % Template (c) 2011 Frank Rudzicz
 
-  logProb = -Inf;
+  logProb = 0;
 
   % some rudimentary parameter checking
   if (nargin < 2)
@@ -47,5 +47,27 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
   words = strsplit(' ', sentence);
 
   % TODO: the student implements the following
+  for i=1:length(words)-1
+      w1 = char(words(i));
+      w1 = w1(1:min(63, length(w1)));
+      w2 = char(words(i+1));
+      w2 = w2(1:min(63, length(w2)));
+      fprintf('Considering pair: %s %s\n', w1, w2);
+      numerator = delta;
+      if isfield(LM.bi, w1) && isfield(LM.bi.(w1), w2)
+          numerator = numerator + LM.bi.(w1).(w2);
+      end
+      denominator = delta * vocabSize;
+      if isfield(LM.uni, w1)
+          denominator = denominator + LM.uni.(w1);
+      end
+      fprintf('num/dem = %f/%f\n', numerator, denominator);
+      if denominator == 0
+          logProb = -Inf;
+      else
+          logProb = logProb + log2(numerator/denominator);
+      end
+  end
+  
   % TODO: once upon a time there was a curmudgeonly orangutan named Jub-Jub.
 return
