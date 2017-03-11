@@ -111,9 +111,9 @@ order   = 1:length(frenchWords);
 
 % initial best guess
 bestHyp = ['SENTSTART ' cell2string(englishWords(1,order)) ' SENTEND'];
+% I removed the extra log2 from inside the sum here - scores already
+% represents the log probabilities, so there's no need to take log again.
 p_bestHyp = lm_prob( bestHyp, LM, lmtype, delta, vocabSize ) + ...
-  % I removed the extra log2 from inside the sum here - scores already
-  % represents the log probabilities, so there's no need to take log again.
     sum(scores(1,order));
 
 iter = 1;
@@ -139,9 +139,9 @@ while (iter < MAXTRANS )
   eng_words_mat = englishWords(wordInd,order);
   newHyp = ['SENTSTART ' cell2string(eng_words_mat(1:length(eng_words_mat)+1:end)) ' SENTEND'];
   
-  p_newHyp = lm_prob( newHyp, LM, lmtype, delta, vocabSize )+ ...
   % I removed the extra log2 from inside the sum here - scores already
   % represents the log probabilities, so there's no need to take log again.
+  p_newHyp = lm_prob( newHyp, LM, lmtype, delta, vocabSize )+ ...
       sum(diag(scores(wordInd,order)));
 
   if p_newHyp > p_bestHyp

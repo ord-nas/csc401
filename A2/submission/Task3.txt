@@ -24,17 +24,39 @@ Add-delta (delta=0.1)  | 57.908611
 Add-delta (delta=0.3)  | 84.603787
 Add-delta (delta=0.6)  | 113.902120
 
-As we add more smoothing, the perplexity increases. This makes sense: since
-perplexity is 2 to the power of the average entropy per token, it can be seen as
-a measure of how "surprising" the data is. Higher perplexity means that on
-average it is more difficult for the model to predict what token will come
-next. Adding smoothing means that we add probability mass to every possible
-bigram. This means that any token (so long as it is in the vocabulary) is
-possible after any other token - and so the probability distribution becomes
-less sparse, more uniform. This generally makes it more difficult to predict
-what word will come next, because there are many more possibilities, and the
-probability mass is not as concentrated.
+First, let's try to give an intuitive explanation of what perplexity
+means. Since perplexity is 2 to the power of the average entropy per token, it
+can be seen as a measure of how "surprising" the test data is. Higher perplexity
+means that on average it is more difficult for the model to predict what token
+will come next.
 
-It's also important to note that perplexity.m doesn't count sentences which get
-assigned probability 0. These sentences would cause the perplexity to become
-infinite in MLE.
+As we add more smoothing, the perplexity increases. This makes sense: adding
+smoothing means that we add probability mass to every unseen bigram. This means
+that any token (so long as it is in the vocabulary) can follow any other token -
+and so the probability distribution becomes less sparse, more uniform. This
+generally makes it more difficult to predict what word will come next, because
+there are many more possibilities, and the probability mass is not as
+concentrated. In the limit, as delta approaches infinity, our probability
+distribution will approach a uniform distribution and perplexity will reach a
+maximum.
+
+Looking at the MLE perplexity values for both French and English, the values are
+actually quite low (around 13). According to Wikipedia, the lowest perplexity
+reported on the Brown corpus is around 250, so our perplexity values are an
+order of magnitude lower. The reason for this is twofold:
+
+1) The Hansard corpus is much more specialized (and thus more predictable) than
+the Brown Corpus. Parliamentary proceedings follow a certain format, and tend to
+discuss a narrower range of topics than general English writing. Further, as
+mentioned in the assignment handout, our subset of the Hansard dataset was
+specifically selected to be simple: sentences are relatively short, and there is
+always a clear 1-to-1 mapping between English and French sentences. Thus, we are
+working with an artificially simple (and therefore predictable) subset of
+Hansard.
+
+2) In reality, our MLE models have *infinite* perplexity on the corpus, because
+there are sentences in the test set which the MLE models assign *zero*
+probability. To get the values shown here, we are throwing away these
+troublesome sentences. Because our MLE model doesn't have to waste any
+probability mass on these kinds of sentences, the perplexity values reported are
+artificially low.
