@@ -165,8 +165,8 @@ while (iter < MAXTRANS )
   iter = iter + 1;
 end
 
-disp(p_bestHyp);
-disp(bestHyp);
+% disp(p_bestHyp);
+% disp(bestHyp);
 
 
 return
