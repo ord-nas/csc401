@@ -59,6 +59,7 @@ end
 % sentence 
 
 frenchWords  = strsplit(' ', french );
+frenchWords  = frenchWords(2:end-1); % strip of SENTSTART/SENTEND
 englishWords = cell(N, length(frenchWords));
 scores       = zeros(N, length(frenchWords));
 
@@ -77,36 +78,49 @@ for iew=1:length(VE)
     MX = MX+ LM.uni.( VE{iew} );
   end
 end
+%disp(MX);
 
-tmpScores = zeros(length(VE), 1);
+tmpScoresEngGivenFre = zeros(length(VE), 1);
+tmpScoresFreGivenEng = zeros(length(VE), 1);
 
 % determine the best N translations for each french word on a
 % word-by-word basis 
 for ifw=1:length(frenchWords)
   for iew=1:length(VE)
     if (isfield(AM, VE{iew}) && isfield(LM.uni, VE{iew}) && isfield(AM.(VE{iew}), (frenchWords{ifw})))
-      tmpScores(iew) = log2(AM.(VE{iew}).(frenchWords{ifw}))+log2( ...
+      tmpScoresEngGivenFre(iew) = log2(AM.(VE{iew}).(frenchWords{ifw}))+log2( ...
 	  LM.uni.(VE{iew})) - log2(MX );
+      tmpScoresFreGivenEng(iew) = log2(AM.(VE{iew}).(frenchWords{ifw}));
     else
-      tmpScores(iew) = -Inf;
+      tmpScoresEngGivenFre(iew) = -Inf;
+      tmpScoresFreGivenEng(iew) = -Inf;
     end
   end
 
-  [b,ind] = sort(tmpScores, 'descend');
-  scores(:,ifw) = b(1:N);
+  [b,ind] = sort(tmpScoresEngGivenFre, 'descend');
+  scores(:,ifw) = tmpScoresFreGivenEng(ind(1:N));
   englishWords(:,ifw) = VE(ind(1:N));
-end 
-%englishWords
+  % disp('start');
+  % disp(b(1:N));
+  % disp(scores);
+  % disp('end');
+end
+%disp(scores);
+%disp(size(scores));
+%disp(englishWords);
 
 % indices 
 wordInd = ones(1, length(frenchWords));
 order   = 1:length(frenchWords);
 
 % initial best guess
-bestHyp = cell2string(englishWords(1,order));
+bestHyp = ['SENTSTART ' cell2string(englishWords(1,order)) ' SENTEND'];
 p_bestHyp = lm_prob( bestHyp, LM, lmtype, delta, vocabSize ) + ...
-    sum(log2(scores(1,order)));
+    sum(scores(1,order));
 
+%disp(scores(1,order));
+%disp(bestHyp);
+%disp(p_bestHyp);
 
 iter = 1;
 while (iter < MAXTRANS )
@@ -130,9 +144,18 @@ while (iter < MAXTRANS )
   % evaluate
   %  newHyp = cell2string(diag(englishWords(wordInd,order)));
   eng_words_mat = englishWords(wordInd,order);
-  newHyp = cell2string(eng_words_mat(1:length(eng_words_mat)+1:end));
+  newHyp = ['SENTSTART ' cell2string(eng_words_mat(1:length(eng_words_mat)+1:end)) ' SENTEND'];
+  
   p_newHyp = lm_prob( newHyp, LM, lmtype, delta, vocabSize )+ ...
-      sum(log2(diag(scores(wordInd,order))));
+      sum(diag(scores(wordInd,order)));
+  %disp(wordInd);
+  %disp(order);
+  %disp(eng_words_mat);
+  %disp(newHyp);
+  %disp(newHyp);
+  %disp(p_newHyp);
+  %disp(lm_prob( newHyp, LM, lmtype, delta, vocabSize ));
+  %disp(scores(wordInd,order));
 
   if p_newHyp > p_bestHyp
     p_bestHyp = p_newHyp;
@@ -141,6 +164,9 @@ while (iter < MAXTRANS )
 
   iter = iter + 1;
 end
+
+disp(p_bestHyp);
+disp(bestHyp);
 
 
 return
