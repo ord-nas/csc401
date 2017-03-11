@@ -80,17 +80,20 @@ function [eng, fre] = read_hansard(mydir, numSentences)
   
   counter = 1;
   
+  % Iterate over the english and french files in parallel
   for iFile=1:length(engFiles)
-      disp(iFile); % TODO REMOVE ME
+      fprintf('Reading file %d (%s) ...\n', iFile, engFiles(iFile).name);
       engName = engFiles(iFile).name;
       freName = [engName(1:end-1), 'f'];
       engLines = textread([mydir, filesep, engName], '%s','delimiter','\n');
       freLines = textread([mydir, filesep, freName], '%s','delimiter','\n');
       
+      % Iterate over lines in the english and french files in parallel
       for l=1:length(engLines)
           eng{counter} = strsplit(' ', preprocess(engLines{l}, 'e'));
           fre{counter} = strsplit(' ', preprocess(freLines{l}, 'f'));
           counter = counter + 1;
+          % Continue until we've read enough sentences
           if counter > numSentences
               return
           end
@@ -106,15 +109,19 @@ function AM = initialize(eng, fre)
 %
     AM = {}; % AM.(english_word).(foreign_word)
     
-    % Now iterate over pairs of sentences:
+    % First iterate over pairs of sentences:
     for i=1:length(eng)
         E = eng{i};
         F = fre{i};
+        % Iterate over all possible pairings of a word in the English sentence
+        % to a words in the French sentence. Don't include the SENTSTART and
+        % SENTEND tokens.
         for j=2:length(E)-1 % Skip SENTSTART and SENTEND
             eWord = asFieldname(E(j));
             for k=2:length(F)-1 % Skip SENTSTART and SENTEND
                 fWord = asFieldname(F(k));
-                % First just put a placeholder value in the alignment model
+                % In this first loop, just put a placeholder value in the
+                % alignment model wherever we find there is a pairing.
                 AM.(eWord).(fWord) = 1.0;
             end
         end
@@ -123,13 +130,14 @@ function AM = initialize(eng, fre)
     % Now go over the alignment model and actually compute the correct
     % probabilities
     engVocab=fieldnames(AM);
+    % Iterate over all English words
     for i=1:length(engVocab)
         eWord = asFieldname(engVocab(i));
         freMatches = fieldnames(AM.(eWord));
         for j=1:length(freMatches)
             fWord = asFieldname(freMatches(j));
-            % Unifromly assign probability to each french word that
-            % potentially matches the given english word
+            % Unifromly assign probability to each french word that potentially
+            % matches the given english word
             AM.(eWord).(fWord) = 1.0 / length(freMatches);
         end
     end
@@ -140,17 +148,22 @@ function AM = initialize(eng, fre)
 end
 
 function t = em_step(t, eng, fre)
-    tcount = struct();
-    total = struct();
+% Perform one step of the EM algorithm
+    tcount = struct(); % All values initialized to zero (i.e. nonexistent)
+    total = struct(); % All values initialized to zero (i.e. nonexistent)
+    % Iterate over all English sentences
     for i=1:length(eng)
         E = eng{i}(2:end-1); % Skip SENTSTART/SENTEND
         F = fre{i}(2:end-1); % Skip SENTSTART/SENTEND
+	% Find all the unique French/English words, and count the number of
+	% occurrences of each.
         [uniqueF, ~, mapping] = unique(F);
         countsF = hist(mapping, length(uniqueF));
         [uniqueE, ~, mapping] = unique(E);
         countsE = hist(mapping, length(uniqueE));
         for j=1:length(uniqueF)
             f = asFieldname(uniqueF(j));
+	    % Compute denominator = sum{all english words e in E}(P(f|e))
             denominator = 0;
             for k=1:length(uniqueE)
                 e = asFieldname(uniqueE(k));
@@ -158,14 +171,14 @@ function t = em_step(t, eng, fre)
             end
             for k=1:length(uniqueE)
                 e = asFieldname(uniqueE(k));
-                % update tcount
+                % Update tcount
                 prev = 0;
                 if isfield(tcount, e) && isfield(tcount.(e), f)
                     prev = tcount.(e).(f);
                 end
                 tcount.(e).(f) = prev + t.(e).(f) * countsF(j) * countsE(k) / denominator;
                 
-                % update total
+                % Update total
                 prev = 0;
                 if isfield(total, e)
                     prev = total.(e);
@@ -174,14 +187,19 @@ function t = em_step(t, eng, fre)
             end
         end
     end
+    % Now that we have tcount and total, we can compute the next iteration of
+    % model parameters P(f|e).
     engVocab = fieldnames(t);
     for i=1:length(engVocab)
         e = asFieldname(engVocab(i));
+	% Ignore SENTSTART, SENTEND; we don't need to update their
+	% probabilities, since we know them a priori.
         if strcmp(e, 'SENTSTART') || strcmp(e, 'SENTEND')
             continue
         end
         freMatches = fieldnames(t.(e));
         for j=1:length(freMatches)
+            % For each paring <e, f>, compute the new P(f|e)
             f = asFieldname(freMatches(j));
             t.(e).(f) = tcount.(e).(f) / total.(e);
         end

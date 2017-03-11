@@ -59,7 +59,7 @@ end
 % sentence 
 
 frenchWords  = strsplit(' ', french );
-frenchWords  = frenchWords(2:end-1); % strip of SENTSTART/SENTEND
+frenchWords  = frenchWords(2:end-1); % strip off SENTSTART/SENTEND
 englishWords = cell(N, length(frenchWords));
 scores       = zeros(N, length(frenchWords));
 
@@ -78,13 +78,12 @@ for iew=1:length(VE)
     MX = MX+ LM.uni.( VE{iew} );
   end
 end
-%disp(MX);
 
 tmpScoresEngGivenFre = zeros(length(VE), 1);
 tmpScoresFreGivenEng = zeros(length(VE), 1);
 
-% determine the best N translations for each french word on a
-% word-by-word basis 
+% Determine the best N translations for each french word on a word-by-word
+% basis. Also keep track of P(f|e) for those words.
 for ifw=1:length(frenchWords)
   for iew=1:length(VE)
     if (isfield(AM, VE{iew}) && isfield(LM.uni, VE{iew}) && isfield(AM.(VE{iew}), (frenchWords{ifw})))
@@ -97,17 +96,14 @@ for ifw=1:length(frenchWords)
     end
   end
 
+  % We sort the words by P(e|f), since we want the most likely english
+  % translations given the french words.
   [b,ind] = sort(tmpScoresEngGivenFre, 'descend');
+  % BUT: the values we store in scores are P(f|e), since the purpose this serves
+  % is to calculate P(F|E) for candidate translations.
   scores(:,ifw) = tmpScoresFreGivenEng(ind(1:N));
   englishWords(:,ifw) = VE(ind(1:N));
-  % disp('start');
-  % disp(b(1:N));
-  % disp(scores);
-  % disp('end');
 end
-%disp(scores);
-%disp(size(scores));
-%disp(englishWords);
 
 % indices 
 wordInd = ones(1, length(frenchWords));
@@ -117,10 +113,6 @@ order   = 1:length(frenchWords);
 bestHyp = ['SENTSTART ' cell2string(englishWords(1,order)) ' SENTEND'];
 p_bestHyp = lm_prob( bestHyp, LM, lmtype, delta, vocabSize ) + ...
     sum(scores(1,order));
-
-%disp(scores(1,order));
-%disp(bestHyp);
-%disp(p_bestHyp);
 
 iter = 1;
 while (iter < MAXTRANS )
@@ -142,20 +134,11 @@ while (iter < MAXTRANS )
   end
 
   % evaluate
-  %  newHyp = cell2string(diag(englishWords(wordInd,order)));
   eng_words_mat = englishWords(wordInd,order);
   newHyp = ['SENTSTART ' cell2string(eng_words_mat(1:length(eng_words_mat)+1:end)) ' SENTEND'];
   
   p_newHyp = lm_prob( newHyp, LM, lmtype, delta, vocabSize )+ ...
       sum(diag(scores(wordInd,order)));
-  %disp(wordInd);
-  %disp(order);
-  %disp(eng_words_mat);
-  %disp(newHyp);
-  %disp(newHyp);
-  %disp(p_newHyp);
-  %disp(lm_prob( newHyp, LM, lmtype, delta, vocabSize ));
-  %disp(scores(wordInd,order));
 
   if p_newHyp > p_bestHyp
     p_bestHyp = p_newHyp;
@@ -165,12 +148,7 @@ while (iter < MAXTRANS )
   iter = iter + 1;
 end
 
-% disp(p_bestHyp);
-% disp(bestHyp);
-
-
 return
-
 
 function eSen = cell2string( c )
   eSen = '';
