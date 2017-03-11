@@ -95,6 +95,9 @@ function outSentence = preprocess( inSentence, language )
     outSentence = regexprep( outSentence, '\<qu''([a-z])', 'qu'' $1');
     
     % Handle puisque or lorsque contractions
+    % Note: I'm only handling the case where puisque and lorsque are followed by
+    % 'on' or 'il', as specified in the assignment. So this won't handle cases
+    % where pusique/lorsque are constracted with other words.
     outSentence = regexprep( outSentence, '\<(puisqu|lorsqu)''(il|on)\>', '$1'' $2');
   end
   
