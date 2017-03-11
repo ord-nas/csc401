@@ -21,6 +21,12 @@ delta           = 0;
 vocabSize       = 0;
 N               = 3; % Highest-order n-gram to use in BLEU score.
 
+% Make sure to source the global definitions file
+csc401_a2_defns
+
+% Suppress warnings
+warning('off', 'MATLAB:nargchk:deprecated');
+
 % Load/train language models. This is task 2 which makes use of task 1
 if train
     % Train new models
