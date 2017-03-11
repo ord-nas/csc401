@@ -120,13 +120,15 @@ limit of this simplistic model's capabilities.
 In general, as N increases, BLEU scores decrease. This is also expected: as N
 increases, we consider larger and larger n-grams, meaning that the automatic
 translation must match the references more and more closely in order to get
-similar scores.
+similar scores. This makes the task more challenging for the machine
+translations system.
 
 Discussion of Reference Sentences
 =================================
 
 In general, the Hansard translations are more accurate/correct than the Google
-translations. For example, consider this sentence:
+translations (as expected, given that Hansard is human-translated). For example,
+consider this sentence:
 
 -French: Les deputes liberaux sont nombreux a representer des circonscription rurales.
 -Hansard English: Many Liberal members come from rural ridings.
