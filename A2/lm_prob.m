@@ -50,7 +50,7 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
   for i=1:length(words)-1
       w1 = asFieldname(words(i));
       w2 = asFieldname(words(i+1));
-      fprintf('Considering pair: %s %s\n', w1, w2);
+      %fprintf('Considering pair: %s %s\n', w1, w2);
       numerator = delta;
       if isfield(LM.bi, w1) && isfield(LM.bi.(w1), w2)
           numerator = numerator + LM.bi.(w1).(w2);
@@ -61,7 +61,7 @@ function logProb = lm_prob(sentence, LM, type, delta, vocabSize)
           return;
       end
       denominator = LM.uni.(w1) + (delta * vocabSize);
-      fprintf('num/dem = %f/%f\n', numerator, denominator);
+      %fprintf('num/dem = %f/%f\n', numerator, denominator);
       logProb = logProb + log2(numerator/denominator);
   end
   
