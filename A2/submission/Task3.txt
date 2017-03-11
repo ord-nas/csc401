@@ -1,0 +1,40 @@
+Perplexity values for English
+=============================
+
+Smoothing Strategy     | Perplexity
+-----------------------+--------------
+MLE                    | 13.008654
+Add-delta (delta=0.01) | 37.150539
+Add-delta (delta=0.03) | 42.828669
+Add-delta (delta=0.06) | 49.027005
+Add-delta (delta=0.1)  | 55.520541
+Add-delta (delta=0.3)  | 78.270358
+Add-delta (delta=0.6)  | 102.759591
+
+Perplexity values for French
+============================
+
+Smoothing Strategy     | Perplexity
+-----------------------+--------------
+MLE                    | 12.764655
+Add-delta (delta=0.01) | 36.187198
+Add-delta (delta=0.03) | 43.064551
+Add-delta (delta=0.06) | 50.339163
+Add-delta (delta=0.1)  | 57.908611
+Add-delta (delta=0.3)  | 84.603787
+Add-delta (delta=0.6)  | 113.902120
+
+As we add more smoothing, the perplexity increases. This makes sense: since
+perplexity is 2 to the power of the average entropy per token, it can be seen as
+a measure of how "surprising" the data is. Higher perplexity means that on
+average it is more difficult for the model to predict what token will come
+next. Adding smoothing means that we add probability mass to every possible
+bigram. This means that any token (so long as it is in the vocabulary) is
+possible after any other token - and so the probability distribution becomes
+less sparse, more uniform. This generally makes it more difficult to predict
+what word will come next, because there are many more possibilities, and the
+probability mass is not as concentrated.
+
+It's also important to note that perplexity.m doesn't count sentences which get
+assigned probability 0. These sentences would cause the perplexity to become
+infinite in MLE.

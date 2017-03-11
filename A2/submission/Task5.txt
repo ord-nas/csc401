@@ -1,0 +1,2901 @@
+BLEU N = 1 Scores
+=================
+
++------------------+---------------------------------------+
+|                  |  Number of Sentences in AM Training   |
+|                  +---------+---------+---------+---------+
+|  Sentence Number |   1000  |  10000  |  15000  |  30000  |
++------------------+---------+---------+---------+---------+
+|          1       |  0.4667 |  0.6000 |  0.6667 |  0.6667 |
+|          2       |  0.4286 |  0.4286 |  0.7143 |  0.2857 |
+|          3       |  0.5455 |  0.6364 |  0.7273 |  0.6364 |
+|          4       |  0.3333 |  0.5833 |  0.5833 |  0.5833 |
+|          5       |  0.6364 |  0.8182 |  0.8182 |  0.7273 |
+|          6       |  0.6250 |  0.6250 |  0.7500 |  0.7500 |
+|          7       |  0.3636 |  0.5455 |  0.6364 |  0.6364 |
+|          8       |  0.6667 |  0.8333 |  0.8333 |  1.0000 |
+|          9       |  0.6667 |  0.8333 |  0.8333 |  0.8333 |
+|         10       |  0.3750 |  0.3750 |  0.5000 |  0.5000 |
+|         11       |  0.8182 |  0.8182 |  0.6364 |  0.7273 |
+|         12       |  0.4167 |  0.5000 |  0.5000 |  0.5833 |
+|         13       |  0.2500 |  0.3750 |  0.3750 |  0.5000 |
+|         14       |  0.6250 |  0.6875 |  0.7500 |  0.8125 |
+|         15       |  0.5306 |  0.6822 |  0.7580 |  0.7580 |
+|         16       |  0.5000 |  0.7000 |  0.7000 |  0.4000 |
+|         17       |  0.5000 |  0.6250 |  0.6250 |  0.7500 |
+|         18       |  0.6275 |  0.6275 |  0.6798 |  0.7844 |
+|         19       |  0.5455 |  0.4545 |  0.4545 |  0.4545 |
+|         20       |  0.4412 |  0.6619 |  0.6619 |  0.6619 |
+|         21       |  0.6667 |  0.8333 |  0.8333 |  0.8333 |
+|         22       |  0.6667 |  0.7778 |  0.7778 |  0.7778 |
+|         23       |  0.7500 |  0.8333 |  0.8333 |  0.8333 |
+|         24       |  0.5714 |  0.6429 |  0.6429 |  0.6429 |
+|         25       |  0.3333 |  0.3333 |  0.3333 |  0.3333 |
++------------------+---------+---------+---------+---------+
+
+BLEU N = 2 Scores
+=================
+
++------------------+---------------------------------------+
+|                  |  Number of Sentences in AM Training   |
+|                  +---------+---------+---------+---------+
+|  Sentence Number |   1000  |  10000  |  15000  |  30000  |
++------------------+---------+---------+---------+---------+
+|          1       |  0.1826 |  0.2928 |  0.3086 |  0.3086 |
+|          2       |  0      |  0      |  0      |  0      |
+|          3       |  0      |  0.2523 |  0.2523 |  0.2523 |
+|          4       |  0.1741 |  0.3257 |  0.3257 |  0.3257 |
+|          5       |  0.3568 |  0.4954 |  0.4954 |  0.4671 |
+|          6       |  0.5175 |  0.5175 |  0.5669 |  0.5669 |
+|          7       |  0      |  0.2335 |  0.2523 |  0.2523 |
+|          8       |  0.3651 |  0.7071 |  0.7071 |  1.0000 |
+|          9       |  0.3651 |  0.4082 |  0.4082 |  0.4082 |
+|         10       |  0      |  0.3273 |  0.4629 |  0.4629 |
+|         11       |  0.4954 |  0.4954 |  0.4369 |  0.4671 |
+|         12       |  0      |  0.2132 |  0.2132 |  0.2303 |
+|         13       |  0      |  0      |  0      |  0      |
+|         14       |  0.4082 |  0.4282 |  0.4472 |  0.5204 |
+|         15       |  0.2103 |  0.4770 |  0.5621 |  0.5621 |
+|         16       |  0.2357 |  0.5578 |  0.5578 |  0      |
+|         17       |  0.3780 |  0.4226 |  0.4226 |  0.5669 |
+|         18       |  0.4574 |  0.4574 |  0.5142 |  0.6263 |
+|         19       |  0.3303 |  0.2132 |  0.2132 |  0.2132 |
+|         20       |  0      |  0.5003 |  0.5003 |  0.2359 |
+|         21       |  0.3651 |  0.7071 |  0.7071 |  0.7071 |
+|         22       |  0.4082 |  0.6236 |  0.6236 |  0.6236 |
+|         23       |  0.3693 |  0.5505 |  0.5505 |  0      |
+|         24       |  0.4688 |  0.4972 |  0.4972 |  0.4972 |
+|         25       |  0      |  0      |  0      |  0      |
++------------------+---------+---------+---------+---------+
+
+BLEU N = 3 Scores
+=================
+
++------------------+---------------------------------------+
+|                  |  Number of Sentences in AM Training   |
+|                  +---------+---------+---------+---------+
+|  Sentence Number |   1000  |  10000  |  15000  |  30000  |
++------------------+---------+---------+---------+---------+
+|          1       |  0      |  0      |  0      |  0      |
+|          2       |  0      |  0      |  0      |  0      |
+|          3       |  0      |  0      |  0      |  0      |
+|          4       |  0      |  0      |  0      |  0      |
+|          5       |  0      |  0      |  0      |  0      |
+|          6       |  0.3547 |  0.3547 |  0      |  0.3770 |
+|          7       |  0      |  0      |  0      |  0      |
+|          8       |  0      |  0.6300 |  0.6300 |  1.0000 |
+|          9       |  0      |  0      |  0      |  0      |
+|         10       |  0      |  0.2614 |  0.4149 |  0.4149 |
+|         11       |  0.3010 |  0.3010 |  0.2768 |  0.2894 |
+|         12       |  0      |  0      |  0      |  0      |
+|         13       |  0      |  0      |  0      |  0      |
+|         14       |  0.2877 |  0.2970 |  0.3057 |  0.3382 |
+|         15       |  0      |  0.2762 |  0.3082 |  0.3082 |
+|         16       |  0      |  0.4269 |  0.4269 |  0      |
+|         17       |  0      |  0      |  0      |  0.3770 |
+|         18       |  0.3674 |  0.3674 |  0.4279 |  0.5708 |
+|         19       |  0      |  0      |  0      |  0      |
+|         20       |  0      |  0.4191 |  0.4191 |  0.4191 |
+|         21       |  0      |  0.6300 |  0.6300 |  0.6300 |
+|         22       |  0      |  0.3816 |  0.3816 |  0.3816 |
+|         23       |  0      |  0.3118 |  0.3118 |  0.3118 |
+|         24       |  0.2636 |  0.3454 |  0.3454 |  0.2741 |
+|         25       |  0      |  0      |  0      |  0      |
++------------------+---------+---------+---------+---------+
+
+Discussion
+==========
+	
+In general, BLEU score increases as we give the alignment model more training
+data (i.e. as we increase Number of Sentences). The general pattern is:
+ - 10000 model is much better than 1000 model
+ - 15000 model is a little better than 10000 model
+ - 30000 and 15000 models are on average roughly identical
+
+This makes sense: we expect that as we give the model more training data, it
+gets a more accurate representation of the underlying distribution we are trying
+to model. But we see diminishing returns, because we soon begin to reach the
+limit of this simplistic model's capabilities.
+
+In general, as N increases, BLEU scores decrease. This is also expected: as N
+increases, we consider larger and larger n-grams, meaning that the automatic
+translation must match the references more and more closely in order to get
+similar scores. This makes the task more challenging for the machine
+translations system.
+
+Discussion of Reference Sentences
+=================================
+
+In general, the Hansard translations are more accurate/correct than the Google
+translations (as expected, given that Hansard is human-translated). For example,
+consider this sentence:
+
+-French: Les deputes liberaux sont nombreux a representer des circonscription rurales.
+-Hansard English: Many Liberal members come from rural ridings.
+-Google English: The liberal deputies are many represent a rural constituency.
+
+Note that the Google translation isn't even grammatical, and doesn't convey the
+correct meaning.
+
+On the other hand, the Google translations are often much more literal than the
+Hansard translations. For example:
+
+-French: C'est le comble du ridicule
+-Hansard English: I cannot imagine anything so ridiculous.
+-Google English: It is the height of ridicule
+
+The Google translation in this case is a much more literal or "exact"
+translation (although the Hansard translation is a more natural English
+phrasing). If we used only the Hansard reference, which is very liberal in its
+rephrasing, we may unfairly penalize a perfectly good translation simply because
+it remained faithful to the original French.
+
+Advantages of using more than two references: there are many ways of phrasing a
+sentence, and so having a variety of diverse reference phrasings means we are
+less likely to penalize the machine translation system simply because it chose a
+phrasing which was different from (but just as good as) the reference translations.
+
+Disadvantages of using more than two references: if we add too many references,
+then we risk losing our ability to properly guage fluency: the machine
+translation system can produce ungrammatical franken-sentences in which the
+parts don't fit together, but as long as each part can be found in one of the
+reference sentences, the translation will get a good score.
+
+Appendix - Detailed Dump for All Sentences
+==========================================
+
+AM numSentences = 1000, BLEU N = 1
+----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world edited COMMA_ it not there to nothing of system to way PERIOD_ SENTEND
+1-gram score: 7 / 15 = 0.466667
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.466667
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART way edited for all are members PERIOD_ SENTEND
+1-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.428571
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not form not that this her the our plan PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.545455
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all represent who edited the motion edited well let yes PERIOD_ SENTEND
+1-gram score: 4 / 12 = 0.333333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.333333
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the edited new is that edited canada is all edited PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.636364
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question some clear believe COMMA_ why QUESTION_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.625000
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART are members liberals are suggestions to representing of riding edited PERIOD_ SENTEND
+1-gram score: 4 / 11 = 0.363636
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.363636
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we edited in a edited PERIOD_ SENTEND
+1-gram score: 4 / 6 = 0.666667
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.666667
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART that is the edited of ridiculous SENTEND
+1-gram score: 4 / 6 = 0.666667
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.666667
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my agree COMMA_ are amendments the edited SENTEND
+1-gram score: 3 / 8 = 0.375000
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.375000
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all are members of all are parties figures well these programs SENTEND
+1-gram score: 9 / 11 = 0.818182
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.818182
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not the edited of work left to way PERIOD_ SENTEND
+1-gram score: 5 / 12 = 0.416667
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.416667
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited be edited our edited of edited PERIOD_ SENTEND
+1-gram score: 2 / 8 = 0.250000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.250000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to edited to next of edited in are edited needs provinces PERIOD_ SENTEND
+1-gram score: 10 / 16 = 0.625000
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.625000
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but edited way and edited in the bottom of debate PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.530570
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we edited what it is makes of do able PERIOD_ SENTEND
+1-gram score: 5 / 10 = 0.500000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that is the more edited rhetoric liberal PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister forward situations who is the speaker of offer PERIOD_ SENTEND
+1-gram score: 12 / 17 = 0.705882
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.627536
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is edited that way edited a edited be interest PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.545455
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we solid of these news edited PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.441248
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i beginning the motion edited PERIOD_ SENTEND
+1-gram score: 4 / 6 = 0.666667
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.666667
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my being edited COLON_ SENTEND
+1-gram score: 6 / 9 = 0.666667
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.666667
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this her the own of problem PERIOD_ SENTEND
+1-gram score: 9 / 12 = 0.750000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.750000
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i congratulate the member of edited be please held this bill of bill PERIOD_ SENTEND
+1-gram score: 8 / 14 = 0.571429
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.571429
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it those that leave changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.333333
+
+AM numSentences = 10000, BLEU N = 1
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world name COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 9 / 15 = 0.600000
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.600000
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART includes this all vote all members the SENTEND
+1-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.428571
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this adjourned the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.636364
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who raising the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.583333
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that post canada is all edited PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.818182
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question happen questions therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.625000
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART are members liberals are many to face of riding rural PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.545455
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we exciting in a democracy PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the edited of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ are no of yeas SENTEND
+1-gram score: 3 / 8 = 0.375000
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.375000
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all are members of all are parties throw well these programs SENTEND
+1-gram score: 9 / 11 = 0.818182
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.818182
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not of away of put end to that PERIOD_ SENTEND
+1-gram score: 6 / 12 = 0.500000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a edited our commitments of edited PERIOD_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.375000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in are transfers division provinces PERIOD_ SENTEND
+1-gram score: 11 / 16 = 0.687500
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.687500
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but set that and rather in the heart of debate PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.682161
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we passed what it is possible of do better PERIOD_ SENTEND
+1-gram score: 7 / 10 = 0.700000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.700000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more edited improving liberal PERIOD_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.625000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister going market who is the speaker of treasury PERIOD_ SENTEND
+1-gram score: 12 / 17 = 0.705882
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.627536
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that edited a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.454545
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we celebrate of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.661873
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion defeated PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.777778
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this adjourned the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i commend the member of sharing a leave presented this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.642857
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it have that but name to SENTEND
+1-gram score: 2 / 6 = 0.333333
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.333333
+
+AM numSentences = 15000, BLEU N = 1
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world real COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 10 / 15 = 0.666667
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.666667
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART this worth to leave all to PERIOD_ SENTEND
+1-gram score: 5 / 7 = 0.714286
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.714286
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART am not think what does this put to our goal PERIOD_ SENTEND
+1-gram score: 8 / 11 = 0.727273
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.727273
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who lose the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.583333
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that post canada is all beats PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.818182
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question going question therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.750000
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the members liberals are many to represent of riding rural PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.636364
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we respect in a democracy PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the motivation of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ the no of yeas SENTEND
+1-gram score: 4 / 8 = 0.500000
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all the members of all the parties orders well these programs SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.636364
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not of so of put end to that PERIOD_ SENTEND
+1-gram score: 6 / 12 = 0.500000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a edited our commitments of edited PERIOD_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.375000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in the transfers division provinces PERIOD_ SENTEND
+1-gram score: 12 / 16 = 0.750000
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.750000
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but let that and rather in the heart of debate PERIOD_ SENTEND
+1-gram score: 10 / 11 = 0.909091
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.757957
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we passed what it is possible of do better PERIOD_ SENTEND
+1-gram score: 7 / 10 = 0.700000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.700000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more tactics imagery liberal PERIOD_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.625000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister going determine who is the speaker of treasury PERIOD_ SENTEND
+1-gram score: 13 / 17 = 0.764706
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.679831
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that edited a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.454545
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we achievement of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.661873
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion negatived PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.777778
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this senate the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i commend the member of sharing a get presented this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.642857
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it must that that changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.333333
+
+AM numSentences = 30000, BLEU N = 1
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world real COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 10 / 15 = 0.666667
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.666667
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that better get everyone to leave the SENTEND
+1-gram score: 2 / 7 = 0.285714
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.285714
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this amended the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.636364
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who vote the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.583333
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that N1999 canada is all beats PERIOD_ SENTEND
+1-gram score: 8 / 11 = 0.727273
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.727273
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question going ask therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.750000
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the members liberals are many to represent of riding rural PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.636364
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we live in a democracy PERIOD_ SENTEND
+1-gram score: 6 / 6 = 1.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 1.000000
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the requires of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ the no honPERIOD_ yeas SENTEND
+1-gram score: 4 / 8 = 0.500000
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all the members of all the parties familiar well these programs SENTEND
+1-gram score: 8 / 11 = 0.727273
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.727273
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not we not honPERIOD_ honourable of put end to that PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.583333
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a trying our commitments of kyoto PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.500000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in the transfers to provinces PERIOD_ SENTEND
+1-gram score: 13 / 16 = 0.812500
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.812500
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but let that and getting in the heart of debate PERIOD_ SENTEND
+1-gram score: 10 / 11 = 0.909091
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.757957
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART have actually they there is can to make better to SENTEND
+1-gram score: 4 / 10 = 0.400000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.400000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more whimsy style liberal PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.750000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister will determine who is the speaker of council PERIOD_ SENTEND
+1-gram score: 15 / 17 = 0.882353
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.784420
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that signal a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.454545
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we celebrating of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.661873
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion negatived PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.777778
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this amended the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.833333
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i congratulate the member of winnipeg a get present this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.642857
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it must that that changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.333333
+
+AM numSentences = 1000, BLEU N = 2
+----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world edited COMMA_ it not there to nothing of system to way PERIOD_ SENTEND
+1-gram score: 7 / 15 = 0.466667
+2-gram score: 1 / 14 = 0.071429
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.182574
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART way edited for all are members PERIOD_ SENTEND
+1-gram score: 3 / 7 = 0.428571
+2-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not form not that this her the our plan PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+2-gram score: 0 / 10 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all represent who edited the motion edited well let yes PERIOD_ SENTEND
+1-gram score: 4 / 12 = 0.333333
+2-gram score: 1 / 11 = 0.090909
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.174078
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the edited new is that edited canada is all edited PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 2 / 10 = 0.200000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.356753
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question some clear believe COMMA_ why QUESTION_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.517549
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART are members liberals are suggestions to representing of riding edited PERIOD_ SENTEND
+1-gram score: 4 / 11 = 0.363636
+2-gram score: 0 / 10 = 0.000000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we edited in a edited PERIOD_ SENTEND
+1-gram score: 4 / 6 = 0.666667
+2-gram score: 1 / 5 = 0.200000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.365148
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART that is the edited of ridiculous SENTEND
+1-gram score: 4 / 6 = 0.666667
+2-gram score: 1 / 5 = 0.200000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.365148
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my agree COMMA_ are amendments the edited SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all are members of all are parties figures well these programs SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.495434
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not the edited of work left to way PERIOD_ SENTEND
+1-gram score: 5 / 12 = 0.416667
+2-gram score: 0 / 11 = 0.000000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited be edited our edited of edited PERIOD_ SENTEND
+1-gram score: 2 / 8 = 0.250000
+2-gram score: 0 / 7 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to edited to next of edited in are edited needs provinces PERIOD_ SENTEND
+1-gram score: 10 / 16 = 0.625000
+2-gram score: 4 / 15 = 0.266667
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.408248
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but edited way and edited in the bottom of debate PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.210325
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we edited what it is makes of do able PERIOD_ SENTEND
+1-gram score: 5 / 10 = 0.500000
+2-gram score: 1 / 9 = 0.111111
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.235702
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that is the more edited rhetoric liberal PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 2 / 7 = 0.285714
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.377964
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister forward situations who is the speaker of offer PERIOD_ SENTEND
+1-gram score: 12 / 17 = 0.705882
+2-gram score: 6 / 16 = 0.375000
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.457392
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is edited that way edited a edited be interest PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+2-gram score: 2 / 10 = 0.200000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.330289
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we solid of these news edited PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 0 / 7 = 0.000000
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.000000
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i beginning the motion edited PERIOD_ SENTEND
+1-gram score: 4 / 6 = 0.666667
+2-gram score: 1 / 5 = 0.200000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.365148
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my being edited COLON_ SENTEND
+1-gram score: 6 / 9 = 0.666667
+2-gram score: 2 / 8 = 0.250000
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.408248
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this her the own of problem PERIOD_ SENTEND
+1-gram score: 9 / 12 = 0.750000
+2-gram score: 2 / 11 = 0.181818
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.369274
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i congratulate the member of edited be please held this bill of bill PERIOD_ SENTEND
+1-gram score: 8 / 14 = 0.571429
+2-gram score: 5 / 13 = 0.384615
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.468807
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART those poor than leave has it SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 10000, BLEU N = 2
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world name COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 9 / 15 = 0.600000
+2-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.292770
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART includes this vote will all members the SENTEND
+1-gram score: 2 / 7 = 0.285714
+2-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this adjourned the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.252262
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who raising the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 2 / 11 = 0.181818
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.325669
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that post canada is all edited PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.495434
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question happen questions therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.517549
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART are members liberals are many to face of riding rural PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+2-gram score: 1 / 10 = 0.100000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.233550
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we exciting in a democracy PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.707107
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the edited of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 1 / 5 = 0.200000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.408248
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ are no of yeas SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 2 / 7 = 0.285714
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.327327
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all are members of all are parties throw well these programs SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.495434
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not of away of put end to that PERIOD_ SENTEND
+1-gram score: 6 / 12 = 0.500000
+2-gram score: 1 / 11 = 0.090909
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.213201
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a edited our commitments of edited PERIOD_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in are transfers division provinces PERIOD_ SENTEND
+1-gram score: 11 / 16 = 0.687500
+2-gram score: 4 / 15 = 0.266667
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.428174
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but set that and rather in the heart of debate PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 4 / 10 = 0.400000
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.476971
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we passed what it is possible of do better PERIOD_ SENTEND
+1-gram score: 7 / 10 = 0.700000
+2-gram score: 4 / 9 = 0.444444
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.557773
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more edited improving liberal PERIOD_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 2 / 7 = 0.285714
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.422577
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister going market who is the speaker of treasury PERIOD_ SENTEND
+1-gram score: 12 / 17 = 0.705882
+2-gram score: 6 / 16 = 0.375000
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.457392
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that edited a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+2-gram score: 1 / 10 = 0.100000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.213201
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we celebrate of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.500329
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion defeated PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.707107
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+2-gram score: 4 / 8 = 0.500000
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.623610
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this adjourned the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+2-gram score: 4 / 11 = 0.363636
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.550482
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i commend the member of sharing a leave presented this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+2-gram score: 5 / 13 = 0.384615
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.497245
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it must that way changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 15000, BLEU N = 2
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world real COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 10 / 15 = 0.666667
+2-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.308607
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART this worth to everybody have members to SENTEND
+1-gram score: 3 / 7 = 0.428571
+2-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this senate the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.252262
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who lose the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 2 / 11 = 0.181818
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.325669
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that post canada is all beats PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.495434
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question going question therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.566947
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the members liberals are many to represent of riding rural PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.252262
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we respect in a democracy PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.707107
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the motivation of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 1 / 5 = 0.200000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.408248
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ the no of yeas SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.462910
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all the members of all the parties orders well these programs SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.436931
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not of so of put end to that PERIOD_ SENTEND
+1-gram score: 6 / 12 = 0.500000
+2-gram score: 1 / 11 = 0.090909
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.213201
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a edited our commitments of edited PERIOD_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in the transfers division provinces PERIOD_ SENTEND
+1-gram score: 12 / 16 = 0.750000
+2-gram score: 4 / 15 = 0.266667
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.447214
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but let that and rather in the heart of debate PERIOD_ SENTEND
+1-gram score: 10 / 11 = 0.909091
+2-gram score: 5 / 10 = 0.500000
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.562116
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we passed what it is possible of do better PERIOD_ SENTEND
+1-gram score: 7 / 10 = 0.700000
+2-gram score: 4 / 9 = 0.444444
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.557773
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more tactics imagery liberal PERIOD_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 2 / 7 = 0.285714
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.422577
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister going determine who is the speaker of treasury PERIOD_ SENTEND
+1-gram score: 13 / 17 = 0.764706
+2-gram score: 7 / 16 = 0.437500
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.514213
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that edited a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+2-gram score: 1 / 10 = 0.100000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.213201
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we achievement of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.500329
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion negatived PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.707107
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+2-gram score: 4 / 8 = 0.500000
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.623610
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this senate the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+2-gram score: 4 / 11 = 0.363636
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.550482
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i commend the member of sharing a get presented this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+2-gram score: 5 / 13 = 0.384615
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.497245
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it must that that changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 30000, BLEU N = 2
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world real COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 10 / 15 = 0.666667
+2-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.308607
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that worth for all the members PERIOD_ SENTEND
+1-gram score: 4 / 7 = 0.571429
+2-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this amended the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.252262
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who vote the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 2 / 11 = 0.181818
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.325669
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that N1999 canada is all beats PERIOD_ SENTEND
+1-gram score: 8 / 11 = 0.727273
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.467099
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question going ask therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.566947
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the members liberals are many to represent of riding rural PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.252262
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we live in a democracy PERIOD_ SENTEND
+1-gram score: 6 / 6 = 1.000000
+2-gram score: 5 / 5 = 1.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 1.000000
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the requires of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 1 / 5 = 0.200000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.408248
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ the no honPERIOD_ yeas SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.462910
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all the members of all the parties familiar well these programs SENTEND
+1-gram score: 8 / 11 = 0.727273
+2-gram score: 3 / 10 = 0.300000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.467099
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not we not honPERIOD_ honourable of put end to that PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 1 / 11 = 0.090909
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.230283
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a trying our commitments of kyoto PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 0 / 7 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in the transfers to provinces PERIOD_ SENTEND
+1-gram score: 13 / 16 = 0.812500
+2-gram score: 5 / 15 = 0.333333
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.520416
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but let that and getting in the heart of debate PERIOD_ SENTEND
+1-gram score: 10 / 11 = 0.909091
+2-gram score: 5 / 10 = 0.500000
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.562116
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we actually what it both that done of best it SENTEND
+1-gram score: 4 / 10 = 0.400000
+2-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more whimsy style liberal PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.566947
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister will determine who is the speaker of council PERIOD_ SENTEND
+1-gram score: 15 / 17 = 0.882353
+2-gram score: 9 / 16 = 0.562500
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.626309
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that signal a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+2-gram score: 1 / 10 = 0.100000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.213201
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART have that to balanced these new to forget SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 1 / 7 = 0.142857
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.235857
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion negatived PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.707107
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+2-gram score: 4 / 8 = 0.500000
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.623610
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i no think not as this senate to answer of particular to SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 0 / 11 = 0.000000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i congratulate the member of winnipeg a get present this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+2-gram score: 5 / 13 = 0.384615
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.497245
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it must that that changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 1000, BLEU N = 3
+----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world edited COMMA_ it not there to nothing of system to way PERIOD_ SENTEND
+1-gram score: 7 / 15 = 0.466667
+2-gram score: 1 / 14 = 0.071429
+3-gram score: 0 / 13 = 0.000000
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART way edited for all are members PERIOD_ SENTEND
+1-gram score: 3 / 7 = 0.428571
+2-gram score: 0 / 6 = 0.000000
+3-gram score: 0 / 5 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not form not that this her the our plan PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+2-gram score: 0 / 10 = 0.000000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all represent who edited the motion edited well let yes PERIOD_ SENTEND
+1-gram score: 4 / 12 = 0.333333
+2-gram score: 1 / 11 = 0.090909
+3-gram score: 0 / 10 = 0.000000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the edited new is that edited canada is all edited PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 2 / 10 = 0.200000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question some clear believe COMMA_ why QUESTION_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 1 / 6 = 0.166667
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.354746
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART are members liberals are suggestions to representing of riding edited PERIOD_ SENTEND
+1-gram score: 4 / 11 = 0.363636
+2-gram score: 0 / 10 = 0.000000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we edited in a edited PERIOD_ SENTEND
+1-gram score: 4 / 6 = 0.666667
+2-gram score: 1 / 5 = 0.200000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART that is the edited of ridiculous SENTEND
+1-gram score: 4 / 6 = 0.666667
+2-gram score: 1 / 5 = 0.200000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my agree COMMA_ are amendments the edited SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all are members of all are parties figures well these programs SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.301007
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not the edited of work left to way PERIOD_ SENTEND
+1-gram score: 5 / 12 = 0.416667
+2-gram score: 0 / 11 = 0.000000
+3-gram score: 0 / 10 = 0.000000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited be edited our edited of edited PERIOD_ SENTEND
+1-gram score: 2 / 8 = 0.250000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to edited to next of edited in are edited needs provinces PERIOD_ SENTEND
+1-gram score: 10 / 16 = 0.625000
+2-gram score: 4 / 15 = 0.266667
+3-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.287685
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but edited way and edited in the bottom of debate PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.000000
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we edited what it is makes of do able PERIOD_ SENTEND
+1-gram score: 5 / 10 = 0.500000
+2-gram score: 1 / 9 = 0.111111
+3-gram score: 0 / 8 = 0.000000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that is the more edited rhetoric liberal PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 2 / 7 = 0.285714
+3-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister forward situations who is the speaker of offer PERIOD_ SENTEND
+1-gram score: 12 / 17 = 0.705882
+2-gram score: 6 / 16 = 0.375000
+3-gram score: 4 / 15 = 0.266667
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.367410
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is edited that way edited a edited be interest PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+2-gram score: 2 / 10 = 0.200000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we solid of these news edited PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.000000
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i beginning the motion edited PERIOD_ SENTEND
+1-gram score: 4 / 6 = 0.666667
+2-gram score: 1 / 5 = 0.200000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my being edited COLON_ SENTEND
+1-gram score: 6 / 9 = 0.666667
+2-gram score: 2 / 8 = 0.250000
+3-gram score: 0 / 7 = 0.000000
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this her the own of problem PERIOD_ SENTEND
+1-gram score: 9 / 12 = 0.750000
+2-gram score: 2 / 11 = 0.181818
+3-gram score: 0 / 10 = 0.000000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i congratulate the member of edited be please held this bill of bill PERIOD_ SENTEND
+1-gram score: 8 / 14 = 0.571429
+2-gram score: 5 / 13 = 0.384615
+3-gram score: 1 / 12 = 0.083333
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.263594
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it those that leave changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 10000, BLEU N = 3
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world name COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 9 / 15 = 0.600000
+2-gram score: 2 / 14 = 0.142857
+3-gram score: 0 / 13 = 0.000000
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that worth for all are members PERIOD_ SENTEND
+1-gram score: 4 / 7 = 0.571429
+2-gram score: 0 / 6 = 0.000000
+3-gram score: 0 / 5 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this adjourned the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who raising the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 2 / 11 = 0.181818
+3-gram score: 0 / 10 = 0.000000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that post canada is all edited PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question happen questions therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 1 / 6 = 0.166667
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.354746
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART are members liberals are many to face of riding rural PERIOD_ SENTEND
+1-gram score: 6 / 11 = 0.545455
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we exciting in a democracy PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+3-gram score: 2 / 4 = 0.500000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.629961
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the edited of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 1 / 5 = 0.200000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ are no of yeas SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 2 / 7 = 0.285714
+3-gram score: 1 / 6 = 0.166667
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.261379
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all are members of all are parties throw well these programs SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.301007
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not of away of put end to that PERIOD_ SENTEND
+1-gram score: 6 / 12 = 0.500000
+2-gram score: 1 / 11 = 0.090909
+3-gram score: 0 / 10 = 0.000000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a edited our commitments of edited PERIOD_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in are transfers division provinces PERIOD_ SENTEND
+1-gram score: 11 / 16 = 0.687500
+2-gram score: 4 / 15 = 0.266667
+3-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.296971
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but set that and rather in the heart of debate PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 4 / 10 = 0.400000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.276223
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we passed what it is possible of do better PERIOD_ SENTEND
+1-gram score: 7 / 10 = 0.700000
+2-gram score: 4 / 9 = 0.444444
+3-gram score: 2 / 8 = 0.250000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.426860
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more edited improving liberal PERIOD_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 2 / 7 = 0.285714
+3-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister going market who is the speaker of treasury PERIOD_ SENTEND
+1-gram score: 12 / 17 = 0.705882
+2-gram score: 6 / 16 = 0.375000
+3-gram score: 4 / 15 = 0.266667
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.367410
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that edited a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we celebrate of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 2 / 6 = 0.333333
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.419148
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion defeated PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+3-gram score: 2 / 4 = 0.500000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.629961
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+2-gram score: 4 / 8 = 0.500000
+3-gram score: 1 / 7 = 0.142857
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.381571
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this adjourned the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+2-gram score: 4 / 11 = 0.363636
+3-gram score: 1 / 10 = 0.100000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.311766
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i commend the member of sharing a leave presented this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+2-gram score: 5 / 13 = 0.384615
+3-gram score: 2 / 12 = 0.166667
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.345406
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART to this must leave to N25 SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 15000, BLEU N = 3
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world real COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 10 / 15 = 0.666667
+2-gram score: 2 / 14 = 0.142857
+3-gram score: 0 / 13 = 0.000000
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART does for labour have all members PERIOD_ SENTEND
+1-gram score: 3 / 7 = 0.428571
+2-gram score: 0 / 6 = 0.000000
+3-gram score: 0 / 5 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this senate the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who lose the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 2 / 11 = 0.181818
+3-gram score: 0 / 10 = 0.000000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that post canada is all beats PERIOD_ SENTEND
+1-gram score: 9 / 11 = 0.818182
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART question the questions going so of concerned QUESTION_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the members liberals are many to represent of riding rural PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we respect in a democracy PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+3-gram score: 2 / 4 = 0.500000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.629961
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the motivation of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 1 / 5 = 0.200000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ the no of yeas SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 2 / 6 = 0.333333
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.414913
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all the members of all the parties orders well these programs SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.276818
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not have not of so of put end to that PERIOD_ SENTEND
+1-gram score: 6 / 12 = 0.500000
+2-gram score: 1 / 11 = 0.090909
+3-gram score: 0 / 10 = 0.000000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a edited our commitments of edited PERIOD_ SENTEND
+1-gram score: 3 / 8 = 0.375000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in the transfers division provinces PERIOD_ SENTEND
+1-gram score: 12 / 16 = 0.750000
+2-gram score: 4 / 15 = 0.266667
+3-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.305711
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but let that and rather in the heart of debate PERIOD_ SENTEND
+1-gram score: 10 / 11 = 0.909091
+2-gram score: 5 / 10 = 0.500000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.308188
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we passed what it is possible of do better PERIOD_ SENTEND
+1-gram score: 7 / 10 = 0.700000
+2-gram score: 4 / 9 = 0.444444
+3-gram score: 2 / 8 = 0.250000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.426860
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more tactics imagery liberal PERIOD_ SENTEND
+1-gram score: 5 / 8 = 0.625000
+2-gram score: 2 / 7 = 0.285714
+3-gram score: 0 / 6 = 0.000000
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister going determine who is the speaker of treasury PERIOD_ SENTEND
+1-gram score: 13 / 17 = 0.764706
+2-gram score: 7 / 16 = 0.437500
+3-gram score: 5 / 15 = 0.333333
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.427914
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that edited a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we achievement of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 2 / 6 = 0.333333
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.419148
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion negatived PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+3-gram score: 2 / 4 = 0.500000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.629961
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+2-gram score: 4 / 8 = 0.500000
+3-gram score: 1 / 7 = 0.142857
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.381571
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this senate the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+2-gram score: 4 / 11 = 0.363636
+3-gram score: 1 / 10 = 0.100000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.311766
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i commend the member of sharing a get presented this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+2-gram score: 5 / 13 = 0.384615
+3-gram score: 2 / 12 = 0.166667
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.345406
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART do it means that changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
+
+AM numSentences = 30000, BLEU N = 3
+-----------------------------------
+
+Original:SENTSTART dans le monde reel COMMA_ il nSINGQUOTE_ y a rien de mal a cela PERIOD_ SENTEND
+Hansard:SENTSTART in the real world there is nothing wrong with that PERIOD_ SENTEND
+Google:SENTSTART in the real world COMMA_ there is nothing wrong with that PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART in the world real COMMA_ it not there to nothing of wrong to that PERIOD_ SENTEND
+1-gram score: 10 / 15 = 0.666667
+2-gram score: 2 / 14 = 0.142857
+3-gram score: 0 / 13 = 0.000000
+Brevity: 12 / 15 = 0.800000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cela vaut pour tous les deputes PERIOD_ SENTEND
+Hansard:SENTSTART that is true for every member of parliament PERIOD_ SENTEND
+Google:SENTSTART this applies to all deputies PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that includes all for leave have PERIOD_ SENTEND
+1-gram score: 4 / 7 = 0.571429
+2-gram score: 0 / 6 = 0.000000
+3-gram score: 0 / 5 = 0.000000
+Brevity: 6 / 7 = 0.857143, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART je ne pense pas que ce soit la notre objectif PERIOD_ SENTEND
+Hansard:SENTSTART i would think this is not at all what we want to do here PERIOD_ SENTEND
+Google:SENTSTART i do not think it SINGQUOTE_s our goal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this amended the our objective PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART que tous ceux qui appuient la motion veuillent bien dire oui PERIOD_ SENTEND
+Hansard:SENTSTART all those in favour of the motion will please say yea PERIOD_ SENTEND
+Google:SENTSTART all those in favor will please say yea PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART that all those who vote the motion please well say yes PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 2 / 11 = 0.181818
+3-gram score: 0 / 10 = 0.000000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le bonne nouvelle est que postes canada est tout ouie PERIOD_ SENTEND
+Hansard:SENTSTART the good news is that canada post is listening PERIOD_ SENTEND
+Google:SENTSTART the good news is that canada post is all ears PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the good new is that N1999 canada is all beats PERIOD_ SENTEND
+1-gram score: 8 / 11 = 0.727273
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART la question se pose donc COMMA_ pourquoi QUESTION_ SENTEND
+Hansard:SENTSTART we have to ask why PERIOD_ SENTEND
+Google:SENTSTART the question arises COMMA_ why QUESTION_ SENTEND
+IBM-1 Translation:SENTSTART the question going ask therefore COMMA_ why QUESTION_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 1 / 6 = 0.166667
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.376974
+
+Original:SENTSTART les deputes liberaux sont nombreux a representer des circonscription rurales PERIOD_ SENTEND
+Hansard:SENTSTART many liberal members come from rural ridings PERIOD_ SENTEND
+Google:SENTSTART the liberal deputies are many represent a rural constituency PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the members liberals are many to represent of riding rural PERIOD_ SENTEND
+1-gram score: 7 / 11 = 0.636364
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 10 / 11 = 0.909091, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous vivons dans une democratie PERIOD_ SENTEND
+Hansard:SENTSTART we live in a democracy PERIOD_ SENTEND
+Google:SENTSTART we live in a democracy PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we live in a democracy PERIOD_ SENTEND
+1-gram score: 6 / 6 = 1.000000
+2-gram score: 5 / 5 = 1.000000
+3-gram score: 4 / 4 = 1.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 1.000000
+
+Original:SENTSTART cSINGQUOTE_ est le comble du ridicule SENTEND
+Hansard:SENTSTART i cannot imagine anything so ridiculous PERIOD_ SENTEND
+Google:SENTSTART it is the height of ridicule SENTEND
+IBM-1 Translation:SENTSTART is is the requires of ridiculous SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 1 / 5 = 0.200000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART a mon avis COMMA_ les non lSINGQUOTE_ emportent SENTEND
+Hansard:SENTSTART in my opinion the nays have it PERIOD_ SENTEND
+Google:SENTSTART in my opinion COMMA_ the nays SENTEND
+IBM-1 Translation:SENTSTART to my opinion COMMA_ the no honPERIOD_ yeas SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 2 / 6 = 0.333333
+Brevity: 8 / 8 = 1.000000, penalty: 1.000000
+Bleu: 0.414913
+
+Original:SENTSTART tous les deputes de tous les partis connaissent bien ces programmes SENTEND
+Hansard:SENTSTART all members of all parties are aware of these programs PERIOD_ SENTEND
+Google:SENTSTART all mps from all parties are familiar with these programs SENTEND
+IBM-1 Translation:SENTSTART all the members of all the parties familiar well these programs SENTEND
+1-gram score: 8 / 11 = 0.727273
+2-gram score: 3 / 10 = 0.300000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 11 / 11 = 1.000000, penalty: 1.000000
+Bleu: 0.289418
+
+Original:SENTSTART nous nSINGQUOTE_ avons pas lSINGQUOTE_ intention de mettre fin a cela PERIOD_ SENTEND
+Hansard:SENTSTART we do not intend to stop that PERIOD_ SENTEND
+Google:SENTSTART we do not intend to terminate it PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we not we not honPERIOD_ honourable of put end to that PERIOD_ SENTEND
+1-gram score: 7 / 12 = 0.583333
+2-gram score: 1 / 11 = 0.090909
+3-gram score: 0 / 10 = 0.000000
+Brevity: 8 / 12 = 0.666667, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART tachons dSINGQUOTE_ honorer nos engagements de kyoto PERIOD_ SENTEND
+Hansard:SENTSTART let us meet our kyoto commitments PERIOD_ SENTEND
+Google:SENTSTART let us try to honor our kyoto commitments PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART edited a trying our commitments of kyoto PERIOD_ SENTEND
+1-gram score: 4 / 8 = 0.500000
+2-gram score: 0 / 7 = 0.000000
+3-gram score: 0 / 6 = 0.000000
+Brevity: 7 / 8 = 0.875000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART le ministre des finances a sabre a tour de bras dans les transferts aux provinces PERIOD_ SENTEND
+Hansard:SENTSTART the minister of finance has made deep cuts to provincial transfers PERIOD_ SENTEND
+Google:SENTSTART the finance minister saber vengeance in transfers to the provinces PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART the minister of finance to gut to turn of SINGQUOTE_or in the transfers to provinces PERIOD_ SENTEND
+1-gram score: 13 / 16 = 0.812500
+2-gram score: 5 / 15 = 0.333333
+3-gram score: 2 / 14 = 0.142857
+Brevity: 12 / 16 = 0.750000, penalty: 1.000000
+Bleu: 0.338222
+
+Original:SENTSTART mais laissons cela et entrons dans le coeur du debat PERIOD_ SENTEND
+Hansard:SENTSTART let us get on with it and continue to engage in debate PERIOD_ SENTEND
+Google:SENTSTART but let SINGQUOTE_s leave that and move into the heart of the debate PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART but let that and getting in the heart of debate PERIOD_ SENTEND
+1-gram score: 10 / 11 = 0.909091
+2-gram score: 5 / 10 = 0.500000
+3-gram score: 1 / 9 = 0.111111
+Brevity: 13 / 11 = 1.181818, penalty: 0.833753
+Bleu: 0.308188
+
+Original:SENTSTART nous estimons quSINGQUOTE_ il est possible de faire mieux PERIOD_ SENTEND
+Hansard:SENTSTART we are suggesting that we could pass a better bill PERIOD_ SENTEND
+Google:SENTSTART we believe it is possible to do better PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART have it to important is possible for to better the SENTEND
+1-gram score: 6 / 10 = 0.600000
+2-gram score: 1 / 9 = 0.111111
+3-gram score: 0 / 8 = 0.000000
+Brevity: 9 / 10 = 0.900000, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART cSINGQUOTE_ est le plus pur style liberal PERIOD_ SENTEND
+Hansard:SENTSTART this is reminiscent of the liberal way of doing things PERIOD_ SENTEND
+Google:SENTSTART this is the style liberal PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART is is the more whimsy style liberal PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 1 / 6 = 0.166667
+Brevity: 6 / 8 = 0.750000, penalty: 1.000000
+Bleu: 0.376974
+
+Original:SENTSTART nous y revoila COMMA_ et le premier ministre va determiner qui est le president du conseil PERIOD_ SENTEND
+Hansard:SENTSTART the prime minister will determine who the president of the council will be PERIOD_ SENTEND
+Google:SENTSTART we SINGQUOTE_m back there COMMA_ and the prime minister will determine who is the chairman of the board PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we there edited COMMA_ and the prime minister will determine who is the speaker of council PERIOD_ SENTEND
+1-gram score: 15 / 17 = 0.882353
+2-gram score: 9 / 16 = 0.562500
+3-gram score: 8 / 15 = 0.533333
+Brevity: 19 / 17 = 1.117647, penalty: 0.889010
+Bleu: 0.570814
+
+Original:SENTSTART il est clair que cela constituerait un conflit dSINGQUOTE_ interets PERIOD_ SENTEND
+Hansard:SENTSTART clearly it is a conflict of interest situation PERIOD_ SENTEND
+Google:SENTSTART clearly this would be a conflict of interest PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it is clear that that signal a edited a interests PERIOD_ SENTEND
+1-gram score: 5 / 11 = 0.454545
+2-gram score: 1 / 10 = 0.100000
+3-gram score: 0 / 9 = 0.000000
+Brevity: 9 / 11 = 0.818182, penalty: 1.000000
+Bleu: 0.000000
+
+Original:SENTSTART nous nous rejouissons de ces nouvelles perspectives PERIOD_ SENTEND
+Hansard:SENTSTART we welcome the opportunity PERIOD_ SENTEND
+Google:SENTSTART we are looking forward to these new opportunities PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART we we celebrating of these new opportunities PERIOD_ SENTEND
+1-gram score: 6 / 8 = 0.750000
+2-gram score: 3 / 7 = 0.428571
+3-gram score: 2 / 6 = 0.333333
+Brevity: 9 / 8 = 1.125000, penalty: 0.882497
+Bleu: 0.419148
+
+Original:SENTSTART je declare la motion rejetee PERIOD_ SENTEND
+Hansard:SENTSTART i declare the motion lost PERIOD_ SENTEND
+Google:SENTSTART i declare the motion rejected PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i declare the motion negatived PERIOD_ SENTEND
+1-gram score: 5 / 6 = 0.833333
+2-gram score: 3 / 5 = 0.600000
+3-gram score: 2 / 4 = 0.500000
+Brevity: 6 / 6 = 1.000000, penalty: 1.000000
+Bleu: 0.629961
+
+Original:SENTSTART et plus de cinq deputes sSINGQUOTE_ etant leves COLON_ SENTEND
+Hansard:SENTSTART and more than five members having risen COLON_ SENTEND
+Google:SENTSTART and more than five deputies are being leves COLON_ SENTEND
+IBM-1 Translation:SENTSTART and more of five members my having risen COLON_ SENTEND
+1-gram score: 7 / 9 = 0.777778
+2-gram score: 4 / 8 = 0.500000
+3-gram score: 1 / 7 = 0.142857
+Brevity: 9 / 9 = 1.000000, penalty: 1.000000
+Bleu: 0.381571
+
+Original:SENTSTART je ne crois pas que ce soit la solution du probleme PERIOD_ SENTEND
+Hansard:SENTSTART i do not think a union is the key to solving the problem PERIOD_ SENTEND
+Google:SENTSTART i do not think this is the solution of the problem PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i not think not that this amended the solution of problem PERIOD_ SENTEND
+1-gram score: 10 / 12 = 0.833333
+2-gram score: 4 / 11 = 0.363636
+3-gram score: 1 / 10 = 0.100000
+Brevity: 12 / 12 = 1.000000, penalty: 1.000000
+Bleu: 0.311766
+
+Original:SENTSTART je felicite le depute de winnipegDASH_centre dSINGQUOTE_ avoir presente ce projet de loi PERIOD_ SENTEND
+Hansard:SENTSTART i commend the member for winnipeg centre for bringing forward this bill PERIOD_ SENTEND
+Google:SENTSTART i congratulate the mp for winnipeg centre have presented the bill PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART i congratulate the member of winnipeg a get present this bill of bill PERIOD_ SENTEND
+1-gram score: 9 / 14 = 0.642857
+2-gram score: 5 / 13 = 0.384615
+3-gram score: 1 / 12 = 0.083333
+Brevity: 13 / 14 = 0.928571, penalty: 1.000000
+Bleu: 0.274149
+
+Original:SENTSTART il faut que ca change PERIOD_ SENTEND
+Hansard:SENTSTART something has to change PERIOD_ SENTEND
+Google:SENTSTART it has to change PERIOD_ SENTEND
+IBM-1 Translation:SENTSTART it must that that changed PERIOD_ SENTEND
+1-gram score: 2 / 6 = 0.333333
+2-gram score: 0 / 5 = 0.000000
+3-gram score: 0 / 4 = 0.000000
+Brevity: 5 / 6 = 0.833333, penalty: 1.000000
+Bleu: 0.000000
