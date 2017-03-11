@@ -98,7 +98,7 @@ for i=1:length(french_lines)
             length(translation)-2, brevity, penalty);
     
     % Compute final BLEU score
-    bleu = penalty * (ngram_score.^N);
+    bleu = penalty * (ngram_score.^(1/N));
     
     fprintf('Bleu: %f\n\n', bleu);
 end

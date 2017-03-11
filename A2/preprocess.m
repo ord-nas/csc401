@@ -27,10 +27,12 @@ function outSentence = preprocess( inSentence, language )
 
   % perform language-agnostic changes
 
+  % Separate a bunch of special characters
   outSentence = regexprep( outSentence, '([,:;()+<>=*/"])', ' $1 ');
   
-  % Handle dashes inside parens
-  overall = '';
+  % Handle dashes inside parens. This code correctly handles nested
+  % parentheses (although that's almost certainly overkill).
+  overall = ''; % Our post-processed sentence, so far
   currentParenGroup = '';
   parenLevel = 0;
   for i=1:length(outSentence)
@@ -40,18 +42,22 @@ function outSentence = preprocess( inSentence, language )
           parenLevel = parenLevel - 1;
           % If we just left a parenthesized statement ...
           if parenLevel == 0
+              % Then take the parenthesized group of words, separate hyphens,
+              % concatenate it onto the overall result.
               overall = [overall, regexprep( currentParenGroup, '-', ' - ')];
               currentParenGroup = '';
           elseif parenLevel == -1
-              % Throw away unmatched parens
+              % Ignore unmatched parens
               parenLevel = 0;
           end
       end
       % Now attach the current character to the end of the appropriate
-      % string
+      % string.
       if parenLevel > 0
+          % If we're inside parentheses, add to currentParenGroup
           currentParenGroup = [ currentParenGroup outSentence(i) ];
       else
+          % Otherwise, we can directly add to the overall result
           overall = [ overall outSentence(i) ];
       end
   end
@@ -59,10 +65,15 @@ function outSentence = preprocess( inSentence, language )
   overall = [overall, regexprep( currentParenGroup, '-', ' - ')];
   outSentence = overall;
 
-  % Handle mathematical operator subtraction
+  % Handle the subtraction operator ... assume that a dash must be directly
+  % between two numerical characters to be considered subtraction.
   outSentence = regexprep( outSentence, '([0-9])-([0-9])', '$1 - $2');
   
   % Handle end-of-sentence punctuation
+  % End-of-sentence punctuation is one (or more) of [.?!]
+  % We also allow this punctuation to be followed by close brackets or close
+  % quotes, in the case that the sentence ends with a quotation or a
+  % parenthesized phrase.
   outSentence = regexprep( outSentence, '([.?!]+)([")\s]*SENTEND$)', ' $1 $2');
 
   switch language

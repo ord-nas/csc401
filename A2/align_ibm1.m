@@ -1,5 +1,4 @@
-% TODO FIX SIGNATURE
-function [AM, eng, fre] = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
+function AM = align_ibm1(trainDir, numSentences, maxIter, fn_AM)
 %
 %  align_ibm1
 % 

@@ -41,22 +41,24 @@ disp([ dataDir, filesep, '.*', language] );
 
 for iFile=1:length(DD)
 
-  disp(iFile); % TODO REMOVE ME
+  fprintf('Reading file %d (%s) ...\n', iFile, DD(iFile).name);
   lines = textread([dataDir, filesep, DD(iFile).name], '%s','delimiter','\n');
 
   for l=1:length(lines)
 
     processedLine =  preprocess(lines{l}, language);
     words = strsplit(' ', processedLine );
-    
+
     % TODO: THE STUDENT IMPLEMENTS THE FOLLOWING
     
     % Unigram counts
     for i=1:length(words)
         w = asFieldname(words(i));
+	% Create new field if necessary
         if ~isfield(LM.uni, w)
             LM.uni.(w) = 0;
         end
+	% Increment relevant field
         LM.uni.(w) = LM.uni.(w) + 1;
     end
     
@@ -64,12 +66,14 @@ for iFile=1:length(DD)
     for i=1:length(words)-1
         w1 = asFieldname(words(i));
         w2 = asFieldname(words(i+1));
+	% Create new fields if necessary
         if ~isfield(LM.bi, w1)
             LM.bi.(w1) = struct();
         end
         if ~isfield(LM.bi.(w1), w2)
             LM.bi.(w1).(w2) = 0;
         end
+	% Increment relevant field
         LM.bi.(w1).(w2) = LM.bi.(w1).(w2) + 1;
     end
 
