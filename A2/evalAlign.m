@@ -5,7 +5,7 @@
 %  Task 5. 
 
 % definitions
-train           = false;
+train           = true;
 numSentences    = 1000;
 maxIter         = 10;
 trainDir        = '/u/cs401/A2_SMT/data/Hansard/Training';
@@ -21,7 +21,7 @@ delta           = 0;
 vocabSize       = 0;
 N               = 3; % Highest-order n-gram to use in BLEU score.
 
-% Load pre-trained language models. This is task 2 which makes use of task 1
+% Load/train language models. This is task 2 which makes use of task 1
 if train
     % Train new models
     LME = lm_train( trainDir, 'e', 'temporary_LM_e.mat' );
@@ -34,7 +34,7 @@ else
     LMF = LM;
 end
 
-% Load alignment model of French, given English 
+% Load/train alignment model of French, given English 
 if train
     % Train a new model
     AMFE = align_ibm1( trainDir, numSentences, maxIter, 'temporary_AM.mat');
@@ -131,4 +131,3 @@ end
 
 % Print a summary vector
 disp(all_scores);
-
