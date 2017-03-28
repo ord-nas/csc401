@@ -1,4 +1,4 @@
-function gmm = gmmEM( data, max_iter, epsilon, M )
+function [gmm, L] = gmmEM( data, max_iter, epsilon, M )
 % gmmEM
 %
 %  inputs:  data       : matrix of training data

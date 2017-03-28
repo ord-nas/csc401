@@ -34,7 +34,8 @@ for s=1:length(speakers)
     end
     fprintf('Training model for speaker %s with data of size %d x %d\n', ...
             name, size(all_data, 1), size(all_data, 2));
-    gmm = gmmEM(all_data, max_iter, epsilon, M);
+    [gmm, L] = gmmEM(all_data, max_iter, epsilon, M);
+    fprintf('    Final log likelihood: %f\n', L);
     gmm.name = name;
     gmms{counter} = gmm;
     counter = counter + 1;
