@@ -81,20 +81,20 @@ function [gmm, L] = em_step(gmm, data)
   %b(1:5,1:5)
   wb_product = bsxfun(@plus, log(gmm.weights), log_b);
   log_p = bsxfun(@minus, wb_product, logsumexp(wb_product, 2));
-  %p = exp(log_p);
+  p = exp(log_p);
   
-  log_L = sum(logsumexp(wb_product, 2))
+  L = sum(logsumexp(wb_product, 2))
   
   % Straight-forward loopy implementation
-  %log_L2 = 0;
+  %L2 = 0;
   %for n=1:N
   %    s = 0;
   %    for m=1:8
   %        s = s + gmm.weights(1,m) * b(n, m);
   %    end
-  %    log_L2 = log_L2 + log(s);
+  %    L2 = L2 + log(s);
   %end
-  %log_L2
+  %L2
   
   
   %bsxfun(@rdivide, ...
@@ -124,6 +124,68 @@ function [gmm, L] = em_step(gmm, data)
   % cov is dxM
   
   % Maximization
+  sum_p = sum(p, 1);
+  gmm.weights = sum_p ./ N;
+  gmm.means = bsxfun(@rdivide, data' * p, sum_p);
+  gmm.cov = bsxfun(@rdivide, (data.^2)' * p, sum_p) - ...
+            (gmm.means.^2);
   
+  % Straight-forward loopy implementation
+  %weights = zeros(1, 8);
+  %for i=1:8
+  %    s = 0;
+  %    for t=1:N
+  %        s = s + p(t, i);
+  %    end
+  %    weights(1, i) = s / N;
+  %end
+  %means = zeros(d, 8);
+  %for i=1:8
+  %    s = 0;
+  %    for t=1:N
+  %        s = s + p(t, i);
+  %    end
+  %    for j=1:d
+  %        x = 0;
+  %        for t=1:N
+  %            x = x +  p(t, i) * data(t, j);
+  %        end
+  %        means(j, i) = x / s;
+  %    end
+  %end
+  %cov = zeros(d, 8);
+  %for i=1:8
+  %    s = 0;
+  %    for t=1:N
+  %        s = s + p(t, i);
+  %    end
+  %    for j=1:d
+  %        x = 0;
+  %        for t=1:N
+  %            x = x + p(t, i) * (data(t, j).^2);
+  %        end
+  %        cov(j, i) = x / s - (means(j, i).^2);
+  %    end
+  %end
+  
+  %disp('WEIGHTS');
+  %disp(gmm.weights);
+  %disp(weights);
+  %max_diff = max(max(abs(gmm.weights - weights)))
+  
+  %disp('MEANS');
+  %disp(gmm.means(1:5,1:5));
+  %disp(means(1:5,1:5));
+  %max_diff = max(max(abs(gmm.means - means)))
+  
+  %disp('COV');
+  %disp(gmm.cov(1:5,1:5));
+  %disp(cov(1:5,1:5));
+  %max_diff = max(max(abs(gmm.cov - cov)))
+  %aweffawefawfawefawef;
+  
+  %p is nxm
+  %data is nxd
+  %we want dxm
   
 end
