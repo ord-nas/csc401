@@ -47,7 +47,7 @@ function gmmClassify(dir_test, dir_output, gmms)
       fileID = fopen(output, 'w');
       tee(fileID, 'Most likely speakers, sorted descending:\n');
       for i=1:min(5, length(L))
-          tee(fileID, '%d. %s, with log liklihood %f\n', ...
+          tee(fileID, '%d. %s, with log likelihood %f\n', ...
               i, gmms{I(i)}.name, sorted_L(i));
       end
       fclose(fileID);
