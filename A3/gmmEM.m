@@ -20,7 +20,8 @@ function gmm = gmmEM( data, max_iter, epsilon, M )
   gmm = struct();
   gmm.weights = ones(1, M) ./ M;
   gmm.means = data(randi(N, 1, M),:)';%rand(d, M);
-  gmm.cov = rand(d, M);
+  gmm.cov = rand(d, M) * 100; % Start with a big variance so that our
+                              % likelihoods don't vanish
   %gmm.cov = zeros(d,d,M);
   %for m=1:M
   %    gmm.cov(:,:,m) = diag(rand(1,d));
@@ -44,18 +45,18 @@ function [gmm, L] = em_step(gmm, data)
   N = size(data, 1); % Number training examples
   d = size(data, 2); % Number of dimensions
 
-  % All probabilities are log probabilities
-
-  % Exepectation  1xM
+  % Expectation
   constant_b_term = -(sum(gmm.means.^2 ./ gmm.cov.^2 ./ 2, 1) + ...
                       (d./2.*log(2.*pi)) + ...
-                      (1./2.*log(prod(gmm.cov.^2, 1))));
+                      (1./2.*sum(log(gmm.cov.^2), 1)));
   variable_b_term = -((1./2 .* (data.^2) * (gmm.cov.^-2)) - ...
                       (data * (gmm.means .* (gmm.cov.^-2))));
-  b = bsxfun(@plus, constant_b_term, variable_b_term);
+  log_b = bsxfun(@plus, constant_b_term, variable_b_term);
   %size(b);
 
-  %b2 = zeros(N, 8);
+  % Straight-forward loopy implementation
+  % (used to debug vectorized version)
+  %log_b2 = zeros(N, 8);
   %for n=1:N
   %    for m=1:8
   %        s = 0;
@@ -69,11 +70,54 @@ function [gmm, L] = em_step(gmm, data)
   %            term = gmm.cov(i, m).^2;
   %            p = p * term;
   %        end
-  %        b2(n, m) = -s - (d./2.*log(2.*pi)) - (1/2*log(p));
+  %        log_b2(n, m) = -s - (d./2.*log(2.*pi)) - (1/2*log(p));
   %    end
   %end
   
-  maximum_diff = max(max(abs(b2 - b)));
+  %log_b(1:5,1:5)
+  %log_b2(1:5,1:5)
+  %maximum_diff = max(max(abs(log_b2 - log_b)))
+  %b = exp(log_b);
+  %b(1:5,1:5)
+  wb_product = bsxfun(@plus, log(gmm.weights), log_b);
+  log_p = bsxfun(@minus, wb_product, logsumexp(wb_product, 2));
+  %p = exp(log_p);
+  
+  log_L = sum(logsumexp(wb_product, 2))
+  
+  % Straight-forward loopy implementation
+  %log_L2 = 0;
+  %for n=1:N
+  %    s = 0;
+  %    for m=1:8
+  %        s = s + gmm.weights(1,m) * b(n, m);
+  %    end
+  %    log_L2 = log_L2 + log(s);
+  %end
+  %log_L2
+  
+  
+  %bsxfun(@rdivide, ...
+  %               bsxfun(@times, gmm.weights, b), ...
+  %               (b * gmm.weights'));
+  %size(p)
+
+  % Straight-foward loopy implmentation
+  % (used to debug vectorized version)
+  %p2 = zeros(N, 8);
+  %for n=1:N
+  %    for m=1:8
+  %        s = 0;
+  %        for k=1:8
+  %            s = s + (gmm.weights(1,k) * b(n, k));
+  %        end
+  %        p2(n, m) = gmm.weights(1,m) * b(n, m) / s;
+  %    end
+  %end
+  
+  %p(1:5,1:5)
+  %p2(1:5,1:5)
+  %maximum_diff = max(max(abs(p2 - p)))
   
   % b is going to be NxM
   % data is Nxd
@@ -81,6 +125,5 @@ function [gmm, L] = em_step(gmm, data)
   
   % Maximization
   
-  L = 0;
   
 end
