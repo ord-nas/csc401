@@ -20,8 +20,10 @@ function gmm = gmmEM( data, max_iter, epsilon, M )
   gmm = struct();
   gmm.weights = ones(1, M) ./ M;
   gmm.means = data(randi(N, 1, M),:)';%rand(d, M);
-  gmm.cov = rand(d, M) * 100; % Start with a big variance so that our
-                              % likelihoods don't vanish
+  
+  %gmm.cov = rand(d, M) * 10; % Start with a big variance so that our
+  %                           % likelihoods don't vanish
+  gmm.cov = ones(d, M);
   %gmm.cov = zeros(d,d,M);
   %for m=1:M
   %    gmm.cov(:,:,m) = diag(rand(1,d));
@@ -30,7 +32,14 @@ function gmm = gmmEM( data, max_iter, epsilon, M )
   % Do EM algorithm
   previous_L = -Inf;
   for iter=1:max_iter
+      %disp('WEIGHTS');
+      %disp(gmm.weights);
+      %disp('MEANS');
+      %disp(gmm.means);
+      %disp('COV');
+      %disp(gmm.cov);
       [gmm, L] = em_step(gmm, data);
+      disp(L);
       % Detect convergence
       if L - previous_L < epsilon
           break
@@ -38,6 +47,12 @@ function gmm = gmmEM( data, max_iter, epsilon, M )
       previous_L = L;
   end
 
+  % Expand covariances to full matrix form
+  short_form_cov = gmm.cov;
+  gmm.cov = zeros(d,d,M);
+  for m=1:M
+      gmm.cov(:,:,m) = diag(short_form_cov(:, m));
+  end
 end
   
   
@@ -46,12 +61,14 @@ function [gmm, L] = em_step(gmm, data)
   d = size(data, 2); % Number of dimensions
 
   % Expectation
-  constant_b_term = -(sum(gmm.means.^2 ./ gmm.cov.^2 ./ 2, 1) + ...
+  constant_b_term = -(sum(gmm.means.^2 ./ gmm.cov ./ 2, 1) + ...
                       (d./2.*log(2.*pi)) + ...
-                      (1./2.*sum(log(gmm.cov.^2), 1)));
-  variable_b_term = -((1./2 .* (data.^2) * (gmm.cov.^-2)) - ...
-                      (data * (gmm.means .* (gmm.cov.^-2))));
+                      (1./2.*sum(log(gmm.cov), 1)));
+  variable_b_term = -((1./2 .* (data.^2) * (gmm.cov.^-1)) - ...
+                      (data * (gmm.means ./ gmm.cov)));
   log_b = bsxfun(@plus, constant_b_term, variable_b_term);
+  %disp('LOG_B');
+  %disp(log_b);
   %size(b);
 
   % Straight-forward loopy implementation
@@ -62,17 +79,18 @@ function [gmm, L] = em_step(gmm, data)
   %        s = 0;
   %        for i=1:d
   %            term = (data(n, i) - gmm.means(i, m)).^2 ./ ...
-  %                   (2.* gmm.cov(i, m).^2);
+  %                   (2.* gmm.cov(i, m));
   %            s = s + term;
   %        end
   %        p = 1;
   %        for i=1:d
-  %            term = gmm.cov(i, m).^2;
+  %            term = gmm.cov(i, m);
   %            p = p * term;
   %        end
   %        log_b2(n, m) = -s - (d./2.*log(2.*pi)) - (1/2*log(p));
   %    end
   %end
+  %b2 = exp(log_b2);
   
   %log_b(1:5,1:5)
   %log_b2(1:5,1:5)
@@ -82,6 +100,8 @@ function [gmm, L] = em_step(gmm, data)
   wb_product = bsxfun(@plus, log(gmm.weights), log_b);
   log_p = bsxfun(@minus, wb_product, logsumexp(wb_product, 2));
   p = exp(log_p);
+  %disp('LOG_P');
+  %disp(log_p);
   
   L = sum(logsumexp(wb_product, 2))
   
@@ -90,7 +110,7 @@ function [gmm, L] = em_step(gmm, data)
   %for n=1:N
   %    s = 0;
   %    for m=1:8
-  %        s = s + gmm.weights(1,m) * b(n, m);
+  %        s = s + gmm.weights(1,m) * b2(n, m);
   %    end
   %    L2 = L2 + log(s);
   %end
