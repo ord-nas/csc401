@@ -24,15 +24,19 @@ for s=1:length(speakers)
     end
     name = speakers(s).name;
     all_data = [];
-    data_files = dir([dir_train, filesep, name, filesep, '*.txt']);
+    data_files = dir([dir_train, filesep, name, filesep, '*.mfcc']);
     for f=1:length(data_files)
-        data = dlmread('/u/cs401/speechdata/Training/FCJF0/SA1.mfcc');
+        filename = data_files(f).name;
+        filepath = [dir_train, filesep, name, filesep, filename];
+        data = dlmread(filepath);
         all_data = [all_data; data];
     end
     % fprintf('Speaker %s has data that is %d by %d\n', name, size(all_data, 1), size(all_data, 2));
+    disp('SIZE ALL_DATA');
+    disp(size(all_data));
     gmm = gmmEM(all_data, max_iter, epsilon, M);
     gmm.name = name;
     gmms{counter} = gmm;
     counter = counter + 1;
+    return
 end
-return
