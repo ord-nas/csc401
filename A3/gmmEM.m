@@ -104,6 +104,8 @@ function [gmm, L] = em_step(gmm, data)
   %disp(log_p);
   
   L = sum(logsumexp(wb_product, 2))
+  %L_ref = sum(logsumexp_ref(wb_product, 2))
+  %diff = abs(L - L_ref)
   
   % Straight-forward loopy implementation
   %L2 = 0;
