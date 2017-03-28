@@ -39,7 +39,7 @@ function gmm = gmmEM( data, max_iter, epsilon, M )
       %disp('COV');
       %disp(gmm.cov);
       [gmm, L] = em_step(gmm, data);
-      disp(L);
+      %disp(L);
       % Detect convergence
       if L - previous_L < epsilon
           break
@@ -103,7 +103,7 @@ function [gmm, L] = em_step(gmm, data)
   %disp('LOG_P');
   %disp(log_p);
   
-  L = sum(logsumexp(wb_product, 2))
+  L = sum(logsumexp(wb_product, 2));
   %L_ref = sum(logsumexp_ref(wb_product, 2))
   %diff = abs(L - L_ref)
   

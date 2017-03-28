@@ -20,6 +20,7 @@ speakers = dir(dir_train);
 counter = 1;
 for s=1:length(speakers)
     if strcmp(speakers(s).name, '.') || strcmp(speakers(s).name, '..')
+        % dir gives us '.' and '..' directory entries, which we don't want
         continue
     end
     name = speakers(s).name;
@@ -31,12 +32,10 @@ for s=1:length(speakers)
         data = dlmread(filepath);
         all_data = [all_data; data];
     end
-    % fprintf('Speaker %s has data that is %d by %d\n', name, size(all_data, 1), size(all_data, 2));
-    disp('SIZE ALL_DATA');
-    disp(size(all_data));
+    fprintf('Training model for speaker %s with data of size %d x %d\n', ...
+            name, size(all_data, 1), size(all_data, 2));
     gmm = gmmEM(all_data, max_iter, epsilon, M);
     gmm.name = name;
     gmms{counter} = gmm;
     counter = counter + 1;
-    return
 end
