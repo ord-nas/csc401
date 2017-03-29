@@ -25,3 +25,19 @@ end
 % M = 6, accuracy = 0.986667
 % M = 7, accuracy = 0.991111
 % M = 8, accuracy = 0.997778
+% >> mExperiment
+% M = 1, accuracy = 0.933333
+% M = 2, accuracy = 0.911111
+% M = 3, accuracy = 0.868889
+% M = 4, accuracy = 0.960000
+% M = 5, accuracy = 0.955556
+% M = 6, accuracy = 0.975556
+% M = 7, accuracy = 0.995556
+% M = 8, accuracy = 0.997778
+% >> mExperiment
+% M = 9, accuracy = 0.993333
+% M = 10, accuracy = 0.993333
+% M = 11, accuracy = 0.997778
+% M = 12, accuracy = 1.000000
+% >> mExperiment
+% M = 12, accuracy = 1.000000
