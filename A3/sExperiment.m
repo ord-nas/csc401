@@ -59,3 +59,20 @@ end
 
 
 % Results:
+% >> sExperiment
+% S = 15, accuracy = 0.933333
+% S = 16, accuracy = 0.924444
+% S = 17, accuracy = 0.920000
+% S = 18, accuracy = 0.917778
+% S = 19, accuracy = 0.913333
+% S = 20, accuracy = 0.917778
+% S = 21, accuracy = 0.908889
+% S = 22, accuracy = 0.904444
+% S = 23, accuracy = 0.902222
+% S = 24, accuracy = 0.891111
+% S = 25, accuracy = 0.895556
+% S = 26, accuracy = 0.884444
+% S = 27, accuracy = 0.888889
+% S = 28, accuracy = 0.871111
+% S = 29, accuracy = 0.871111
+% S = 30, accuracy = 0.866667
