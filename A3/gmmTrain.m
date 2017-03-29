@@ -1,4 +1,4 @@
-function gmms = gmmTrain( dir_train, max_iter, epsilon, M )
+function gmms = gmmTrain( dir_train, max_iter, epsilon, M, quiet )
 % gmmTain
 %
 %  inputs:  dir_train  : a string pointing to the high-level
@@ -6,6 +6,7 @@ function gmms = gmmTrain( dir_train, max_iter, epsilon, M )
 %           max_iter   : maximum number of training iterations (integer)
 %           epsilon    : minimum improvement for iteration (float)
 %           M          : number of Gaussians/mixture (integer)
+%           quiet      : optional boolean to suppress output
 %
 %  output:  gmms       : a 1xN cell array. The i^th element is a structure
 %                        with this structure:
@@ -15,6 +16,10 @@ function gmms = gmmTrain( dir_train, max_iter, epsilon, M )
 %                                          is a vector
 %                            gmm.cov     : DxDxM matrix of covariances. 
 %                                          (:,:,i) is for i^th mixture
+
+if nargin < 5
+    quiet = false;
+end
 
 speakers = dir(dir_train);
 counter = 1;
@@ -32,10 +37,14 @@ for s=1:length(speakers)
         data = dlmread(filepath);
         all_data = [all_data; data];
     end
-    fprintf('Training model for speaker %s with data of size %d x %d\n', ...
-            name, size(all_data, 1), size(all_data, 2));
+    if ~quiet
+        fprintf('Training model for speaker %s with data of size %d x %d\n', ...
+                name, size(all_data, 1), size(all_data, 2));
+    end
     [gmm, L] = gmmEM(all_data, max_iter, epsilon, M);
-    fprintf('    Final log likelihood: %f\n', L);
+    if ~quiet
+        fprintf('    Final log likelihood: %f\n', L);
+    end
     gmm.name = name;
     gmms{counter} = gmm;
     counter = counter + 1;
