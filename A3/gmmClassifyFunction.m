@@ -37,7 +37,7 @@ function accuracy = gmmClassifyFunction(dir_test, dir_output, gmms, label_file, 
           fprintf('Analyzing file %s ...\n', fullname);
       end
       
-      N = size(data, 1); % Number training examples
+      N = size(data, 1); % Number data points
       d = size(data, 2); % Number of dimensions
 
       % Compute likelihood for each of the gmms
