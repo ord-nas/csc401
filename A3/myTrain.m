@@ -4,6 +4,7 @@ dir_train = '/u/cs401/speechdata/Training';
 addpath(genpath('/u/cs401/A3_ASR/code/FullBNT-1.0.7'));
 warning('off', 'MATLAB:nargchk:deprecated'); % For strsplit
 
+% Now extract all the training data
 phonemes = struct();
 speakers = dir(dir_train);
 counter = 1;
@@ -51,8 +52,21 @@ for s=1:length(speakers)
             if isfield(phonemes, p)
                 next_index = 1 + length(phonemes.(p));
             end
-            phonemes.(p){next_index} = mfcc_data(start:finish,:);
+            phonemes.(p){next_index} = mfcc_data(start:finish,:)';
             %fprintf('%s/%s.mfcc(%d:%d,:) -> %s\n', speaker, name, start, finish, p);
         end
     end
+end
+
+% Okay, now train just one model.
+pnames = fieldnames(phonemes);
+for p=1:length(pnames)
+    phon = pnames{p};
+    fprintf('Training phoneme %s (%d of %d) ...\n', phon, p, length(pnames));
+    HMM = initHMM(phonemes.(phon));
+    [HMM, LL] = trainHMM(HMM, phonemes.(phon), 15);
+    filename = ['/h/u15/c6/01/youngsan/csc401/csc401/A3/initial_phoneme_models/' ...
+                phon, '.mat'];
+    save(filename, 'HMM', '-mat');
+    fprintf('Saved %s model to %s\n', phon, filename);
 end
