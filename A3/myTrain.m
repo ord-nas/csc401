@@ -1,3 +1,5 @@
+tic; % Time how long this script takes to run
+
 dir_train = '/u/cs401/speechdata/Training';
 
 % First add BNT to our path
@@ -7,14 +9,12 @@ warning('off', 'MATLAB:nargchk:deprecated'); % For strsplit
 % Now extract all the training data
 phonemes = struct();
 speakers = dir(dir_train);
-counter = 1;
 for s=1:length(speakers)
     if strcmp(speakers(s).name, '.') || strcmp(speakers(s).name, '..')
         % dir gives us '.' and '..' directory entries, which we don't want
         continue
     end
     speaker = speakers(s).name;
-    all_data = [];
     data_files = dir([dir_train, filesep, speaker, filesep, '*.phn']);
     for f=1:length(data_files)
         filename = data_files(f).name;
@@ -47,6 +47,10 @@ for s=1:length(speakers)
             assert(start == fix(start));
             assert(finish == fix(finish));
             finish = min(finish, N);
+            % If this phone sequence is empty, skip it
+            if finish < start
+                continue
+            end
             % Now add this sequence
             next_index = 1;
             if isfield(phonemes, p)
@@ -58,15 +62,22 @@ for s=1:length(speakers)
     end
 end
 
-% Okay, now train just one model.
+% Okay, now train each phone model.
 pnames = fieldnames(phonemes);
 for p=1:length(pnames)
     phon = pnames{p};
+    filename = ['/h/u15/c6/01/youngsan/csc401/csc401/A3/initial_phoneme_models/' ...
+                phon, '.mat'];
+    if exist(filename, 'file')
+        fprintf('Skipping phoneme %s because HMM model %s already exists\n', ...
+                phon, filename);
+        continue
+    end
     fprintf('Training phoneme %s (%d of %d) ...\n', phon, p, length(pnames));
     HMM = initHMM(phonemes.(phon));
     [HMM, LL] = trainHMM(HMM, phonemes.(phon), 15);
-    filename = ['/h/u15/c6/01/youngsan/csc401/csc401/A3/initial_phoneme_models/' ...
-                phon, '.mat'];
     save(filename, 'HMM', '-mat');
     fprintf('Saved %s model to %s\n', phon, filename);
 end
+
+toc; % Print elapsed time
