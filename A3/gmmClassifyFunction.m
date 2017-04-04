@@ -9,10 +9,9 @@ function accuracy = gmmClassifyFunction(dir_test, dir_output, gmms, label_file, 
       lines = lines(2:end);
       % Grab the correct answers
       for i=1:length(lines)
-          words = strsplit(lines{i}, ' *: *', ...
-                           'DelimiterType', 'RegularExpression');
-          sample_name = ['unkn_', words{1}];
-          answers.(sample_name) = words{2};
+          words = strsplit(':', lines{i});
+          sample_name = ['unkn_', regexprep(words{1}, ' ', '')];
+          answers.(sample_name) = regexprep(words{2}, ' ', '');
       end
   end
   
@@ -70,10 +69,11 @@ function accuracy = gmmClassifyFunction(dir_test, dir_output, gmms, label_file, 
       % Report the 5 best models
       output = [dir_output, filesep, name, '.lik'];
       fileID = fopen(output, 'w');
-      tee(fileID, quiet, 'Most likely speakers, sorted descending:\n');
+      if ~quiet
+          fprintf('Most likely speakers, sorted descending:\n');
+      end
       for i=1:min(5, length(L))
-          tee(fileID, quiet, '%d. %s, with log likelihood %f\n', ...
-              i, gmms{I(i)}.name, sorted_L(i));
+          tee(fileID, quiet, '%s,%f\n', gmms{I(i)}.name, sorted_L(i));
       end
       fclose(fileID);
       

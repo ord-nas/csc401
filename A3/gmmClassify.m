@@ -1,3 +1,8 @@
+% In order to keep everything consistent, we're going to use the strsplit in
+% BNT, even though this part of the assignment doesn't actually use BNT.
+addpath(genpath('/u/cs401/A3_ASR/code/FullBNT-1.0.7'));
+warning('off', 'MATLAB:nargchk:deprecated'); % For strsplit
+
 output_folder = '.';
 iterations = 100;
 epsilon = 0;
