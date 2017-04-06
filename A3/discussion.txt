@@ -1,0 +1,220 @@
+2.3 Speaker Identification Experiments and Discussion.
+======================================================
+
+2.3.1
+=====
+Experiment 1: effect of M on classification accuracy. First, note that there is
+an element of randomness in the GMM training process, because initialization is
+random, and EM for GMMs doesn't necessarily converge to the global optimum. We
+want to measure the *expected value* of the classification accuracy. We
+approximate this by running the training script many times, and averaging the
+accuracy. I used 30 repititions, because that seemed like a good compromise
+between precision and runtime. For details, see mExperiment.m. Results:
+
+M = 1, accuracy = 0.933333
+M = 2, accuracy = 0.926667
+M = 3, accuracy = 0.893333
+M = 4, accuracy = 0.948889
+M = 5, accuracy = 0.962222
+M = 6, accuracy = 0.986667
+M = 7, accuracy = 0.991111
+M = 8, accuracy = 0.997778
+M = 9, accuracy = 0.993333
+M = 10, accuracy = 0.993333
+M = 11, accuracy = 0.997778
+M = 12, accuracy = 1.000000
+
+There is clearly a general upward trend: as the size of M increases,
+classification accuracy increases.
+
+2.3.2
+=====
+Experiment 2: effect of epsilon on classification accuracy and total iteration
+count (to train all speaker models). Similar to above, I ran 30 repitions of
+this experiment with different random GMM initializations, and averaged the
+results. For details, see epsilonExperiment.m. Results:
+
+epsilon = 10000.000000, accuracy = 0.953333, iters = 90
+epsilon = 5000.000000, accuracy = 0.971111, iters = 120
+epsilon = 1000.000000, accuracy = 0.977778, iters = 1.502333e+02
+epsilon = 500.000000, accuracy = 0.986667, iters = 1.820667e+02
+epsilon = 100.000000, accuracy = 0.997778, iters = 2.784667e+02
+epsilon = 50.000000, accuracy = 0.997778, iters = 3.623667e+02
+epsilon = 10.000000, accuracy = 0.997778, iters = 629
+epsilon = 5.000000, accuracy = 0.997778, iters = 7.695333e+02
+epsilon = 1.000000, accuracy = 0.997778, iters = 1.141633e+03
+epsilon = 0.500000, accuracy = 0.997778, iters = 1.330133e+03
+epsilon = 0.100000, accuracy = 0.993333, iters = 1.712700e+03
+epsilon = 0.050000, accuracy = 0.993333, iters = 1.863667e+03
+epsilon = 0.010000, accuracy = 0.993333, iters = 2.131800e+03
+epsilon = 0.005000, accuracy = 0.993333, iters = 2.228867e+03
+epsilon = 0.001000, accuracy = 0.993333, iters = 2.408467e+03
+epsilon = 0.000000, accuracy = 0.993333, iters = 2.977167e+03
+
+As expected, as epsilon decreases, the accuracy generally improves, but the
+number of iterations until convergenge also increases. There is also an
+interesting effect where the accuracy actually decreases when epsilon gets too
+small. This may be caused by overfitting - if the training is allowed to
+continue too long, the model can overfit the training data and get lower
+accuracy on the test data. Also: decreasing epsilon provides diminishing returns
+in accuracy, while causing the iteration count to increase steadily. This
+suggests that by using a higher epsilon, we can dramatically reduce runtime
+without sacrificing much accuracy.
+
+2.3.3
+=====
+Experiment 3: Effect of number of possible speakers on classification
+accuracy. In this experiment, I reduced the number of speakers in the training
+set. However, I ensure that all 15 of the test-set speakers were in the training
+set, so that the model would at least have an opprotunity to get the right
+answer. Besides this constraint, the subset of speakers to keep is chosen
+uniformly at random. I repeat the experiment 30 times with different subsets,
+and average the results. I also reduced M from 8 to 3 (since the M=8 model was
+already so close to perfect even with all 30 speakers). For details, see
+sExperiment.s. Results:
+
+S = 15, accuracy = 0.933333
+S = 16, accuracy = 0.924444
+S = 17, accuracy = 0.920000
+S = 18, accuracy = 0.917778
+S = 19, accuracy = 0.913333
+S = 20, accuracy = 0.917778
+S = 21, accuracy = 0.908889
+S = 22, accuracy = 0.904444
+S = 23, accuracy = 0.902222
+S = 24, accuracy = 0.891111
+S = 25, accuracy = 0.895556
+S = 26, accuracy = 0.884444
+S = 27, accuracy = 0.888889
+S = 28, accuracy = 0.871111
+S = 29, accuracy = 0.871111
+S = 30, accuracy = 0.866667
+
+As expected, as the number of speakers increases, the accuracy
+drops. Intuitively, this is because the classification problem becomes more and
+more challenging as we add more classes.
+
+2.3.4
+=====
+Experiment 4: Effect of number of possible speakers on classification
+accuracy. In this experiment, I reduced the number of speakers in the training
+set. Contrary to the previous experiment, I *allowed the possibility of removing
+speakers which appear in the test set*. To compensate, I also trained an "other"
+GMM model, which would attempt to classify an example as none of the known
+speakers. I trained this model by concatenating training data for all speakers,
+so that the model would hopefully learn a speaker-agnostic model. The subset of
+speakers to keep is chosen uniformly at random. I repeat the experiment 30 times
+with different subsets, and average the results. For details, see
+sOtherExperiment.s. Results:
+
+S = 15, accuracy = 0.800000
+S = 16, accuracy = 0.791111
+S = 17, accuracy = 0.817778
+S = 18, accuracy = 0.804444
+S = 19, accuracy = 0.802222
+S = 20, accuracy = 0.820000
+S = 21, accuracy = 0.853333
+S = 22, accuracy = 0.860000
+S = 23, accuracy = 0.860000
+S = 24, accuracy = 0.884444
+S = 25, accuracy = 0.915556
+S = 26, accuracy = 0.911111
+S = 27, accuracy = 0.951111
+S = 28, accuracy = 0.953333
+S = 29, accuracy = 0.971111
+S = 30, accuracy = 1.000000
+
+In this case, as the number of speakers increase, the accuracy also generally
+increased. This is the *opposite* trend from the previous experiemnt. It is true
+that with fewer speakers, there are fewer classes to worry about. BUT: we also
+need to model a very prevalent "other" class with very minimal data. Indeed, if
+we look at the results of the S=15 classification, we see that nearly all the
+errors involve incorrectly labeling the "other" class.
+
+2.3.5
+=====
+QUESTIONS:
+
+1. How might you improve the classification accuracy of the Gaussian mixtures,
+without adding more training data?
+
+Accuracy is already pretty great. But we could potentially improve it by:
+
+Adding more mixture components (for example, with M=12, we got perfect
+classification accuracy of 100% in all 30 experiments - see above).
+
+Extracting more features from the raw audio. For example, we could extract more
+cepstral coefficients (instead of just the first 13 plus log energy). Or perhaps
+in addition to cepstral coefficients, we could also extract fourier
+coefficients. Or perhaps we could try using multiple window sizes. The current
+data was produced using a 256-sample window. We could perhaps split it into two
+128-sample windows, get cepstral coefficients for each of the subwindows, and
+then create one large feature vector by concatenating the features from the
+256-sample window with the features from the two 128-sample windows.
+
+Modify our implementation of GMM to allow non-diagonal covariance matrices
+(i.e. allow the dimensions of the gaussians to be correlated). This would give
+the model flexibility to represent more complex distributions while using fewer
+components.
+
+2. When would your classifier decide that a given test utterance comes from none
+of the trained speaker models, and how would your classifier come to this
+decision?
+
+The way the classifier was initially specified, it will always classify an audio
+sample as belonging to one of the trained speaker models. It simply computes the
+likelihood of the sample given each of the trained models, and then picks the
+speaker model that assigns the sample the highest likelihood. There is no way
+for it to conclude that the sample doesn’t belong to any speaker.
+
+We could extend the classifier so that it’s able to recognize samples that don’t
+come from any of the trained models. One thing we could try: we could
+empirically determine a minimum log likelihood threshold. We’d want this
+threshold to be per-frame, since the length of the sample has a big impact on
+the overall log likelihood. If none of the trained models assign an average
+per-frame likelihood that is greater than the threshold, then we decided that
+the sample belongs to an unknown speaker.
+
+Another thing we could try is to train a speaker-independent model. Ideally,
+we’d get samples from a large number of distinct speakers, but if that was not
+possible, we could simply try combining the training samples from all of the
+speakers we do have. Essentially, we hope that this model learns how audio
+samples are distributed in general, when the speaker is chosen uniformly at
+random from the set of all possible speakers (known and unknown). We’d have to
+make sure we have enough data (and few enough gaussian components) so that the
+model can’t overfit to the specific set of speakers we used as training
+data. Then at classification time, if the speaker-independent model predicts a
+higher likelihood than any other model, we decide that the sample doesn’t come
+from any of the trained models. In fact, this approach is exactly what I used in
+2.3.4 above.
+
+3. Can you think of some alternative methods for doing speaker identification
+that don't use Gaussian mixtures?
+
+K-nearest-neighbours: For every frame in the unknown sample, look at the k
+nearest frames in the training set (where distance is simply euclidean distance
+in the 14-dimensional mfcc space). Determine who the speakers were for those k
+frames. Repeat this for all of the frames in the unknown sample, keep a running
+tally of how many nearby frames came from each of the speakers. At the end,
+classify the sample according to which speaker has the highest tally.
+
+Deep learning: train a neural net to label the 14-dimensional with the correct
+speaker. We could try a simple fully-connected architecture, with a
+14-dimensional input layer, some number of hidden layers, and then an output
+layer with one neuron per speaker. We could then train the model using softmax
+cross entropy as our loss function. We could vary the number of hidden layers
+and the number of nodes per hidden layer to try to get optimal results.
+
+Decision trees: use either the ID3 algorithm that we learned about in class, or
+the extension C4.5 that we briefly touched on. Treat each of the 14 dimensions
+of an mfcc frame as a continuous attribute. Decision trees classify data by
+using a tree of questions. At each node in the tree, we ask a single yes/no
+question about one of the attributes of our sample, and then follow the left or
+right branch depending on the answer. We continue until we reach the leaf nodes
+of the tree, which are labeled with the appropriate classification. ID3 and C4.5
+build decision trees recursively. At each step, they look at the set of training
+data, and ask which single-attribute yes/no question would produce the greatest
+information gain (i.e. would subdivide the data into sets with the lowest
+average entropy). They then create a node in the tree representing this
+question, subdivide the training set based on the question, and then recurse on
+the two subsets.

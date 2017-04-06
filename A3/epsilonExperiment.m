@@ -24,30 +24,21 @@ for j=1:length(epsilons)
             average_accuracy(j), average_iters(j));
 end
 
-
 % Results:
-% >> mExperiment
-% M = 1, accuracy = 0.933333
-% M = 2, accuracy = 0.926667
-% M = 3, accuracy = 0.893333
-% M = 4, accuracy = 0.948889
-% M = 5, accuracy = 0.962222
-% M = 6, accuracy = 0.986667
-% M = 7, accuracy = 0.991111
-% M = 8, accuracy = 0.997778
-% >> mExperiment
-% M = 1, accuracy = 0.933333
-% M = 2, accuracy = 0.911111
-% M = 3, accuracy = 0.868889
-% M = 4, accuracy = 0.960000
-% M = 5, accuracy = 0.955556
-% M = 6, accuracy = 0.975556
-% M = 7, accuracy = 0.995556
-% M = 8, accuracy = 0.997778
-% >> mExperiment
-% M = 9, accuracy = 0.993333
-% M = 10, accuracy = 0.993333
-% M = 11, accuracy = 0.997778
-% M = 12, accuracy = 1.000000
-% >> mExperiment
-% M = 12, accuracy = 1.000000
+% >> epsilonExperiment;
+% epsilon = 10000.000000, accuracy = 0.953333, iters = 90
+% epsilon = 5000.000000, accuracy = 0.971111, iters = 120
+% epsilon = 1000.000000, accuracy = 0.977778, iters = 1.502333e+02
+% epsilon = 500.000000, accuracy = 0.986667, iters = 1.820667e+02
+% epsilon = 100.000000, accuracy = 0.997778, iters = 2.784667e+02
+% epsilon = 50.000000, accuracy = 0.997778, iters = 3.623667e+02
+% epsilon = 10.000000, accuracy = 0.997778, iters = 629
+% epsilon = 5.000000, accuracy = 0.997778, iters = 7.695333e+02
+% epsilon = 1.000000, accuracy = 0.997778, iters = 1.141633e+03
+% epsilon = 0.500000, accuracy = 0.997778, iters = 1.330133e+03
+% epsilon = 0.100000, accuracy = 0.993333, iters = 1.712700e+03
+% epsilon = 0.050000, accuracy = 0.993333, iters = 1.863667e+03
+% epsilon = 0.010000, accuracy = 0.993333, iters = 2.131800e+03
+% epsilon = 0.005000, accuracy = 0.993333, iters = 2.228867e+03
+% epsilon = 0.001000, accuracy = 0.993333, iters = 2.408467e+03
+% epsilon = 0.000000, accuracy = 0.993333, iters = 2.977167e+03 

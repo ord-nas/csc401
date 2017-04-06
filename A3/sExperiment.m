@@ -33,11 +33,6 @@ for i=1:length(gmms)
     end
 end
 
-%disp('KEEPERS');
-%disp(keepers);
-%disp('DISPOSABLES')
-%disp(disposables);
-
 for s=15:30
     total_accuracy = 0;
     for i=1:reps

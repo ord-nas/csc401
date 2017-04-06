@@ -19,11 +19,12 @@ for i=1:length(gmms)
     end
 end
 
-for s=30:30
+for s=15:30
     total_accuracy = 0;
     for i=1:reps
         % Select a random s-sized subset of the speaker data.
         index = randperm(length(speakers));
+        clear subset;
         for j=1:s
             subset{j} = speakers{index(j)};
             if ~quiet
@@ -42,36 +43,19 @@ end
 
 % Results:
 % >> sOtherExperiment
-% S = 15, accuracy = 0.842222
-% S = 16, accuracy = 0.815556
-% S = 17, accuracy = 0.864444
-% S = 18, accuracy = 0.837778
-% S = 19, accuracy = 0.844444
-% S = 20, accuracy = 0.868889
-% S = 21, accuracy = 0.862222
-% S = 22, accuracy = 0.880000
-% S = 23, accuracy = 0.886667
-% S = 24, accuracy = 0.886667
-% S = 25, accuracy = 0.924444
-% S = 26, accuracy = 0.951111
-% S = 27, accuracy = 0.955556
-% S = 28, accuracy = 0.966667
-% S = 29, accuracy = 0.975556
+% S = 15, accuracy = 0.800000
+% S = 16, accuracy = 0.791111
+% S = 17, accuracy = 0.817778
+% S = 18, accuracy = 0.804444
+% S = 19, accuracy = 0.802222
+% S = 20, accuracy = 0.820000
+% S = 21, accuracy = 0.853333
+% S = 22, accuracy = 0.860000
+% S = 23, accuracy = 0.860000
+% S = 24, accuracy = 0.884444
+% S = 25, accuracy = 0.915556
+% S = 26, accuracy = 0.911111
+% S = 27, accuracy = 0.951111
+% S = 28, accuracy = 0.953333
+% S = 29, accuracy = 0.971111
 % S = 30, accuracy = 1.000000
-% >> sOtherExperiment
-% S = 15, accuracy = 0.848889
-% S = 16, accuracy = 0.860000
-% S = 17, accuracy = 0.842222
-% S = 18, accuracy = 0.840000
-% S = 19, accuracy = 0.835556
-% S = 20, accuracy = 0.866667
-% S = 21, accuracy = 0.840000
-% S = 22, accuracy = 0.886667
-% S = 23, accuracy = 0.904444
-% S = 24, accuracy = 0.911111
-% S = 25, accuracy = 0.900000
-% S = 26, accuracy = 0.928889
-% S = 27, accuracy = 0.955556
-% S = 28, accuracy = 0.973333
-% S = 29, accuracy = 0.988889
-% S = 30, accuracy = 1.000000 
