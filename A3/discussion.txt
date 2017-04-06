@@ -218,3 +218,67 @@ information gain (i.e. would subdivide the data into sets with the lowest
 average entropy). They then create a node in the tree representing this
 question, subdivide the training set based on the question, and then recurse on
 the two subsets.
+
+3.1
+===
+
+Classification accuracy achieved with default parameters (8 GMM mixtures, 3 HMM
+states, 14 mfcc dimensions, and all available training data): 44.8402%
+
+3.2
+===
+
+This experiment was run using: sshScript, sshRunSript, hmmExperimentScript, and hmmExperimentRunScript
+
+Results:
+
+dim (# of mcff dimesions) | M (# of GMM mixtures) | S (# of HMM states) | data_frac (% of training data used) | Classification Accuracy
+==========================+=======================+=====================+=====================================+========================
+14                        | 4                     | 2                   | 0.5                                 | 41.0046 %
+14                        | 4                     | 2                   | 1.0                                 | 44.6575 %
+14                        | 4                     | 3                   | 0.5                                 | 40.0000 %
+14                        | 4                     | 3                   | 1.0                                 | 46.0274 %
+14                        | 8                     | 2                   | 0.5                                 | 40.6393 %
+14                        | 8                     | 2                   | 1.0                                 | 45.2055 %
+14                        | 8                     | 3                   | 0.5                                 | 38.0822 %
+14                        | 8                     | 3                   | 1.0                                 | 44.8402 %
+ 7                        | 4                     | 2                   | 0.5                                 | 35.9817 %
+ 7                        | 4                     | 2                   | 1.0                                 | 35.3425 %
+ 7                        | 4                     | 3                   | 0.5                                 | 38.0822 %
+ 7                        | 4                     | 3                   | 1.0                                 | 39.0868 %
+ 7                        | 8                     | 2                   | 0.5                                 | 35.1598 %
+ 7                        | 8                     | 2                   | 1.0                                 | 36.7123 %
+ 7                        | 8                     | 3                   | 0.5                                 | 36.7123 %
+ 7                        | 8                     | 3                   | 1.0                                 | 37.0776 %
+
+Trends:
+
+Across the boards, higher-dimensional data results in higher classification
+accuracy. This makes sense: more attributes gives the classifier a
+"higher-resolution" picture of the data, so that they can be classifier more
+easily.
+
+Almost across the board, more data results in higher classificatio
+accuracy. This makes sense: more training data gives us a clearer picture of the
+actual distribution that we are trying to model.
+
+Generally, 3-state HMMs were more accurate than 2-state HMMs. More HMM states
+gives the model more opportunity to accurately model the underlying
+distribution, but also gives the model more opportunity to overfit. It seems
+like generally, 3-states struck a better balance than 2-states. The two
+exceptions to this rule were both observed when only half the training data was
+used. Perhaps with less training data, 2-states were better because the 3-state
+models were able to overfit the smaller training set.
+
+It was more difficult to identify general trends with the number of mixtures. On
+average, 4 mixtures was *slightly* better than 8 (average accuracy of 40.0%
+versus 39.3%), but the trend was not universal. Certain parameter settings
+worked better with 4 mixtures, and others worked better with 8
+mixtures. Depending on the number of HMM states and the number of dimensions,
+the distribution that each GMM is trying to model will potentially look very
+different, so it makes sense that the optimal number of mixtures is not
+universal.
+
+
+
+
