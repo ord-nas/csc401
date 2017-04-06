@@ -1,0 +1,1554 @@
+Executing: matlab -nodisplay -nosplash -r "myTrainFunction('/u/cs401/speechdata/Training', 'all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim', true, 4, 3, 1.0, 7); myRunFunction('/u/cs401/speechdata/Testing', 'all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim'); exit"
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+[Warning: Function assert has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In addpath (line 88)
+  In myTrainFunction (line 3)] 
+Training phoneme sil (1 of 60) ...
+(using 540 out of 540 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -125334.9856
+EM iteration 2, loglik = -123716.8226
+EM iteration 3, loglik = -121863.0245
+EM iteration 4, loglik = -119529.2472
+EM iteration 5, loglik = -116945.2448
+EM iteration 6, loglik = -114064.5287
+EM iteration 7, loglik = -111296.1174
+EM iteration 8, loglik = -109446.5700
+EM iteration 9, loglik = -108746.4952
+EM iteration 10, loglik = -108422.6806
+EM iteration 11, loglik = -108223.1147
+EM iteration 12, loglik = -108079.6189
+EM iteration 13, loglik = -107964.2230
+EM iteration 14, loglik = -107853.3946
+EM iteration 15, loglik = -107718.6659
+Saved sil model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/sil.mat
+Training phoneme sh (2 of 60) ...
+(using 143 out of 143 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -22589.1886
+EM iteration 2, loglik = -22160.6843
+EM iteration 3, loglik = -21816.3521
+EM iteration 4, loglik = -21467.8936
+EM iteration 5, loglik = -21075.3006
+EM iteration 6, loglik = -20692.7167
+EM iteration 7, loglik = -20449.0078
+EM iteration 8, loglik = -20301.8813
+EM iteration 9, loglik = -20198.3270
+EM iteration 10, loglik = -20117.5216
+EM iteration 11, loglik = -20041.8510
+EM iteration 12, loglik = -19969.1102
+EM iteration 13, loglik = -19943.2180
+EM iteration 14, loglik = -19924.4552
+Saved sh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/sh.mat
+Training phoneme ix (3 of 60) ...
+(using 525 out of 525 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -36672.9865
+EM iteration 2, loglik = -36407.4093
+EM iteration 3, loglik = -36103.7406
+EM iteration 4, loglik = -35803.6331
+EM iteration 5, loglik = -35546.8527
+EM iteration 6, loglik = -35295.6435
+EM iteration 7, loglik = -35100.7254
+EM iteration 8, loglik = -34958.5371
+EM iteration 9, loglik = -34854.9935
+EM iteration 10, loglik = -34785.1481
+EM iteration 11, loglik = -34740.5360
+EM iteration 12, loglik = -34704.8173
+EM iteration 13, loglik = -34671.9865
+Saved ix model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ix.mat
+Training phoneme hv (4 of 60) ...
+(using 67 out of 67 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6496.4825
+EM iteration 2, loglik = -6408.4745
+EM iteration 3, loglik = -6283.3454
+EM iteration 4, loglik = -6064.3853
+EM iteration 5, loglik = -5882.3778
+EM iteration 6, loglik = -5794.9874
+EM iteration 7, loglik = -5744.1813
+EM iteration 8, loglik = -5711.1418
+EM iteration 9, loglik = -5694.7207
+EM iteration 10, loglik = -5683.5773
+EM iteration 11, loglik = -5677.9467
+Saved hv model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/hv.mat
+Training phoneme eh (5 of 60) ...
+(using 217 out of 217 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -26893.1429
+EM iteration 2, loglik = -26729.1247
+EM iteration 3, loglik = -26563.8109
+EM iteration 4, loglik = -26307.7824
+EM iteration 5, loglik = -25900.2070
+EM iteration 6, loglik = -25406.0204
+EM iteration 7, loglik = -25059.8772
+EM iteration 8, loglik = -24878.4171
+EM iteration 9, loglik = -24756.7727
+EM iteration 10, loglik = -24676.0626
+EM iteration 11, loglik = -24613.2824
+EM iteration 12, loglik = -24567.2679
+EM iteration 13, loglik = -24522.9392
+EM iteration 14, loglik = -24486.0717
+EM iteration 15, loglik = -24454.6068
+Saved eh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/eh.mat
+Training phoneme dcl (6 of 60) ...
+(using 302 out of 302 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21136.9682
+EM iteration 2, loglik = -20509.9875
+EM iteration 3, loglik = -19810.7910
+EM iteration 4, loglik = -19109.1050
+EM iteration 5, loglik = -18789.3106
+EM iteration 6, loglik = -18663.8003
+EM iteration 7, loglik = -18600.2973
+EM iteration 8, loglik = -18554.0233
+EM iteration 9, loglik = -18511.0083
+EM iteration 10, loglik = -18469.1479
+EM iteration 11, loglik = -18433.1162
+EM iteration 12, loglik = -18407.7102
+EM iteration 13, loglik = -18389.7327
+Saved dcl model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/dcl.mat
+Training phoneme jh (7 of 60) ...
+(using 74 out of 74 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5805.3037
+EM iteration 2, loglik = -5659.6183
+EM iteration 3, loglik = -5502.1125
+EM iteration 4, loglik = -5351.3209
+EM iteration 5, loglik = -5241.6569
+EM iteration 6, loglik = -5156.9625
+EM iteration 7, loglik = -5117.5597
+EM iteration 8, loglik = -5098.7461
+EM iteration 9, loglik = -5081.8028
+EM iteration 10, loglik = -5070.9012
+EM iteration 11, loglik = -5063.8007
+EM iteration 12, loglik = -5057.2739
+EM iteration 13, loglik = -5051.2736
+EM iteration 14, loglik = -5046.1023
+EM iteration 15, loglik = -5038.3507
+Saved jh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/jh.mat
+Training phoneme ih (8 of 60) ...
+(using 267 out of 267 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -29063.9423
+EM iteration 2, loglik = -28907.0828
+EM iteration 3, loglik = -28722.4734
+EM iteration 4, loglik = -28383.3449
+EM iteration 5, loglik = -27984.5308
+EM iteration 6, loglik = -27628.2579
+EM iteration 7, loglik = -27371.2521
+EM iteration 8, loglik = -27195.9915
+EM iteration 9, loglik = -27078.5022
+EM iteration 10, loglik = -26968.3603
+EM iteration 11, loglik = -26846.1251
+EM iteration 12, loglik = -26746.8711
+EM iteration 13, loglik = -26674.6121
+EM iteration 14, loglik = -26614.6550
+EM iteration 15, loglik = -26541.6864
+Saved ih model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ih.mat
+Training phoneme d (9 of 60) ...
+(using 216 out of 216 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -7455.6360
+EM iteration 2, loglik = -7206.7288
+EM iteration 3, loglik = -7008.6929
+EM iteration 4, loglik = -6922.7121
+EM iteration 5, loglik = -6878.1947
+EM iteration 6, loglik = -6851.0598
+EM iteration 7, loglik = -6837.0633
+EM iteration 8, loglik = -6828.6483
+EM iteration 9, loglik = -6823.0633
+Saved d model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/d.mat
+Training phoneme ah (10 of 60) ...
+(using 139 out of 139 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -16020.0991
+EM iteration 2, loglik = -15915.6849
+EM iteration 3, loglik = -15782.4498
+EM iteration 4, loglik = -15523.2537
+EM iteration 5, loglik = -15170.5742
+EM iteration 6, loglik = -14864.3526
+EM iteration 7, loglik = -14682.2966
+EM iteration 8, loglik = -14589.0715
+EM iteration 9, loglik = -14515.4632
+EM iteration 10, loglik = -14485.4954
+EM iteration 11, loglik = -14470.5006
+EM iteration 12, loglik = -14458.4100
+Saved ah model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ah.mat
+Training phoneme kcl (11 of 60) ...
+(using 348 out of 348 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -26018.7140
+EM iteration 2, loglik = -25425.8834
+EM iteration 3, loglik = -24915.9468
+EM iteration 4, loglik = -24472.8708
+EM iteration 5, loglik = -24180.3556
+EM iteration 6, loglik = -24045.0362
+EM iteration 7, loglik = -23966.6372
+EM iteration 8, loglik = -23907.8647
+EM iteration 9, loglik = -23869.0506
+EM iteration 10, loglik = -23841.1300
+EM iteration 11, loglik = -23817.0565
+EM iteration 12, loglik = -23796.1403
+Saved kcl model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/kcl.mat
+Training phoneme k (12 of 60) ...
+(using 280 out of 280 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -22022.8175
+EM iteration 2, loglik = -21530.6118
+EM iteration 3, loglik = -20996.5719
+EM iteration 4, loglik = -20465.6297
+EM iteration 5, loglik = -20121.8741
+EM iteration 6, loglik = -19936.4382
+EM iteration 7, loglik = -19847.6578
+EM iteration 8, loglik = -19801.0606
+EM iteration 9, loglik = -19767.0121
+EM iteration 10, loglik = -19740.4192
+EM iteration 11, loglik = -19713.8805
+EM iteration 12, loglik = -19692.2739
+EM iteration 13, loglik = -19675.0633
+Saved k model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/k.mat
+Training phoneme s (13 of 60) ...
+(using 433 out of 433 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -68763.8436
+EM iteration 2, loglik = -67609.9920
+EM iteration 3, loglik = -66684.9680
+EM iteration 4, loglik = -65961.1079
+EM iteration 5, loglik = -65179.0337
+EM iteration 6, loglik = -64136.4039
+EM iteration 7, loglik = -63317.2757
+EM iteration 8, loglik = -62912.5866
+EM iteration 9, loglik = -62638.0786
+EM iteration 10, loglik = -62323.2029
+EM iteration 11, loglik = -62104.3448
+EM iteration 12, loglik = -61947.7992
+EM iteration 13, loglik = -61832.9121
+EM iteration 14, loglik = -61752.1163
+EM iteration 15, loglik = -61686.1213
+Saved s model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/s.mat
+Training phoneme ux (14 of 60) ...
+(using 90 out of 90 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -13785.3436
+EM iteration 2, loglik = -13649.5695
+EM iteration 3, loglik = -13490.1999
+EM iteration 4, loglik = -13263.0582
+EM iteration 5, loglik = -12908.4532
+EM iteration 6, loglik = -12577.7869
+EM iteration 7, loglik = -12393.6961
+EM iteration 8, loglik = -12285.2999
+EM iteration 9, loglik = -12209.0206
+EM iteration 10, loglik = -12143.6243
+EM iteration 11, loglik = -12087.2356
+EM iteration 12, loglik = -12040.9821
+EM iteration 13, loglik = -12007.3607
+EM iteration 14, loglik = -11977.0746
+EM iteration 15, loglik = -11944.2849
+Saved ux model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ux.mat
+Training phoneme q (15 of 60) ...
+(using 201 out of 201 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21756.3257
+EM iteration 2, loglik = -21581.2059
+EM iteration 3, loglik = -21385.8331
+EM iteration 4, loglik = -21086.3726
+EM iteration 5, loglik = -20826.1679
+EM iteration 6, loglik = -20610.8178
+EM iteration 7, loglik = -20448.9461
+EM iteration 8, loglik = -20335.8648
+EM iteration 9, loglik = -20260.3923
+EM iteration 10, loglik = -20209.0619
+EM iteration 11, loglik = -20166.7658
+EM iteration 12, loglik = -20127.4812
+EM iteration 13, loglik = -20087.4284
+EM iteration 14, loglik = -20060.7628
+EM iteration 15, loglik = -20047.8208
+Saved q model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/q.mat
+Training phoneme en (16 of 60) ...
+(using 47 out of 47 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4671.6002
+EM iteration 2, loglik = -4505.7940
+EM iteration 3, loglik = -4373.5068
+EM iteration 4, loglik = -4212.8762
+EM iteration 5, loglik = -4058.4462
+EM iteration 6, loglik = -3962.0518
+EM iteration 7, loglik = -3904.4530
+EM iteration 8, loglik = -3874.3170
+EM iteration 9, loglik = -3859.3142
+EM iteration 10, loglik = -3848.2724
+EM iteration 11, loglik = -3838.7855
+EM iteration 12, loglik = -3833.3734
+EM iteration 13, loglik = -3827.3948
+EM iteration 14, loglik = -3815.1031
+EM iteration 15, loglik = -3806.3033
+Saved en model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/en.mat
+Training phoneme gcl (17 of 60) ...
+(using 135 out of 135 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -9466.6307
+EM iteration 2, loglik = -9194.9991
+EM iteration 3, loglik = -8866.9134
+EM iteration 4, loglik = -8561.8132
+EM iteration 5, loglik = -8421.6603
+EM iteration 6, loglik = -8354.0729
+EM iteration 7, loglik = -8314.7476
+EM iteration 8, loglik = -8292.9675
+EM iteration 9, loglik = -8274.6854
+EM iteration 10, loglik = -8256.8809
+EM iteration 11, loglik = -8247.8789
+EM iteration 12, loglik = -8241.6862
+Saved gcl model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/gcl.mat
+Training phoneme g (18 of 60) ...
+(using 121 out of 121 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6246.1867
+EM iteration 2, loglik = -6066.0099
+EM iteration 3, loglik = -5894.8360
+EM iteration 4, loglik = -5775.5027
+EM iteration 5, loglik = -5706.2902
+EM iteration 6, loglik = -5655.5771
+EM iteration 7, loglik = -5630.7217
+EM iteration 8, loglik = -5615.5880
+EM iteration 9, loglik = -5606.7058
+EM iteration 10, loglik = -5599.4259
+EM iteration 11, loglik = -5592.4487
+EM iteration 12, loglik = -5587.2198
+Saved g model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/g.mat
+Training phoneme r (19 of 60) ...
+(using 340 out of 340 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -28024.6929
+EM iteration 2, loglik = -27844.7640
+EM iteration 3, loglik = -27618.8800
+EM iteration 4, loglik = -27303.8828
+EM iteration 5, loglik = -26978.4133
+EM iteration 6, loglik = -26691.3089
+EM iteration 7, loglik = -26477.1147
+EM iteration 8, loglik = -26361.9683
+EM iteration 9, loglik = -26294.1612
+EM iteration 10, loglik = -26245.2491
+EM iteration 11, loglik = -26200.1135
+EM iteration 12, loglik = -26160.9559
+EM iteration 13, loglik = -26129.0808
+EM iteration 14, loglik = -26102.8163
+EM iteration 15, loglik = -26082.0197
+Saved r model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/r.mat
+Training phoneme w (20 of 60) ...
+(using 174 out of 174 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -14685.7274
+EM iteration 2, loglik = -14528.1810
+EM iteration 3, loglik = -14292.2126
+EM iteration 4, loglik = -13992.2357
+EM iteration 5, loglik = -13769.2331
+EM iteration 6, loglik = -13646.6968
+EM iteration 7, loglik = -13563.9172
+EM iteration 8, loglik = -13504.0625
+EM iteration 9, loglik = -13464.6930
+EM iteration 10, loglik = -13433.9087
+EM iteration 11, loglik = -13408.1137
+EM iteration 12, loglik = -13387.2503
+EM iteration 13, loglik = -13375.4039
+Saved w model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/w.mat
+Training phoneme ao (21 of 60) ...
+(using 162 out of 162 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -25733.2635
+EM iteration 2, loglik = -25476.6368
+EM iteration 3, loglik = -25181.5874
+EM iteration 4, loglik = -24864.9169
+EM iteration 5, loglik = -24397.7085
+EM iteration 6, loglik = -23880.0385
+EM iteration 7, loglik = -23570.9190
+EM iteration 8, loglik = -23416.1550
+EM iteration 9, loglik = -23335.1103
+EM iteration 10, loglik = -23268.7991
+EM iteration 11, loglik = -23174.8483
+EM iteration 12, loglik = -23145.1728
+EM iteration 13, loglik = -23125.0144
+Saved ao model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ao.mat
+Training phoneme epi (22 of 60) ...
+(using 94 out of 94 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5541.7144
+EM iteration 2, loglik = -5405.4380
+EM iteration 3, loglik = -5252.9304
+EM iteration 4, loglik = -5143.3389
+EM iteration 5, loglik = -5074.4688
+EM iteration 6, loglik = -5013.2502
+EM iteration 7, loglik = -4971.8216
+EM iteration 8, loglik = -4944.1234
+EM iteration 9, loglik = -4908.4977
+EM iteration 10, loglik = -4889.6549
+EM iteration 11, loglik = -4872.6298
+EM iteration 12, loglik = -4858.5809
+EM iteration 13, loglik = -4847.4408
+EM iteration 14, loglik = -4832.8661
+EM iteration 15, loglik = -4822.2204
+Saved epi model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/epi.mat
+Training phoneme dx (23 of 60) ...
+(using 153 out of 153 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6437.9145
+EM iteration 2, loglik = -6335.1450
+EM iteration 3, loglik = -6209.0987
+EM iteration 4, loglik = -6129.4790
+EM iteration 5, loglik = -6075.3335
+EM iteration 6, loglik = -6032.9703
+EM iteration 7, loglik = -6001.8652
+EM iteration 8, loglik = -5982.3778
+EM iteration 9, loglik = -5966.9538
+EM iteration 10, loglik = -5956.8699
+EM iteration 11, loglik = -5948.2027
+EM iteration 12, loglik = -5941.7614
+EM iteration 13, loglik = -5936.3001
+Saved dx model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/dx.mat
+Training phoneme axr (24 of 60) ...
+(using 181 out of 181 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -19717.8359
+EM iteration 2, loglik = -19579.3453
+EM iteration 3, loglik = -19431.7953
+EM iteration 4, loglik = -19225.1619
+EM iteration 5, loglik = -18937.4040
+EM iteration 6, loglik = -18598.9651
+EM iteration 7, loglik = -18387.0980
+EM iteration 8, loglik = -18270.7435
+EM iteration 9, loglik = -18217.7476
+EM iteration 10, loglik = -18179.2062
+EM iteration 11, loglik = -18149.9413
+EM iteration 12, loglik = -18133.0277
+Saved axr model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/axr.mat
+Training phoneme l (25 of 60) ...
+(using 335 out of 335 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -28178.0024
+EM iteration 2, loglik = -27994.6660
+EM iteration 3, loglik = -27812.4784
+EM iteration 4, loglik = -27562.0074
+EM iteration 5, loglik = -27252.6069
+EM iteration 6, loglik = -26908.6887
+EM iteration 7, loglik = -26645.6382
+EM iteration 8, loglik = -26505.0245
+EM iteration 9, loglik = -26426.0814
+EM iteration 10, loglik = -26370.8694
+EM iteration 11, loglik = -26336.2306
+EM iteration 12, loglik = -26313.3984
+Saved l model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/l.mat
+Training phoneme y (26 of 60) ...
+(using 117 out of 117 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -10818.4881
+EM iteration 2, loglik = -10686.8941
+EM iteration 3, loglik = -10489.7508
+EM iteration 4, loglik = -10185.1776
+EM iteration 5, loglik = -9925.3066
+EM iteration 6, loglik = -9783.1528
+EM iteration 7, loglik = -9696.6355
+EM iteration 8, loglik = -9617.4147
+EM iteration 9, loglik = -9580.2926
+EM iteration 10, loglik = -9550.6671
+EM iteration 11, loglik = -9521.9488
+EM iteration 12, loglik = -9495.7630
+EM iteration 13, loglik = -9474.8823
+EM iteration 14, loglik = -9458.5040
+EM iteration 15, loglik = -9448.4579
+Saved y model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/y.mat
+Training phoneme iy (27 of 60) ...
+(using 378 out of 378 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -45748.6145
+EM iteration 2, loglik = -45335.5731
+EM iteration 3, loglik = -44830.0675
+EM iteration 4, loglik = -44159.7715
+EM iteration 5, loglik = -43399.7009
+EM iteration 6, loglik = -42751.4870
+EM iteration 7, loglik = -42385.5611
+EM iteration 8, loglik = -42180.6005
+EM iteration 9, loglik = -42022.2116
+EM iteration 10, loglik = -41882.9393
+EM iteration 11, loglik = -41783.7616
+EM iteration 12, loglik = -41698.2475
+EM iteration 13, loglik = -41612.3409
+EM iteration 14, loglik = -41539.0966
+EM iteration 15, loglik = -41476.1242
+Saved iy model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/iy.mat
+Training phoneme v (28 of 60) ...
+(using 114 out of 114 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -9247.6584
+EM iteration 2, loglik = -9138.9127
+EM iteration 3, loglik = -8974.0925
+EM iteration 4, loglik = -8735.9048
+EM iteration 5, loglik = -8539.3232
+EM iteration 6, loglik = -8428.1595
+EM iteration 7, loglik = -8376.6399
+EM iteration 8, loglik = -8336.9905
+EM iteration 9, loglik = -8307.9682
+EM iteration 10, loglik = -8295.2086
+EM iteration 11, loglik = -8284.1785
+EM iteration 12, loglik = -8278.9766
+Saved v model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/v.mat
+Training phoneme n (29 of 60) ...
+(using 422 out of 422 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -29499.9171
+EM iteration 2, loglik = -29169.2100
+EM iteration 3, loglik = -28811.3868
+EM iteration 4, loglik = -28409.8068
+EM iteration 5, loglik = -27998.5864
+EM iteration 6, loglik = -27689.4968
+EM iteration 7, loglik = -27513.3934
+EM iteration 8, loglik = -27407.3813
+EM iteration 9, loglik = -27327.2228
+EM iteration 10, loglik = -27262.0765
+EM iteration 11, loglik = -27204.2921
+EM iteration 12, loglik = -27161.3266
+EM iteration 13, loglik = -27127.4798
+EM iteration 14, loglik = -27097.9850
+EM iteration 15, loglik = -27073.7380
+Saved n model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/n.mat
+Training phoneme f (30 of 60) ...
+(using 128 out of 128 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -16937.8905
+EM iteration 2, loglik = -16664.3405
+EM iteration 3, loglik = -16473.8012
+EM iteration 4, loglik = -16248.9608
+EM iteration 5, loglik = -16007.8358
+EM iteration 6, loglik = -15799.0012
+EM iteration 7, loglik = -15653.2027
+EM iteration 8, loglik = -15541.8377
+EM iteration 9, loglik = -15461.9900
+EM iteration 10, loglik = -15410.5343
+EM iteration 11, loglik = -15375.6713
+EM iteration 12, loglik = -15355.6619
+EM iteration 13, loglik = -15346.0419
+Saved f model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/f.mat
+Training phoneme tcl (31 of 60) ...
+(using 382 out of 382 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -28069.6245
+EM iteration 2, loglik = -27337.6638
+EM iteration 3, loglik = -26619.6307
+EM iteration 4, loglik = -25786.0513
+EM iteration 5, loglik = -25350.5117
+EM iteration 6, loglik = -25189.8862
+EM iteration 7, loglik = -25109.9660
+EM iteration 8, loglik = -25066.7739
+EM iteration 9, loglik = -25033.7408
+EM iteration 10, loglik = -25016.1692
+Saved tcl model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/tcl.mat
+Training phoneme t (32 of 60) ...
+(using 227 out of 227 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -16436.8996
+EM iteration 2, loglik = -15968.5035
+EM iteration 3, loglik = -15465.3635
+EM iteration 4, loglik = -15025.9596
+EM iteration 5, loglik = -14784.3262
+EM iteration 6, loglik = -14657.3080
+EM iteration 7, loglik = -14581.0510
+EM iteration 8, loglik = -14522.3215
+EM iteration 9, loglik = -14466.0436
+EM iteration 10, loglik = -14425.5410
+EM iteration 11, loglik = -14394.3379
+EM iteration 12, loglik = -14366.4578
+EM iteration 13, loglik = -14348.4537
+EM iteration 14, loglik = -14333.8807
+EM iteration 15, loglik = -14324.9472
+Saved t model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/t.mat
+Training phoneme uh (33 of 60) ...
+(using 36 out of 36 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3489.4685
+EM iteration 2, loglik = -3444.8554
+EM iteration 3, loglik = -3364.7648
+EM iteration 4, loglik = -3214.2369
+EM iteration 5, loglik = -3084.9728
+EM iteration 6, loglik = -3006.8617
+EM iteration 7, loglik = -2955.3463
+EM iteration 8, loglik = -2922.2207
+EM iteration 9, loglik = -2906.9869
+EM iteration 10, loglik = -2897.4015
+EM iteration 11, loglik = -2893.9784
+EM iteration 12, loglik = -2888.6351
+EM iteration 13, loglik = -2886.3634
+Saved uh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/uh.mat
+Training phoneme pcl (34 of 60) ...
+(using 149 out of 149 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -10221.2147
+EM iteration 2, loglik = -9875.2634
+EM iteration 3, loglik = -9534.0453
+EM iteration 4, loglik = -9195.1981
+EM iteration 5, loglik = -9028.3815
+EM iteration 6, loglik = -8975.2268
+EM iteration 7, loglik = -8943.2186
+EM iteration 8, loglik = -8919.9627
+EM iteration 9, loglik = -8902.2724
+EM iteration 10, loglik = -8895.2887
+Saved pcl model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/pcl.mat
+Training phoneme ow (35 of 60) ...
+(using 125 out of 125 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21030.1266
+EM iteration 2, loglik = -20816.0518
+EM iteration 3, loglik = -20576.8735
+EM iteration 4, loglik = -20287.7365
+EM iteration 5, loglik = -19894.9208
+EM iteration 6, loglik = -19476.4993
+EM iteration 7, loglik = -19261.8070
+EM iteration 8, loglik = -19153.0737
+EM iteration 9, loglik = -19045.3414
+EM iteration 10, loglik = -18939.6320
+EM iteration 11, loglik = -18870.2659
+EM iteration 12, loglik = -18822.9095
+EM iteration 13, loglik = -18789.7725
+EM iteration 14, loglik = -18765.4000
+EM iteration 15, loglik = -18748.2764
+Saved ow model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ow.mat
+Training phoneme hh (36 of 60) ...
+(using 55 out of 55 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5204.5849
+EM iteration 2, loglik = -5110.9533
+EM iteration 3, loglik = -5000.3173
+EM iteration 4, loglik = -4855.3090
+EM iteration 5, loglik = -4720.5994
+EM iteration 6, loglik = -4643.7059
+EM iteration 7, loglik = -4601.8245
+EM iteration 8, loglik = -4573.4865
+EM iteration 9, loglik = -4557.7633
+EM iteration 10, loglik = -4552.1029
+EM iteration 11, loglik = -4549.9514
+Saved hh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/hh.mat
+Training phoneme ae (37 of 60) ...
+(using 255 out of 255 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -52280.6041
+EM iteration 2, loglik = -51966.1988
+EM iteration 3, loglik = -51634.4904
+EM iteration 4, loglik = -51127.8121
+EM iteration 5, loglik = -50305.3111
+EM iteration 6, loglik = -49197.3834
+EM iteration 7, loglik = -48324.1138
+EM iteration 8, loglik = -47949.2396
+EM iteration 9, loglik = -47757.3226
+EM iteration 10, loglik = -47604.9102
+EM iteration 11, loglik = -47500.1624
+EM iteration 12, loglik = -47423.7206
+EM iteration 13, loglik = -47362.1700
+EM iteration 14, loglik = -47313.8215
+EM iteration 15, loglik = -47263.3940
+Saved ae model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ae.mat
+Training phoneme ch (38 of 60) ...
+(using 50 out of 50 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5599.9188
+EM iteration 2, loglik = -5478.8707
+EM iteration 3, loglik = -5332.6710
+EM iteration 4, loglik = -5169.8540
+EM iteration 5, loglik = -5029.3522
+EM iteration 6, loglik = -4933.0605
+EM iteration 7, loglik = -4887.6291
+EM iteration 8, loglik = -4864.3026
+EM iteration 9, loglik = -4851.1038
+EM iteration 10, loglik = -4843.8343
+EM iteration 11, loglik = -4838.9869
+EM iteration 12, loglik = -4836.7587
+Saved ch model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ch.mat
+Training phoneme bcl (39 of 60) ...
+(using 118 out of 118 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -9091.2972
+EM iteration 2, loglik = -8740.0169
+EM iteration 3, loglik = -8426.6750
+EM iteration 4, loglik = -8119.3600
+EM iteration 5, loglik = -7916.7955
+EM iteration 6, loglik = -7822.6961
+EM iteration 7, loglik = -7787.7444
+EM iteration 8, loglik = -7769.2559
+EM iteration 9, loglik = -7757.9856
+EM iteration 10, loglik = -7751.8006
+Saved bcl model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/bcl.mat
+Training phoneme b (40 of 60) ...
+(using 137 out of 137 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3666.4739
+EM iteration 2, loglik = -3524.3372
+EM iteration 3, loglik = -3403.2734
+EM iteration 4, loglik = -3324.7599
+EM iteration 5, loglik = -3273.7880
+EM iteration 6, loglik = -3249.2008
+EM iteration 7, loglik = -3235.7004
+EM iteration 8, loglik = -3228.0707
+EM iteration 9, loglik = -3221.5120
+EM iteration 10, loglik = -3215.7596
+EM iteration 11, loglik = -3209.1644
+EM iteration 12, loglik = -3204.5720
+EM iteration 13, loglik = -3202.9272
+Saved b model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/b.mat
+Training phoneme aa (41 of 60) ...
+(using 188 out of 188 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -32124.5002
+EM iteration 2, loglik = -31767.7261
+EM iteration 3, loglik = -31309.7583
+EM iteration 4, loglik = -30709.4724
+EM iteration 5, loglik = -29924.6525
+EM iteration 6, loglik = -29433.7612
+EM iteration 7, loglik = -29230.1263
+EM iteration 8, loglik = -29115.7211
+EM iteration 9, loglik = -29028.4749
+EM iteration 10, loglik = -28965.4805
+EM iteration 11, loglik = -28900.0456
+EM iteration 12, loglik = -28852.2463
+EM iteration 13, loglik = -28822.6384
+EM iteration 14, loglik = -28793.5101
+EM iteration 15, loglik = -28767.9429
+Saved aa model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/aa.mat
+Training phoneme ax (42 of 60) ...
+(using 248 out of 248 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -16591.8877
+EM iteration 2, loglik = -16441.6945
+EM iteration 3, loglik = -16312.1153
+EM iteration 4, loglik = -16154.2879
+EM iteration 5, loglik = -15999.8583
+EM iteration 6, loglik = -15869.2509
+EM iteration 7, loglik = -15778.5351
+EM iteration 8, loglik = -15707.8031
+EM iteration 9, loglik = -15630.4229
+EM iteration 10, loglik = -15569.5141
+EM iteration 11, loglik = -15521.8445
+EM iteration 12, loglik = -15479.3439
+EM iteration 13, loglik = -15448.2538
+EM iteration 14, loglik = -15419.8439
+EM iteration 15, loglik = -15400.5313
+Saved ax model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ax.mat
+Training phoneme em (43 of 60) ...
+(using 9 out of 9 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -763.5243
+EM iteration 2, loglik = -721.5568
+EM iteration 3, loglik = -616.6674
+EM iteration 4, loglik = -447.0592
+EM iteration 5, loglik = -345.0085
+EM iteration 6, loglik = -313.3299
+EM iteration 7, loglik = -299.3515
+EM iteration 8, loglik = -289.8785
+EM iteration 9, loglik = -288.6243
+EM iteration 10, loglik = -288.6295
+******likelihood decreased from -288.6243 to -288.6295!
+EM iteration 11, loglik = -288.6441
+******likelihood decreased from -288.6295 to -288.6441!
+EM iteration 12, loglik = -288.6548
+******likelihood decreased from -288.6441 to -288.6548!
+EM iteration 13, loglik = -288.6631
+******likelihood decreased from -288.6548 to -288.6631!
+EM iteration 14, loglik = -288.6697
+******likelihood decreased from -288.6631 to -288.6697!
+EM iteration 15, loglik = -288.6751
+******likelihood decreased from -288.6697 to -288.6751!
+Saved em model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/em.mat
+Training phoneme ng (44 of 60) ...
+(using 77 out of 77 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6307.1461
+EM iteration 2, loglik = -6182.8402
+EM iteration 3, loglik = -5968.0235
+EM iteration 4, loglik = -5719.7311
+EM iteration 5, loglik = -5522.5589
+EM iteration 6, loglik = -5431.2844
+EM iteration 7, loglik = -5390.9569
+EM iteration 8, loglik = -5374.7094
+EM iteration 9, loglik = -5366.5777
+EM iteration 10, loglik = -5354.3326
+EM iteration 11, loglik = -5340.2013
+EM iteration 12, loglik = -5332.3096
+EM iteration 13, loglik = -5329.3075
+Saved ng model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ng.mat
+Training phoneme m (45 of 60) ...
+(using 224 out of 224 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -18280.5070
+EM iteration 2, loglik = -18111.6584
+EM iteration 3, loglik = -17922.5700
+EM iteration 4, loglik = -17635.3848
+EM iteration 5, loglik = -17352.2519
+EM iteration 6, loglik = -17097.9739
+EM iteration 7, loglik = -16903.1887
+EM iteration 8, loglik = -16786.5263
+EM iteration 9, loglik = -16710.1233
+EM iteration 10, loglik = -16659.7656
+EM iteration 11, loglik = -16618.7244
+EM iteration 12, loglik = -16586.5492
+EM iteration 13, loglik = -16564.5940
+EM iteration 14, loglik = -16547.4582
+EM iteration 15, loglik = -16527.9401
+Saved m model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/m.mat
+Training phoneme ay (46 of 60) ...
+(using 140 out of 140 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -28144.3645
+EM iteration 2, loglik = -27861.4178
+EM iteration 3, loglik = -27560.6520
+EM iteration 4, loglik = -27046.7010
+EM iteration 5, loglik = -26148.5517
+EM iteration 6, loglik = -25347.0522
+EM iteration 7, loglik = -25127.6541
+EM iteration 8, loglik = -25024.7886
+EM iteration 9, loglik = -24969.3119
+EM iteration 10, loglik = -24924.1118
+EM iteration 11, loglik = -24876.9783
+EM iteration 12, loglik = -24837.3469
+EM iteration 13, loglik = -24808.6372
+EM iteration 14, loglik = -24790.5631
+Saved ay model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ay.mat
+Training phoneme th (47 of 60) ...
+(using 37 out of 37 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4772.4118
+EM iteration 2, loglik = -4668.5374
+EM iteration 3, loglik = -4540.4251
+EM iteration 4, loglik = -4349.1500
+EM iteration 5, loglik = -4176.4944
+EM iteration 6, loglik = -4100.2641
+EM iteration 7, loglik = -4059.1159
+EM iteration 8, loglik = -4038.2175
+EM iteration 9, loglik = -4030.7215
+EM iteration 10, loglik = -4026.8483
+Saved th model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/th.mat
+Training phoneme ey (48 of 60) ...
+(using 134 out of 134 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21921.3451
+EM iteration 2, loglik = -21729.0404
+EM iteration 3, loglik = -21454.7299
+EM iteration 4, loglik = -20997.5978
+EM iteration 5, loglik = -20380.4794
+EM iteration 6, loglik = -19992.5072
+EM iteration 7, loglik = -19852.1227
+EM iteration 8, loglik = -19766.3243
+EM iteration 9, loglik = -19693.0334
+EM iteration 10, loglik = -19639.6600
+EM iteration 11, loglik = -19595.7643
+EM iteration 12, loglik = -19548.9026
+EM iteration 13, loglik = -19507.5222
+EM iteration 14, loglik = -19479.2187
+EM iteration 15, loglik = -19456.7322
+Saved ey model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/ey.mat
+Training phoneme dh (49 of 60) ...
+(using 162 out of 162 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -9089.8225
+EM iteration 2, loglik = -8901.5642
+EM iteration 3, loglik = -8701.4265
+EM iteration 4, loglik = -8542.1420
+EM iteration 5, loglik = -8432.8715
+EM iteration 6, loglik = -8344.3468
+EM iteration 7, loglik = -8284.6047
+EM iteration 8, loglik = -8247.9273
+EM iteration 9, loglik = -8218.2282
+EM iteration 10, loglik = -8198.5050
+EM iteration 11, loglik = -8184.8153
+EM iteration 12, loglik = -8171.4869
+EM iteration 13, loglik = -8155.6198
+EM iteration 14, loglik = -8141.6184
+EM iteration 15, loglik = -8131.4584
+Saved dh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/dh.mat
+Training phoneme p (50 of 60) ...
+(using 152 out of 152 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -9594.6923
+EM iteration 2, loglik = -9356.8330
+EM iteration 3, loglik = -9043.4672
+EM iteration 4, loglik = -8815.9379
+EM iteration 5, loglik = -8698.4801
+EM iteration 6, loglik = -8635.3922
+EM iteration 7, loglik = -8593.7817
+EM iteration 8, loglik = -8565.0690
+EM iteration 9, loglik = -8541.0684
+EM iteration 10, loglik = -8523.0648
+EM iteration 11, loglik = -8509.6732
+EM iteration 12, loglik = -8497.7795
+EM iteration 13, loglik = -8485.9742
+EM iteration 14, loglik = -8475.9684
+EM iteration 15, loglik = -8469.3447
+Saved p model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/p.mat
+Training phoneme aw (51 of 60) ...
+(using 45 out of 45 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -8997.7886
+EM iteration 2, loglik = -8881.8576
+EM iteration 3, loglik = -8706.3836
+EM iteration 4, loglik = -8448.7734
+EM iteration 5, loglik = -8150.1269
+EM iteration 6, loglik = -7927.8196
+EM iteration 7, loglik = -7838.3140
+EM iteration 8, loglik = -7791.0036
+EM iteration 9, loglik = -7760.7318
+EM iteration 10, loglik = -7721.8197
+EM iteration 11, loglik = -7684.4345
+EM iteration 12, loglik = -7674.2547
+EM iteration 13, loglik = -7668.6540
+Saved aw model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/aw.mat
+Training phoneme er (52 of 60) ...
+(using 98 out of 98 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -15323.2045
+EM iteration 2, loglik = -15182.0758
+EM iteration 3, loglik = -14986.2093
+EM iteration 4, loglik = -14668.1665
+EM iteration 5, loglik = -14204.4226
+EM iteration 6, loglik = -13896.8730
+EM iteration 7, loglik = -13753.6071
+EM iteration 8, loglik = -13693.6719
+EM iteration 9, loglik = -13663.1905
+EM iteration 10, loglik = -13632.9866
+EM iteration 11, loglik = -13591.8760
+EM iteration 12, loglik = -13542.1851
+EM iteration 13, loglik = -13506.7573
+EM iteration 14, loglik = -13471.8128
+EM iteration 15, loglik = -13449.6440
+Saved er model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/er.mat
+Training phoneme nx (53 of 60) ...
+(using 44 out of 44 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -1318.8829
+EM iteration 2, loglik = -1232.9543
+EM iteration 3, loglik = -1134.2305
+EM iteration 4, loglik = -1057.8829
+EM iteration 5, loglik = -1021.9304
+EM iteration 6, loglik = -1002.6552
+EM iteration 7, loglik = -994.6003
+EM iteration 8, loglik = -992.1607
+EM iteration 9, loglik = -991.0043
+EM iteration 10, loglik = -988.7590
+EM iteration 11, loglik = -987.8295
+Saved nx model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/nx.mat
+Training phoneme z (54 of 60) ...
+(using 215 out of 215 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -25953.9774
+EM iteration 2, loglik = -25575.6502
+EM iteration 3, loglik = -25218.7405
+EM iteration 4, loglik = -24700.1854
+EM iteration 5, loglik = -24151.4358
+EM iteration 6, loglik = -23883.3499
+EM iteration 7, loglik = -23777.3407
+EM iteration 8, loglik = -23700.3231
+EM iteration 9, loglik = -23636.0997
+EM iteration 10, loglik = -23578.3293
+EM iteration 11, loglik = -23517.0332
+EM iteration 12, loglik = -23460.5039
+EM iteration 13, loglik = -23410.1621
+EM iteration 14, loglik = -23355.5895
+EM iteration 15, loglik = -23305.0636
+Saved z model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/z.mat
+Training phoneme el (55 of 60) ...
+(using 63 out of 63 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6885.0029
+EM iteration 2, loglik = -6794.1059
+EM iteration 3, loglik = -6690.2021
+EM iteration 4, loglik = -6547.2447
+EM iteration 5, loglik = -6383.5866
+EM iteration 6, loglik = -6244.7856
+EM iteration 7, loglik = -6174.8494
+EM iteration 8, loglik = -6121.0824
+EM iteration 9, loglik = -6087.1429
+EM iteration 10, loglik = -6070.3676
+EM iteration 11, loglik = -6057.3761
+EM iteration 12, loglik = -6048.4506
+EM iteration 13, loglik = -6041.4155
+EM iteration 14, loglik = -6035.2235
+EM iteration 15, loglik = -6029.9436
+Saved el model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/el.mat
+Training phoneme uw (56 of 60) ...
+(using 55 out of 55 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -8250.2663
+EM iteration 2, loglik = -8167.8168
+EM iteration 3, loglik = -8073.4951
+EM iteration 4, loglik = -7880.4948
+EM iteration 5, loglik = -7561.1125
+EM iteration 6, loglik = -7339.6811
+EM iteration 7, loglik = -7240.4442
+EM iteration 8, loglik = -7184.0572
+EM iteration 9, loglik = -7138.4564
+EM iteration 10, loglik = -7109.1440
+EM iteration 11, loglik = -7092.1392
+EM iteration 12, loglik = -7079.2710
+EM iteration 13, loglik = -7068.5666
+EM iteration 14, loglik = -7058.3072
+EM iteration 15, loglik = -7050.7094
+Saved uw model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/uw.mat
+Training phoneme oy (57 of 60) ...
+(using 46 out of 46 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -9720.8695
+EM iteration 2, loglik = -9619.4731
+EM iteration 3, loglik = -9522.1995
+EM iteration 4, loglik = -9335.7712
+EM iteration 5, loglik = -9026.3585
+EM iteration 6, loglik = -8687.9936
+EM iteration 7, loglik = -8490.0929
+EM iteration 8, loglik = -8387.8955
+EM iteration 9, loglik = -8335.7337
+EM iteration 10, loglik = -8311.1006
+EM iteration 11, loglik = -8295.7080
+EM iteration 12, loglik = -8282.5511
+EM iteration 13, loglik = -8273.1992
+EM iteration 14, loglik = -8267.7200
+Saved oy model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/oy.mat
+Training phoneme pau (58 of 60) ...
+(using 74 out of 74 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -18249.5789
+EM iteration 2, loglik = -17932.0935
+EM iteration 3, loglik = -17682.2794
+EM iteration 4, loglik = -17434.5753
+EM iteration 5, loglik = -17143.0141
+EM iteration 6, loglik = -16744.2343
+EM iteration 7, loglik = -16402.3010
+EM iteration 8, loglik = -16177.5521
+EM iteration 9, loglik = -16046.7607
+EM iteration 10, loglik = -15970.5549
+EM iteration 11, loglik = -15920.9881
+EM iteration 12, loglik = -15889.9591
+EM iteration 13, loglik = -15862.9191
+EM iteration 14, loglik = -15840.2546
+EM iteration 15, loglik = -15815.5214
+Saved pau model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/pau.mat
+Training phoneme zh (59 of 60) ...
+(using 10 out of 10 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -1030.2679
+EM iteration 2, loglik = -986.9437
+EM iteration 3, loglik = -931.9301
+EM iteration 4, loglik = -862.3109
+EM iteration 5, loglik = -798.6097
+EM iteration 6, loglik = -723.2832
+EM iteration 7, loglik = -692.6704
+EM iteration 8, loglik = -687.2126
+EM iteration 9, loglik = -684.4091
+EM iteration 10, loglik = -682.2924
+EM iteration 11, loglik = -682.2299
+Saved zh model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/zh.mat
+Training phoneme eng (60 of 60) ...
+(using 2 out of 2 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -44.5662
+EM iteration 2, loglik =  -4.0743
+EM iteration 3, loglik =  33.2675
+EM iteration 4, loglik =  60.1805
+EM iteration 5, loglik =  75.3327
+EM iteration 6, loglik =  83.0005
+EM iteration 7, loglik =  88.6279
+EM iteration 8, loglik = 103.6397
+EM iteration 9, loglik = 110.2937
+EM iteration 10, loglik = 111.7905
+EM iteration 11, loglik = 111.8185
+Saved eng model to all_hmm_experiments/4-mixture_3-state_1.0-data_7-dim/eng.mat
+Elapsed time is 4097.321845 seconds.
+ALL TEST DATA
+    'sil'
+    'n'
+    'aw'
+    'hv'
+    'ih'
+    'r'
+    'ix'
+    'z'
+    'tcl'
+    't'
+    'uw'
+    'l'
+    'ey'
+    'm'
+    'aa'
+    'v'
+    'el'
+    'd'
+    'ao'
+    'q'
+    'eh'
+    'iy'
+    'dx'
+    'axr'
+    'ay'
+    'f'
+    'er'
+    's'
+    'pau'
+    'dh'
+    'ch'
+    'dcl'
+    'jh'
+    'en'
+    'ax'
+    'pcl'
+    'p'
+    'epi'
+    'ah'
+    'w'
+    'uh'
+    'ow'
+    'hh'
+    'ae'
+    'kcl'
+    'k'
+    'oy'
+    'gcl'
+    'g'
+    'sh'
+    'bcl'
+    'b'
+    'ng'
+    'ux'
+    'y'
+    'th'
+    'nx'
+    'em'
+
+ALL MODELS
+    'aa'
+    'ae'
+    'ah'
+    'ao'
+    'aw'
+    'ax'
+    'axr'
+    'ay'
+    'b'
+    'bcl'
+    'ch'
+    'd'
+    'dcl'
+    'dh'
+    'dx'
+    'eh'
+    'el'
+    'em'
+    'en'
+    'eng'
+    'epi'
+    'er'
+    'ey'
+    'f'
+    'g'
+    'gcl'
+    'hh'
+    'hv'
+    'ih'
+    'ix'
+    'iy'
+    'jh'
+    'k'
+    'kcl'
+    'l'
+    'm'
+    'n'
+    'ng'
+    'nx'
+    'ow'
+    'oy'
+    'p'
+    'pau'
+    'pcl'
+    'q'
+    'r'
+    's'
+    'sh'
+    'sil'
+    't'
+    'tcl'
+    'th'
+    'uh'
+    'uw'
+    'ux'
+    'v'
+    'w'
+    'y'
+    'z'
+    'zh'
+
+>> 

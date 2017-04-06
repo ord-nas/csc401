@@ -1,0 +1,2825 @@
+Executing: matlab -nodisplay -nosplash -r "myTrainFunction('/u/cs401/speechdata/Training', 'all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim', true, 8, 3, 0.5, 14); myRunFunction('/u/cs401/speechdata/Testing', 'all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim'); exit"
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+[Warning: Function assert has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In addpath (line 88)
+  In myTrainFunction (line 3)] 
+Training phoneme sil (1 of 60) ...
+(using 270 out of 540 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -90268.1152
+EM iteration 2, loglik = -89147.2607
+EM iteration 3, loglik = -87948.0083
+EM iteration 4, loglik = -86303.3309
+EM iteration 5, loglik = -84442.5028
+EM iteration 6, loglik = -82977.9934
+EM iteration 7, loglik = -81971.4943
+EM iteration 8, loglik = -81252.8340
+EM iteration 9, loglik = -80680.5487
+EM iteration 10, loglik = -80263.6619
+EM iteration 11, loglik = -79978.8177
+EM iteration 12, loglik = -79778.7572
+EM iteration 13, loglik = -79612.6074
+EM iteration 14, loglik = -79383.3600
+EM iteration 15, loglik = -79241.9737
+Saved sil model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/sil.mat
+Training phoneme sh (2 of 60) ...
+(using 72 out of 143 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -15747.8695
+EM iteration 2, loglik = -15365.2820
+EM iteration 3, loglik = -14820.9450
+EM iteration 4, loglik = -14115.0144
+EM iteration 5, loglik = -13620.2470
+EM iteration 6, loglik = -13371.5534
+EM iteration 7, loglik = -13236.8711
+EM iteration 8, loglik = -13164.3239
+EM iteration 9, loglik = -13130.8191
+EM iteration 10, loglik = -13112.7444
+EM iteration 11, loglik = -13104.4509
+Saved sh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/sh.mat
+Training phoneme ix (3 of 60) ...
+(using 263 out of 525 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -28441.1376
+EM iteration 2, loglik = -27788.0684
+EM iteration 3, loglik = -26850.3577
+EM iteration 4, loglik = -25827.8721
+EM iteration 5, loglik = -25158.1320
+EM iteration 6, loglik = -24850.4724
+EM iteration 7, loglik = -24697.1146
+EM iteration 8, loglik = -24576.5977
+EM iteration 9, loglik = -24493.4706
+EM iteration 10, loglik = -24431.9043
+EM iteration 11, loglik = -24393.1409
+EM iteration 12, loglik = -24376.6659
+Saved ix model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ix.mat
+Training phoneme hv (4 of 60) ...
+(using 34 out of 67 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4240.8613
+EM iteration 2, loglik = -3779.4022
+EM iteration 3, loglik = -3091.2485
+EM iteration 4, loglik = -2350.0982
+EM iteration 5, loglik = -2079.8102
+EM iteration 6, loglik = -2009.6956
+EM iteration 7, loglik = -1989.9083
+EM iteration 8, loglik = -1987.9784
+Saved hv model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/hv.mat
+Training phoneme eh (5 of 60) ...
+(using 109 out of 217 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -19470.7720
+EM iteration 2, loglik = -18921.6513
+EM iteration 3, loglik = -17965.4200
+EM iteration 4, loglik = -16682.5736
+EM iteration 5, loglik = -15862.1009
+EM iteration 6, loglik = -15495.7852
+EM iteration 7, loglik = -15339.3494
+EM iteration 8, loglik = -15242.8317
+EM iteration 9, loglik = -15142.7833
+EM iteration 10, loglik = -15105.2283
+EM iteration 11, loglik = -15059.2434
+EM iteration 12, loglik = -15037.8345
+EM iteration 13, loglik = -15022.7221
+EM iteration 14, loglik = -15009.7041
+Saved eh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/eh.mat
+Training phoneme dcl (6 of 60) ...
+(using 151 out of 302 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -13231.7126
+EM iteration 2, loglik = -12694.1199
+EM iteration 3, loglik = -12009.5249
+EM iteration 4, loglik = -11320.6417
+EM iteration 5, loglik = -10961.5149
+EM iteration 6, loglik = -10821.8568
+EM iteration 7, loglik = -10765.0786
+EM iteration 8, loglik = -10735.6576
+EM iteration 9, loglik = -10718.3306
+EM iteration 10, loglik = -10713.4870
+Saved dcl model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/dcl.mat
+Training phoneme jh (7 of 60) ...
+(using 37 out of 74 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3443.3796
+EM iteration 2, loglik = -3064.2273
+EM iteration 3, loglik = -2428.7403
+EM iteration 4, loglik = -1823.7276
+EM iteration 5, loglik = -1566.5513
+EM iteration 6, loglik = -1514.3386
+EM iteration 7, loglik = -1495.1001
+EM iteration 8, loglik = -1494.5611
+Saved jh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/jh.mat
+Training phoneme ih (8 of 60) ...
+(using 134 out of 267 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -19984.2786
+EM iteration 2, loglik = -19311.6694
+EM iteration 3, loglik = -18210.4399
+EM iteration 4, loglik = -16905.9838
+EM iteration 5, loglik = -16250.3200
+EM iteration 6, loglik = -15981.8025
+EM iteration 7, loglik = -15880.6942
+EM iteration 8, loglik = -15808.1054
+EM iteration 9, loglik = -15754.1904
+EM iteration 10, loglik = -15712.1891
+EM iteration 11, loglik = -15689.2821
+EM iteration 12, loglik = -15669.6757
+EM iteration 13, loglik = -15654.3272
+Saved ih model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ih.mat
+Training phoneme d (9 of 60) ...
+(using 108 out of 216 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4779.3269
+EM iteration 2, loglik = -3958.7301
+EM iteration 3, loglik = -3043.8024
+EM iteration 4, loglik = -2645.8231
+EM iteration 5, loglik = -2582.9904
+EM iteration 6, loglik = -2572.1640
+EM iteration 7, loglik = -2567.5355
+EM iteration 8, loglik = -2563.9521
+EM iteration 9, loglik = -2563.5531
+Saved d model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/d.mat
+Training phoneme ah (10 of 60) ...
+(using 70 out of 139 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -11040.3424
+EM iteration 2, loglik = -10523.6064
+EM iteration 3, loglik = -9532.2087
+EM iteration 4, loglik = -8516.4899
+EM iteration 5, loglik = -8063.4277
+EM iteration 6, loglik = -7875.4626
+EM iteration 7, loglik = -7810.2731
+EM iteration 8, loglik = -7783.6180
+EM iteration 9, loglik = -7772.8678
+EM iteration 10, loglik = -7758.6343
+EM iteration 11, loglik = -7734.0518
+EM iteration 12, loglik = -7695.8679
+EM iteration 13, loglik = -7675.5555
+EM iteration 14, loglik = -7667.6006
+EM iteration 15, loglik = -7659.2252
+Saved ah model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ah.mat
+Training phoneme kcl (11 of 60) ...
+(using 174 out of 348 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -18905.6832
+EM iteration 2, loglik = -18289.0845
+EM iteration 3, loglik = -17633.5326
+EM iteration 4, loglik = -16986.9078
+EM iteration 5, loglik = -16564.5926
+EM iteration 6, loglik = -16381.3241
+EM iteration 7, loglik = -16278.8579
+EM iteration 8, loglik = -16209.7446
+EM iteration 9, loglik = -16172.3420
+EM iteration 10, loglik = -16140.9167
+EM iteration 11, loglik = -16114.3662
+EM iteration 12, loglik = -16106.1146
+Saved kcl model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/kcl.mat
+Training phoneme k (12 of 60) ...
+(using 140 out of 280 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -16670.4915
+EM iteration 2, loglik = -16155.7063
+EM iteration 3, loglik = -15324.0211
+EM iteration 4, loglik = -14681.9577
+EM iteration 5, loglik = -14328.2833
+EM iteration 6, loglik = -14160.7704
+EM iteration 7, loglik = -14088.4031
+EM iteration 8, loglik = -14046.7891
+EM iteration 9, loglik = -14034.2573
+Saved k model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/k.mat
+Training phoneme s (13 of 60) ...
+(using 217 out of 433 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -50616.5470
+EM iteration 2, loglik = -49800.2237
+EM iteration 3, loglik = -48977.5659
+EM iteration 4, loglik = -47917.4917
+EM iteration 5, loglik = -46837.4935
+EM iteration 6, loglik = -46098.3341
+EM iteration 7, loglik = -45670.2923
+EM iteration 8, loglik = -45416.0195
+EM iteration 9, loglik = -45271.5011
+EM iteration 10, loglik = -45169.2751
+EM iteration 11, loglik = -45092.1251
+EM iteration 12, loglik = -45036.5906
+EM iteration 13, loglik = -44988.1047
+EM iteration 14, loglik = -44947.3797
+Saved s model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/s.mat
+Training phoneme ux (14 of 60) ...
+(using 45 out of 90 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -8908.4684
+EM iteration 2, loglik = -8364.0469
+EM iteration 3, loglik = -7617.4689
+EM iteration 4, loglik = -6515.6611
+EM iteration 5, loglik = -5864.5016
+EM iteration 6, loglik = -5645.9567
+EM iteration 7, loglik = -5581.0884
+EM iteration 8, loglik = -5526.8110
+EM iteration 9, loglik = -5512.6919
+EM iteration 10, loglik = -5500.3204
+EM iteration 11, loglik = -5490.6342
+EM iteration 12, loglik = -5480.9337
+EM iteration 13, loglik = -5472.6248
+EM iteration 14, loglik = -5458.1342
+EM iteration 15, loglik = -5435.2295
+Saved ux model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ux.mat
+Training phoneme q (15 of 60) ...
+(using 101 out of 201 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -15752.6847
+EM iteration 2, loglik = -15305.5629
+EM iteration 3, loglik = -14510.5361
+EM iteration 4, loglik = -13671.6048
+EM iteration 5, loglik = -13279.2134
+EM iteration 6, loglik = -13108.1691
+EM iteration 7, loglik = -13045.0289
+EM iteration 8, loglik = -13007.8833
+EM iteration 9, loglik = -12994.1141
+EM iteration 10, loglik = -12986.2194
+Saved q model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/q.mat
+Training phoneme en (16 of 60) ...
+(using 24 out of 47 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -2690.4025
+EM iteration 2, loglik = -2130.8271
+EM iteration 3, loglik = -1545.4964
+EM iteration 4, loglik = -1004.0261
+EM iteration 5, loglik = -788.1010
+EM iteration 6, loglik = -752.1529
+EM iteration 7, loglik = -741.7180
+EM iteration 8, loglik = -740.8299
+EM iteration 9, loglik = -740.8070
+Saved en model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/en.mat
+Training phoneme gcl (17 of 60) ...
+(using 68 out of 135 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6121.0230
+EM iteration 2, loglik = -5589.9935
+EM iteration 3, loglik = -4702.6890
+EM iteration 4, loglik = -4057.1508
+EM iteration 5, loglik = -3792.8160
+EM iteration 6, loglik = -3740.7494
+EM iteration 7, loglik = -3723.9947
+EM iteration 8, loglik = -3720.8036
+Saved gcl model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/gcl.mat
+Training phoneme g (18 of 60) ...
+(using 61 out of 121 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3790.6438
+EM iteration 2, loglik = -3161.5924
+EM iteration 3, loglik = -2230.1140
+EM iteration 4, loglik = -1689.2101
+EM iteration 5, loglik = -1588.9558
+EM iteration 6, loglik = -1578.8874
+EM iteration 7, loglik = -1567.9735
+EM iteration 8, loglik = -1567.9719
+Saved g model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/g.mat
+Training phoneme r (19 of 60) ...
+(using 170 out of 340 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21483.3504
+EM iteration 2, loglik = -20834.2961
+EM iteration 3, loglik = -19638.0036
+EM iteration 4, loglik = -18389.6150
+EM iteration 5, loglik = -17738.0245
+EM iteration 6, loglik = -17434.0403
+EM iteration 7, loglik = -17302.3314
+EM iteration 8, loglik = -17227.8535
+EM iteration 9, loglik = -17184.9981
+EM iteration 10, loglik = -17130.9620
+EM iteration 11, loglik = -17090.0848
+EM iteration 12, loglik = -17054.9103
+EM iteration 13, loglik = -17028.8408
+EM iteration 14, loglik = -16989.4530
+EM iteration 15, loglik = -16967.9543
+Saved r model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/r.mat
+Training phoneme w (20 of 60) ...
+(using 87 out of 174 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -10351.2277
+EM iteration 2, loglik = -9864.6819
+EM iteration 3, loglik = -8916.6510
+EM iteration 4, loglik = -7995.6249
+EM iteration 5, loglik = -7595.0860
+EM iteration 6, loglik = -7460.6725
+EM iteration 7, loglik = -7394.4919
+EM iteration 8, loglik = -7357.0466
+EM iteration 9, loglik = -7334.4434
+EM iteration 10, loglik = -7323.1817
+EM iteration 11, loglik = -7302.1404
+EM iteration 12, loglik = -7294.9541
+Saved w model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/w.mat
+Training phoneme ao (21 of 60) ...
+(using 81 out of 162 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -19359.3115
+EM iteration 2, loglik = -18855.8531
+EM iteration 3, loglik = -17975.4263
+EM iteration 4, loglik = -16510.8445
+EM iteration 5, loglik = -15312.5604
+EM iteration 6, loglik = -14833.7234
+EM iteration 7, loglik = -14701.8073
+EM iteration 8, loglik = -14646.3962
+EM iteration 9, loglik = -14576.6333
+EM iteration 10, loglik = -14525.1858
+EM iteration 11, loglik = -14485.8777
+EM iteration 12, loglik = -14437.9624
+EM iteration 13, loglik = -14414.1689
+EM iteration 14, loglik = -14378.4277
+EM iteration 15, loglik = -14355.8869
+Saved ao model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ao.mat
+Training phoneme epi (22 of 60) ...
+(using 47 out of 94 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3488.9232
+EM iteration 2, loglik = -2907.8708
+EM iteration 3, loglik = -2139.6991
+EM iteration 4, loglik = -1631.8782
+EM iteration 5, loglik = -1467.9966
+EM iteration 6, loglik = -1426.6740
+EM iteration 7, loglik = -1409.8903
+EM iteration 8, loglik = -1407.6785
+EM iteration 9, loglik = -1407.6767
+Saved epi model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/epi.mat
+Training phoneme dx (23 of 60) ...
+(using 77 out of 153 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3973.5737
+EM iteration 2, loglik = -3394.4603
+EM iteration 3, loglik = -2525.5276
+EM iteration 4, loglik = -2033.9853
+EM iteration 5, loglik = -1919.8984
+EM iteration 6, loglik = -1911.8345
+EM iteration 7, loglik = -1909.6553
+EM iteration 8, loglik = -1908.2402
+Saved dx model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/dx.mat
+Training phoneme axr (24 of 60) ...
+(using 91 out of 181 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -13876.2150
+EM iteration 2, loglik = -13387.7092
+EM iteration 3, loglik = -12530.3249
+EM iteration 4, loglik = -11548.4303
+EM iteration 5, loglik = -11071.9332
+EM iteration 6, loglik = -10889.5689
+EM iteration 7, loglik = -10776.2213
+EM iteration 8, loglik = -10685.8071
+EM iteration 9, loglik = -10650.7884
+EM iteration 10, loglik = -10593.4212
+EM iteration 11, loglik = -10568.9348
+EM iteration 12, loglik = -10553.2408
+EM iteration 13, loglik = -10527.1098
+EM iteration 14, loglik = -10516.1311
+EM iteration 15, loglik = -10512.2827
+Saved axr model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/axr.mat
+Training phoneme l (25 of 60) ...
+(using 168 out of 335 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21195.5330
+EM iteration 2, loglik = -20707.9963
+EM iteration 3, loglik = -19752.7535
+EM iteration 4, loglik = -18659.7174
+EM iteration 5, loglik = -18035.0161
+EM iteration 6, loglik = -17775.2340
+EM iteration 7, loglik = -17671.5221
+EM iteration 8, loglik = -17596.0180
+EM iteration 9, loglik = -17544.7366
+EM iteration 10, loglik = -17504.7133
+EM iteration 11, loglik = -17468.0317
+EM iteration 12, loglik = -17445.1584
+EM iteration 13, loglik = -17411.7167
+EM iteration 14, loglik = -17379.2288
+EM iteration 15, loglik = -17357.5143
+Saved l model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/l.mat
+Training phoneme y (26 of 60) ...
+(using 59 out of 117 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5750.3155
+EM iteration 2, loglik = -5117.2193
+EM iteration 3, loglik = -4250.3079
+EM iteration 4, loglik = -3637.9826
+EM iteration 5, loglik = -3311.2917
+EM iteration 6, loglik = -3185.6697
+EM iteration 7, loglik = -3132.8832
+EM iteration 8, loglik = -3098.4749
+EM iteration 9, loglik = -3086.1868
+EM iteration 10, loglik = -3084.5910
+Saved y model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/y.mat
+Training phoneme iy (27 of 60) ...
+(using 189 out of 378 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -30877.4657
+EM iteration 2, loglik = -30157.9069
+EM iteration 3, loglik = -29045.0781
+EM iteration 4, loglik = -27567.9528
+EM iteration 5, loglik = -26480.6893
+EM iteration 6, loglik = -25970.8640
+EM iteration 7, loglik = -25713.7402
+EM iteration 8, loglik = -25556.9215
+EM iteration 9, loglik = -25440.9377
+EM iteration 10, loglik = -25358.7105
+EM iteration 11, loglik = -25319.7893
+EM iteration 12, loglik = -25288.4594
+EM iteration 13, loglik = -25267.1210
+Saved iy model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/iy.mat
+Training phoneme v (28 of 60) ...
+(using 57 out of 114 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6004.8894
+EM iteration 2, loglik = -5641.8862
+EM iteration 3, loglik = -4872.3360
+EM iteration 4, loglik = -4151.6405
+EM iteration 5, loglik = -3816.9520
+EM iteration 6, loglik = -3734.7184
+EM iteration 7, loglik = -3722.1779
+EM iteration 8, loglik = -3703.3742
+EM iteration 9, loglik = -3702.1701
+Saved v model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/v.mat
+Training phoneme n (29 of 60) ...
+(using 211 out of 422 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -21692.6232
+EM iteration 2, loglik = -20990.7568
+EM iteration 3, loglik = -19947.2453
+EM iteration 4, loglik = -18952.3307
+EM iteration 5, loglik = -18413.0189
+EM iteration 6, loglik = -18175.9720
+EM iteration 7, loglik = -18049.7536
+EM iteration 8, loglik = -17980.1575
+EM iteration 9, loglik = -17941.0492
+EM iteration 10, loglik = -17899.6137
+EM iteration 11, loglik = -17854.3152
+EM iteration 12, loglik = -17812.8017
+EM iteration 13, loglik = -17780.0553
+EM iteration 14, loglik = -17772.4806
+Saved n model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/n.mat
+Training phoneme f (30 of 60) ...
+(using 64 out of 128 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -11060.4491
+EM iteration 2, loglik = -10785.8927
+EM iteration 3, loglik = -10313.0670
+EM iteration 4, loglik = -9715.0058
+EM iteration 5, loglik = -9273.5781
+EM iteration 6, loglik = -9061.9532
+EM iteration 7, loglik = -8979.4626
+EM iteration 8, loglik = -8925.4542
+EM iteration 9, loglik = -8894.8578
+EM iteration 10, loglik = -8880.1555
+EM iteration 11, loglik = -8875.9023
+Saved f model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/f.mat
+Training phoneme tcl (31 of 60) ...
+(using 191 out of 382 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -19343.1270
+EM iteration 2, loglik = -18539.5918
+EM iteration 3, loglik = -17587.7474
+EM iteration 4, loglik = -16881.5137
+EM iteration 5, loglik = -16553.0380
+EM iteration 6, loglik = -16400.9317
+EM iteration 7, loglik = -16337.5067
+EM iteration 8, loglik = -16293.5411
+EM iteration 9, loglik = -16268.7319
+EM iteration 10, loglik = -16253.4328
+Saved tcl model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/tcl.mat
+Training phoneme t (32 of 60) ...
+(using 114 out of 227 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -11400.7780
+EM iteration 2, loglik = -10870.6405
+EM iteration 3, loglik = -10136.1109
+EM iteration 4, loglik = -9574.8094
+EM iteration 5, loglik = -9221.5883
+EM iteration 6, loglik = -9064.4779
+EM iteration 7, loglik = -8982.8649
+EM iteration 8, loglik = -8953.4219
+EM iteration 9, loglik = -8944.8856
+Saved t model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/t.mat
+Training phoneme uh (33 of 60) ...
+(using 18 out of 36 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -1625.1454
+EM iteration 2, loglik = -874.0156
+EM iteration 3, loglik = -270.4256
+EM iteration 4, loglik = 123.7003
+EM iteration 5, loglik = 236.3894
+EM iteration 6, loglik = 263.1529
+EM iteration 7, loglik = 264.9553
+EM iteration 8, loglik = 264.9631
+Saved uh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/uh.mat
+Training phoneme pcl (34 of 60) ...
+(using 75 out of 149 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6745.0345
+EM iteration 2, loglik = -6301.8531
+EM iteration 3, loglik = -5717.5051
+EM iteration 4, loglik = -5160.9340
+EM iteration 5, loglik = -4855.8724
+EM iteration 6, loglik = -4731.0010
+EM iteration 7, loglik = -4690.7293
+EM iteration 8, loglik = -4675.0450
+EM iteration 9, loglik = -4671.2134
+Saved pcl model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/pcl.mat
+Training phoneme ow (35 of 60) ...
+(using 63 out of 125 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -15874.3036
+EM iteration 2, loglik = -15299.9809
+EM iteration 3, loglik = -14317.7481
+EM iteration 4, loglik = -12947.9945
+EM iteration 5, loglik = -12021.2355
+EM iteration 6, loglik = -11665.9851
+EM iteration 7, loglik = -11526.9141
+EM iteration 8, loglik = -11467.5698
+EM iteration 9, loglik = -11443.8264
+EM iteration 10, loglik = -11412.1859
+EM iteration 11, loglik = -11387.7513
+EM iteration 12, loglik = -11380.3034
+Saved ow model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ow.mat
+Training phoneme hh (36 of 60) ...
+(using 28 out of 55 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3031.0065
+EM iteration 2, loglik = -2580.5952
+EM iteration 3, loglik = -1855.1412
+EM iteration 4, loglik = -1273.1988
+EM iteration 5, loglik = -1030.3004
+EM iteration 6, loglik = -990.0663
+EM iteration 7, loglik = -988.2356
+EM iteration 8, loglik = -987.8852
+Saved hh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/hh.mat
+Training phoneme ae (37 of 60) ...
+(using 128 out of 255 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -37436.0866
+EM iteration 2, loglik = -36688.2622
+EM iteration 3, loglik = -35483.6989
+EM iteration 4, loglik = -33171.9929
+EM iteration 5, loglik = -31424.6163
+EM iteration 6, loglik = -30617.8253
+EM iteration 7, loglik = -30301.8705
+EM iteration 8, loglik = -30106.2320
+EM iteration 9, loglik = -29958.9143
+EM iteration 10, loglik = -29850.5633
+EM iteration 11, loglik = -29794.1819
+EM iteration 12, loglik = -29738.4835
+EM iteration 13, loglik = -29676.1860
+EM iteration 14, loglik = -29613.1813
+EM iteration 15, loglik = -29556.0060
+Saved ae model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ae.mat
+Training phoneme ch (38 of 60) ...
+(using 25 out of 50 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3445.0122
+EM iteration 2, loglik = -3098.9970
+EM iteration 3, loglik = -2558.7144
+EM iteration 4, loglik = -1866.1237
+EM iteration 5, loglik = -1533.7694
+EM iteration 6, loglik = -1501.9665
+EM iteration 7, loglik = -1481.1494
+EM iteration 8, loglik = -1480.3733
+Saved ch model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ch.mat
+Training phoneme bcl (39 of 60) ...
+(using 59 out of 118 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5305.5593
+EM iteration 2, loglik = -4860.6944
+EM iteration 3, loglik = -4293.4360
+EM iteration 4, loglik = -3736.4802
+EM iteration 5, loglik = -3388.2486
+EM iteration 6, loglik = -3300.0235
+EM iteration 7, loglik = -3260.0888
+EM iteration 8, loglik = -3246.2605
+EM iteration 9, loglik = -3232.1661
+EM iteration 10, loglik = -3229.0544
+Saved bcl model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/bcl.mat
+Training phoneme b (40 of 60) ...
+(using 69 out of 137 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -2242.0234
+EM iteration 2, loglik = -1147.3642
+EM iteration 3, loglik = -412.1007
+EM iteration 4, loglik = -320.2948
+EM iteration 5, loglik = -306.9888
+EM iteration 6, loglik = -306.9860
+Saved b model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/b.mat
+Training phoneme aa (41 of 60) ...
+(using 94 out of 188 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -23000.9101
+EM iteration 2, loglik = -22413.7567
+EM iteration 3, loglik = -21363.4952
+EM iteration 4, loglik = -19736.0598
+EM iteration 5, loglik = -18621.7588
+EM iteration 6, loglik = -18170.0229
+EM iteration 7, loglik = -17955.3520
+EM iteration 8, loglik = -17818.5932
+EM iteration 9, loglik = -17713.9933
+EM iteration 10, loglik = -17637.6232
+EM iteration 11, loglik = -17571.9485
+EM iteration 12, loglik = -17510.5348
+EM iteration 13, loglik = -17461.9929
+EM iteration 14, loglik = -17422.8976
+EM iteration 15, loglik = -17406.7575
+Saved aa model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/aa.mat
+Training phoneme ax (42 of 60) ...
+(using 124 out of 248 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -12247.3564
+EM iteration 2, loglik = -11688.4404
+EM iteration 3, loglik = -10717.8040
+EM iteration 4, loglik = -9970.1204
+EM iteration 5, loglik = -9622.6337
+EM iteration 6, loglik = -9510.2152
+EM iteration 7, loglik = -9466.3032
+EM iteration 8, loglik = -9433.7691
+EM iteration 9, loglik = -9412.5277
+EM iteration 10, loglik = -9400.8824
+EM iteration 11, loglik = -9394.7472
+Saved ax model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ax.mat
+Training phoneme em (43 of 60) ...
+(using 5 out of 9 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -376.6057
+EM iteration 2, loglik = 366.6507
+EM iteration 3, loglik = 466.4120
+EM iteration 4, loglik = 564.6737
+EM iteration 5, loglik = 606.6053
+EM iteration 6, loglik = 630.7194
+EM iteration 7, loglik = 643.8185
+EM iteration 8, loglik = 650.6938
+EM iteration 9, loglik = 658.1960
+EM iteration 10, loglik = 659.9916
+EM iteration 11, loglik = 659.9916
+Saved em model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/em.mat
+Training phoneme ng (44 of 60) ...
+(using 39 out of 77 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -3830.0807
+EM iteration 2, loglik = -3467.9230
+EM iteration 3, loglik = -2625.6567
+EM iteration 4, loglik = -2033.3553
+EM iteration 5, loglik = -1814.1538
+EM iteration 6, loglik = -1742.5393
+EM iteration 7, loglik = -1704.2458
+EM iteration 8, loglik = -1692.9420
+EM iteration 9, loglik = -1689.1959
+EM iteration 10, loglik = -1685.3021
+EM iteration 11, loglik = -1684.4914
+Saved ng model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ng.mat
+Training phoneme m (45 of 60) ...
+(using 112 out of 224 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -12492.7421
+EM iteration 2, loglik = -11967.5626
+EM iteration 3, loglik = -10965.5972
+EM iteration 4, loglik = -9919.6677
+EM iteration 5, loglik = -9496.8879
+EM iteration 6, loglik = -9364.6733
+EM iteration 7, loglik = -9292.3428
+EM iteration 8, loglik = -9255.0088
+EM iteration 9, loglik = -9236.5901
+EM iteration 10, loglik = -9228.1159
+Saved m model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/m.mat
+Training phoneme ay (46 of 60) ...
+(using 70 out of 140 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -19091.7789
+EM iteration 2, loglik = -18557.5731
+EM iteration 3, loglik = -17545.8729
+EM iteration 4, loglik = -15967.0134
+EM iteration 5, loglik = -15016.0292
+EM iteration 6, loglik = -14607.2878
+EM iteration 7, loglik = -14461.9820
+EM iteration 8, loglik = -14381.1255
+EM iteration 9, loglik = -14322.6450
+EM iteration 10, loglik = -14271.9476
+EM iteration 11, loglik = -14213.0959
+EM iteration 12, loglik = -14192.7426
+EM iteration 13, loglik = -14176.0054
+EM iteration 14, loglik = -14167.2093
+Saved ay model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ay.mat
+Training phoneme th (47 of 60) ...
+(using 19 out of 37 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -2411.3695
+EM iteration 2, loglik = -1982.0806
+EM iteration 3, loglik = -1412.0424
+EM iteration 4, loglik = -828.4732
+EM iteration 5, loglik = -574.6831
+EM iteration 6, loglik = -482.7986
+EM iteration 7, loglik = -477.6957
+EM iteration 8, loglik = -477.6929
+Saved th model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/th.mat
+Training phoneme ey (48 of 60) ...
+(using 67 out of 134 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -14033.0903
+EM iteration 2, loglik = -13467.6522
+EM iteration 3, loglik = -12295.5732
+EM iteration 4, loglik = -10866.0199
+EM iteration 5, loglik = -10097.3056
+EM iteration 6, loglik = -9766.9200
+EM iteration 7, loglik = -9652.3318
+EM iteration 8, loglik = -9599.5525
+EM iteration 9, loglik = -9567.0934
+EM iteration 10, loglik = -9491.6802
+EM iteration 11, loglik = -9463.2418
+EM iteration 12, loglik = -9455.8875
+Saved ey model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/ey.mat
+Training phoneme dh (49 of 60) ...
+(using 81 out of 162 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5927.9376
+EM iteration 2, loglik = -5492.4649
+EM iteration 3, loglik = -4706.6921
+EM iteration 4, loglik = -4104.6517
+EM iteration 5, loglik = -3927.8430
+EM iteration 6, loglik = -3901.1249
+EM iteration 7, loglik = -3895.3934
+EM iteration 8, loglik = -3889.2895
+EM iteration 9, loglik = -3881.1463
+EM iteration 10, loglik = -3879.2063
+Saved dh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/dh.mat
+Training phoneme p (50 of 60) ...
+(using 76 out of 152 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -6369.8150
+EM iteration 2, loglik = -5948.1643
+EM iteration 3, loglik = -5196.2000
+EM iteration 4, loglik = -4629.3507
+EM iteration 5, loglik = -4347.5046
+EM iteration 6, loglik = -4216.4229
+EM iteration 7, loglik = -4185.8309
+EM iteration 8, loglik = -4180.8373
+EM iteration 9, loglik = -4178.6557
+Saved p model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/p.mat
+Training phoneme aw (51 of 60) ...
+(using 23 out of 45 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4237.6276
+EM iteration 2, loglik = -4039.5729
+EM iteration 3, loglik = -3347.9371
+EM iteration 4, loglik = -2242.8046
+EM iteration 5, loglik = -1637.7408
+EM iteration 6, loglik = -1482.0393
+EM iteration 7, loglik = -1419.9648
+EM iteration 8, loglik = -1404.7914
+EM iteration 9, loglik = -1399.5652
+EM iteration 10, loglik = -1397.8385
+EM iteration 11, loglik = -1397.7755
+Saved aw model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/aw.mat
+Training phoneme er (52 of 60) ...
+(using 49 out of 98 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -10156.8758
+EM iteration 2, loglik = -9771.5382
+EM iteration 3, loglik = -8801.6335
+EM iteration 4, loglik = -7466.0411
+EM iteration 5, loglik = -6913.7550
+EM iteration 6, loglik = -6773.2884
+EM iteration 7, loglik = -6699.9094
+EM iteration 8, loglik = -6680.0323
+EM iteration 9, loglik = -6671.7019
+EM iteration 10, loglik = -6661.4354
+EM iteration 11, loglik = -6654.9104
+Saved er model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/er.mat
+Training phoneme nx (53 of 60) ...
+(using 22 out of 44 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -943.1937
+EM iteration 2, loglik = 106.5959
+EM iteration 3, loglik = 520.7564
+EM iteration 4, loglik = 588.9229
+EM iteration 5, loglik = 596.2579
+EM iteration 6, loglik = 601.1933
+EM iteration 7, loglik = 601.5465
+Saved nx model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/nx.mat
+Training phoneme z (54 of 60) ...
+(using 108 out of 215 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -18951.9343
+EM iteration 2, loglik = -18556.8807
+EM iteration 3, loglik = -17976.2947
+EM iteration 4, loglik = -17247.3832
+EM iteration 5, loglik = -16719.1505
+EM iteration 6, loglik = -16445.5592
+EM iteration 7, loglik = -16324.2259
+EM iteration 8, loglik = -16253.3187
+EM iteration 9, loglik = -16216.0631
+EM iteration 10, loglik = -16192.5847
+EM iteration 11, loglik = -16181.0245
+Saved z model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/z.mat
+Training phoneme el (55 of 60) ...
+(using 32 out of 63 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4675.4213
+EM iteration 2, loglik = -4218.3519
+EM iteration 3, loglik = -3545.1739
+EM iteration 4, loglik = -2784.1544
+EM iteration 5, loglik = -2475.3623
+EM iteration 6, loglik = -2373.6785
+EM iteration 7, loglik = -2337.8192
+EM iteration 8, loglik = -2335.2044
+EM iteration 9, loglik = -2332.3550
+EM iteration 10, loglik = -2329.9079
+EM iteration 11, loglik = -2319.7802
+EM iteration 12, loglik = -2302.9732
+EM iteration 13, loglik = -2302.9429
+Saved el model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/el.mat
+Training phoneme uw (56 of 60) ...
+(using 28 out of 55 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -4535.3436
+EM iteration 2, loglik = -4243.0675
+EM iteration 3, loglik = -3512.7976
+EM iteration 4, loglik = -2540.3100
+EM iteration 5, loglik = -2113.6558
+EM iteration 6, loglik = -2023.3605
+EM iteration 7, loglik = -1992.6862
+EM iteration 8, loglik = -1972.7048
+EM iteration 9, loglik = -1970.4099
+EM iteration 10, loglik = -1970.2828
+Saved uw model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/uw.mat
+Training phoneme oy (57 of 60) ...
+(using 23 out of 46 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -5460.8280
+EM iteration 2, loglik = -5203.5369
+EM iteration 3, loglik = -4569.9120
+EM iteration 4, loglik = -3470.3145
+EM iteration 5, loglik = -2909.9062
+EM iteration 6, loglik = -2729.0967
+EM iteration 7, loglik = -2700.1299
+EM iteration 8, loglik = -2687.7254
+EM iteration 9, loglik = -2654.2602
+EM iteration 10, loglik = -2643.9411
+EM iteration 11, loglik = -2633.9349
+EM iteration 12, loglik = -2626.4564
+EM iteration 13, loglik = -2619.5390
+EM iteration 14, loglik = -2614.8426
+EM iteration 15, loglik = -2612.5481
+Saved oy model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/oy.mat
+Training phoneme pau (58 of 60) ...
+(using 37 out of 74 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -10626.6012
+EM iteration 2, loglik = -10203.7224
+EM iteration 3, loglik = -9605.4607
+EM iteration 4, loglik = -8829.4750
+EM iteration 5, loglik = -8386.3401
+EM iteration 6, loglik = -8201.2787
+EM iteration 7, loglik = -8127.7853
+EM iteration 8, loglik = -8091.4373
+EM iteration 9, loglik = -8079.9445
+EM iteration 10, loglik = -8070.4648
+EM iteration 11, loglik = -8060.3857
+EM iteration 12, loglik = -8054.4480
+Saved pau model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/pau.mat
+Training phoneme zh (59 of 60) ...
+(using 5 out of 10 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -813.6426
+EM iteration 2, loglik = 127.1537
+EM iteration 3, loglik = 338.4405
+EM iteration 4, loglik = 450.7257
+EM iteration 5, loglik = 505.1956
+EM iteration 6, loglik = 526.1086
+EM iteration 7, loglik = 535.0269
+EM iteration 8, loglik = 541.2872
+EM iteration 9, loglik = 543.5320
+EM iteration 10, loglik = 544.2351
+EM iteration 11, loglik = 544.2364
+Saved zh model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/zh.mat
+Training phoneme eng (60 of 60) ...
+(using 1 out of 2 training sequences)
+
+Qtrans =
+
+    0.5000    0.5000         0
+         0    0.5000    0.5000
+    0.5000         0    0.5000
+
+EM iteration 1, loglik = -179.3995
+EM iteration 2, loglik = 149.6281
+EM iteration 3, loglik = 174.3880
+EM iteration 4, loglik = 188.6746
+EM iteration 5, loglik = 197.5027
+EM iteration 6, loglik = 201.6272
+EM iteration 7, loglik = 203.5894
+EM iteration 8, loglik = 205.5087
+EM iteration 9, loglik = 207.6045
+EM iteration 10, loglik = 209.3821
+EM iteration 11, loglik = 209.3821
+Saved eng model to all_hmm_experiments/8-mixture_3-state_0.5-data_14-dim/eng.mat
+Elapsed time is 2203.651192 seconds.
+ALL TEST DATA
+    'sil'
+    'n'
+    'aw'
+    'hv'
+    'ih'
+    'r'
+    'ix'
+    'z'
+    'tcl'
+    't'
+    'uw'
+    'l'
+    'ey'
+    'm'
+    'aa'
+    'v'
+    'el'
+    'd'
+    'ao'
+    'q'
+    'eh'
+    'iy'
+    'dx'
+    'axr'
+    'ay'
+    'f'
+    'er'
+    's'
+    'pau'
+    'dh'
+    'ch'
+    'dcl'
+    'jh'
+    'en'
+    'ax'
+    'pcl'
+    'p'
+    'epi'
+    'ah'
+    'w'
+    'uh'
+    'ow'
+    'hh'
+    'ae'
+    'kcl'
+    'k'
+    'oy'
+    'gcl'
+    'g'
+    'sh'
+    'bcl'
+    'b'
+    'ng'
+    'ux'
+    'y'
+    'th'
+    'nx'
+    'em'
+
+ALL MODELS
+    'aa'
+    'ae'
+    'ah'
+    'ao'
+    'aw'
+    'ax'
+    'axr'
+    'ay'
+    'b'
+    'bcl'
+    'ch'
+    'd'
+    'dcl'
+    'dh'
+    'dx'
+    'eh'
+    'el'
+    'em'
+    'en'
+    'eng'
+    'epi'
+    'er'
+    'ey'
+    'f'
+    'g'
+    'gcl'
+    'hh'
+    'hv'
+    'ih'
+    'ix'
+    'iy'
+    'jh'
+    'k'
+    'kcl'
+    'l'
+    'm'
+    'n'
+    'ng'
+    'nx'
+    'ow'
+    'oy'
+    'p'
+    'pau'
+    'pcl'
+    'q'
+    'r'
+    's'
+    'sh'
+    'sil'
+    't'
+    'tcl'
+    'th'
+    'uh'
+    'uw'
+    'ux'
+    'v'
+    'w'
+    'y'
+    'z'
+    'zh'
+
+Actual aa, predicted aa
+Actual aa, predicted r
+Actual aa, predicted aa
+Actual aa, predicted q
+Actual aa, predicted aa
+Actual aa, predicted ay
+Actual aa, predicted ae
+Actual aa, predicted aa
+Actual aa, predicted aa
+Actual aa, predicted aa
+Actual aa, predicted ae
+Actual aa, predicted ao
+Actual aa, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted iy
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted iy
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ah, predicted aa
+Actual ah, predicted ae
+Actual ah, predicted l
+Actual ah, predicted ae
+Actual ah, predicted ow
+Actual ah, predicted ah
+Actual ah, predicted ae
+Actual ah, predicted ay
+Actual ah, predicted ix
+Actual ah, predicted eh
+Actual ah, predicted ae
+Actual ah, predicted ah
+Actual ah, predicted r
+Actual ah, predicted eh
+Actual ah, predicted ax
+Actual ah, predicted ae
+Actual ah, predicted ix
+Actual ao, predicted ae
+Actual ao, predicted aa
+Actual ao, predicted ao
+Actual ao, predicted ao
+Actual ao, predicted aa
+Actual ao, predicted aa
+Actual ao, predicted ao
+Actual ao, predicted aa
+Actual ao, predicted ao
+Actual ao, predicted ao
+Actual ao, predicted l
+Actual ao, predicted aa
+Actual aw, predicted ae
+Actual aw, predicted ae
+Actual aw, predicted aa
+Actual aw, predicted aa
+Actual ax, predicted ix
+Actual ax, predicted axr
+Actual ax, predicted ix
+Actual ax, predicted ax
+Actual ax, predicted v
+Actual ax, predicted l
+Actual ax, predicted l
+Actual ax, predicted kcl
+Actual ax, predicted l
+Actual ax, predicted ae
+Actual ax, predicted ix
+Actual ax, predicted ax
+Actual ax, predicted ae
+Actual ax, predicted ae
+Actual ax, predicted ix
+Actual ax, predicted ax
+Actual ax, predicted ax
+Actual ax, predicted ow
+Actual ax, predicted ae
+Actual ax, predicted aa
+Actual ax, predicted aa
+Actual ax, predicted l
+Actual ax, predicted ax
+Actual ax, predicted l
+Actual ax, predicted l
+Actual ax, predicted s
+Actual ax, predicted m
+Actual axr, predicted r
+Actual axr, predicted axr
+Actual axr, predicted q
+Actual axr, predicted axr
+Actual axr, predicted axr
+Actual axr, predicted r
+Actual axr, predicted iy
+Actual axr, predicted aa
+Actual axr, predicted l
+Actual axr, predicted r
+Actual ay, predicted aa
+Actual ay, predicted ae
+Actual ay, predicted ay
+Actual ay, predicted ay
+Actual ay, predicted ae
+Actual ay, predicted ae
+Actual ay, predicted ay
+Actual ay, predicted aa
+Actual ay, predicted ay
+Actual ay, predicted aa
+Actual ay, predicted ay
+Actual ay, predicted ae
+Actual ay, predicted ay
+Actual ay, predicted ae
+Actual ay, predicted aa
+Actual b, predicted dh
+Actual b, predicted r
+Actual b, predicted l
+Actual b, predicted ix
+Actual b, predicted f
+Actual b, predicted k
+Actual b, predicted iy
+Actual b, predicted f
+Actual b, predicted ae
+Actual b, predicted iy
+Actual b, predicted f
+Actual b, predicted ow
+Actual b, predicted b
+Actual bcl, predicted dcl
+Actual bcl, predicted tcl
+Actual bcl, predicted bcl
+Actual bcl, predicted dcl
+Actual bcl, predicted dcl
+Actual bcl, predicted pcl
+Actual bcl, predicted dcl
+Actual bcl, predicted bcl
+Actual bcl, predicted n
+Actual bcl, predicted dcl
+Actual ch, predicted sh
+Actual ch, predicted s
+Actual ch, predicted sh
+Actual ch, predicted sh
+Actual ch, predicted sh
+Actual ch, predicted s
+Actual ch, predicted sh
+Actual d, predicted k
+Actual d, predicted tcl
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted d
+Actual d, predicted t
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted ae
+Actual d, predicted t
+Actual d, predicted s
+Actual d, predicted ae
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted dcl
+Actual d, predicted k
+Actual d, predicted sil
+Actual d, predicted z
+Actual d, predicted ae
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted sh
+Actual d, predicted s
+Actual d, predicted s
+Actual d, predicted s
+Actual dcl, predicted dcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted kcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted dcl
+Actual dcl, predicted dcl
+Actual dcl, predicted tcl
+Actual dcl, predicted tcl
+Actual dcl, predicted tcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted kcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted ae
+Actual dcl, predicted tcl
+Actual dcl, predicted s
+Actual dcl, predicted dcl
+Actual dcl, predicted bcl
+Actual dcl, predicted dcl
+Actual dcl, predicted n
+Actual dcl, predicted dcl
+Actual dcl, predicted kcl
+Actual dcl, predicted n
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted n
+Actual dcl, predicted tcl
+Actual dcl, predicted sil
+Actual dh, predicted n
+Actual dh, predicted s
+Actual dh, predicted s
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted kcl
+Actual dh, predicted t
+Actual dh, predicted k
+Actual dh, predicted s
+Actual dh, predicted aa
+Actual dh, predicted sil
+Actual dh, predicted sil
+Actual dh, predicted tcl
+Actual dh, predicted kcl
+Actual dh, predicted sil
+Actual dh, predicted sil
+Actual dh, predicted q
+Actual dh, predicted dcl
+Actual dh, predicted q
+Actual dh, predicted t
+Actual dh, predicted sil
+Actual dx, predicted r
+Actual dx, predicted ae
+Actual dx, predicted ix
+Actual dx, predicted axr
+Actual dx, predicted n
+Actual dx, predicted ax
+Actual dx, predicted q
+Actual dx, predicted ix
+Actual dx, predicted ix
+Actual eh, predicted ae
+Actual eh, predicted ae
+Actual eh, predicted eh
+Actual eh, predicted ih
+Actual eh, predicted eh
+Actual eh, predicted ae
+Actual eh, predicted ow
+Actual eh, predicted w
+Actual eh, predicted aa
+Actual eh, predicted ae
+Actual eh, predicted ao
+Actual eh, predicted ae
+Actual eh, predicted eh
+Actual eh, predicted r
+Actual eh, predicted ae
+Actual eh, predicted eh
+Actual eh, predicted ae
+Actual eh, predicted ae
+Actual eh, predicted aa
+Actual eh, predicted ae
+Actual eh, predicted ae
+Actual eh, predicted l
+Actual eh, predicted ow
+Actual eh, predicted r
+Actual eh, predicted aa
+Actual eh, predicted ae
+Actual eh, predicted ix
+Actual eh, predicted ae
+Actual eh, predicted eh
+Actual eh, predicted ae
+Actual el, predicted ao
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted q
+Actual el, predicted ao
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual em, predicted n
+Actual en, predicted dcl
+Actual en, predicted n
+Actual en, predicted n
+Actual en, predicted ix
+Actual en, predicted tcl
+Actual epi, predicted sil
+Actual epi, predicted tcl
+Actual epi, predicted tcl
+Actual epi, predicted sil
+Actual epi, predicted tcl
+Actual epi, predicted sil
+Actual epi, predicted sil
+Actual epi, predicted s
+Actual epi, predicted k
+Actual epi, predicted tcl
+Actual epi, predicted q
+Actual epi, predicted sil
+Actual epi, predicted k
+Actual epi, predicted sil
+Actual epi, predicted sil
+Actual epi, predicted k
+Actual er, predicted r
+Actual er, predicted r
+Actual er, predicted r
+Actual er, predicted r
+Actual er, predicted iy
+Actual er, predicted axr
+Actual ey, predicted ih
+Actual ey, predicted iy
+Actual ey, predicted iy
+Actual ey, predicted iy
+Actual ey, predicted iy
+Actual ey, predicted ae
+Actual ey, predicted ix
+Actual ey, predicted ae
+Actual ey, predicted ae
+Actual ey, predicted iy
+Actual ey, predicted ae
+Actual ey, predicted q
+Actual ey, predicted ae
+Actual ey, predicted iy
+Actual f, predicted f
+Actual f, predicted s
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted kcl
+Actual f, predicted sil
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted s
+Actual f, predicted f
+Actual f, predicted s
+Actual f, predicted s
+Actual f, predicted f
+Actual f, predicted s
+Actual g, predicted sil
+Actual g, predicted sil
+Actual g, predicted l
+Actual g, predicted ae
+Actual g, predicted kcl
+Actual g, predicted sil
+Actual g, predicted g
+Actual g, predicted k
+Actual gcl, predicted kcl
+Actual gcl, predicted n
+Actual gcl, predicted kcl
+Actual gcl, predicted kcl
+Actual gcl, predicted kcl
+Actual gcl, predicted kcl
+Actual gcl, predicted kcl
+Actual gcl, predicted dcl
+Actual gcl, predicted n
+Actual gcl, predicted kcl
+Actual hh, predicted k
+Actual hh, predicted k
+Actual hh, predicted s
+Actual hv, predicted ae
+Actual hv, predicted s
+Actual hv, predicted ae
+Actual hv, predicted k
+Actual hv, predicted tcl
+Actual ih, predicted iy
+Actual ih, predicted ih
+Actual ih, predicted ae
+Actual ih, predicted ix
+Actual ih, predicted iy
+Actual ih, predicted ix
+Actual ih, predicted ih
+Actual ih, predicted iy
+Actual ih, predicted eh
+Actual ih, predicted ih
+Actual ih, predicted iy
+Actual ih, predicted ih
+Actual ih, predicted iy
+Actual ih, predicted ix
+Actual ih, predicted ix
+Actual ih, predicted ix
+Actual ih, predicted ix
+Actual ih, predicted iy
+Actual ih, predicted iy
+Actual ih, predicted ix
+Actual ih, predicted iy
+Actual ih, predicted ae
+Actual ih, predicted ih
+Actual ih, predicted ix
+Actual ih, predicted iy
+Actual ih, predicted ax
+Actual ih, predicted eh
+Actual ih, predicted ae
+Actual ih, predicted ih
+Actual ih, predicted ih
+Actual ih, predicted n
+Actual ih, predicted ih
+Actual ih, predicted ih
+Actual ih, predicted iy
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted n
+Actual ix, predicted ih
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted eh
+Actual ix, predicted iy
+Actual ix, predicted q
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted tcl
+Actual ix, predicted ix
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted ih
+Actual ix, predicted ih
+Actual ix, predicted iy
+Actual ix, predicted ae
+Actual ix, predicted ae
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted eh
+Actual ix, predicted ix
+Actual ix, predicted ow
+Actual ix, predicted ae
+Actual ix, predicted iy
+Actual ix, predicted eh
+Actual ix, predicted ix
+Actual ix, predicted ae
+Actual ix, predicted n
+Actual ix, predicted ix
+Actual ix, predicted iy
+Actual ix, predicted s
+Actual ix, predicted ix
+Actual ix, predicted axr
+Actual ix, predicted ih
+Actual iy, predicted iy
+Actual iy, predicted ih
+Actual iy, predicted ix
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted ix
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted ix
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted ix
+Actual iy, predicted ix
+Actual iy, predicted eh
+Actual iy, predicted eh
+Actual iy, predicted ix
+Actual iy, predicted ae
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted ae
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted ae
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted ux
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual jh, predicted s
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual k, predicted sil
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted s
+Actual k, predicted sil
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted t
+Actual k, predicted k
+Actual k, predicted s
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted s
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted sil
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted s
+Actual k, predicted sh
+Actual k, predicted s
+Actual k, predicted k
+Actual k, predicted k
+Actual kcl, predicted tcl
+Actual kcl, predicted tcl
+Actual kcl, predicted sil
+Actual kcl, predicted sil
+Actual kcl, predicted kcl
+Actual kcl, predicted dcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted sil
+Actual kcl, predicted dcl
+Actual kcl, predicted sil
+Actual kcl, predicted ae
+Actual kcl, predicted kcl
+Actual kcl, predicted sil
+Actual kcl, predicted sil
+Actual kcl, predicted sil
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted sil
+Actual kcl, predicted tcl
+Actual kcl, predicted sil
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted kcl
+Actual kcl, predicted sil
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual l, predicted ih
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted ow
+Actual l, predicted ax
+Actual l, predicted ix
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted n
+Actual l, predicted q
+Actual l, predicted aa
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted ax
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted w
+Actual l, predicted l
+Actual l, predicted ax
+Actual l, predicted l
+Actual l, predicted aa
+Actual l, predicted l
+Actual l, predicted aa
+Actual l, predicted aa
+Actual l, predicted ao
+Actual l, predicted l
+Actual l, predicted aa
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted ae
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted iy
+Actual l, predicted s
+Actual l, predicted l
+Actual l, predicted ix
+Actual m, predicted m
+Actual m, predicted ae
+Actual m, predicted n
+Actual m, predicted n
+Actual m, predicted m
+Actual m, predicted n
+Actual m, predicted iy
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted n
+Actual m, predicted l
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted ax
+Actual m, predicted sil
+Actual m, predicted axr
+Actual m, predicted r
+Actual m, predicted sil
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted dcl
+Actual m, predicted n
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted ah
+Actual m, predicted n
+Actual m, predicted n
+Actual m, predicted m
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted ae
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted ih
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted l
+Actual n, predicted n
+Actual n, predicted ix
+Actual n, predicted n
+Actual n, predicted ae
+Actual n, predicted ix
+Actual n, predicted tcl
+Actual n, predicted eh
+Actual n, predicted n
+Actual n, predicted tcl
+Actual n, predicted q
+Actual n, predicted m
+Actual n, predicted ix
+Actual n, predicted n
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted dx
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted iy
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted m
+Actual ng, predicted n
+Actual ng, predicted n
+Actual ng, predicted m
+Actual ng, predicted n
+Actual ng, predicted iy
+Actual ng, predicted kcl
+Actual nx, predicted m
+Actual nx, predicted ae
+Actual nx, predicted ow
+Actual nx, predicted ah
+Actual nx, predicted ae
+Actual nx, predicted n
+Actual nx, predicted ix
+Actual ow, predicted ow
+Actual ow, predicted aa
+Actual ow, predicted l
+Actual ow, predicted l
+Actual ow, predicted l
+Actual ow, predicted ao
+Actual ow, predicted ax
+Actual ow, predicted em
+Actual ow, predicted ao
+Actual ow, predicted ay
+Actual ow, predicted ix
+Actual ow, predicted l
+Actual ow, predicted ax
+Actual oy, predicted ax
+Actual oy, predicted ix
+Actual oy, predicted ix
+Actual oy, predicted ix
+Actual oy, predicted ow
+Actual oy, predicted ae
+Actual p, predicted s
+Actual p, predicted kcl
+Actual p, predicted pcl
+Actual p, predicted k
+Actual p, predicted p
+Actual p, predicted k
+Actual p, predicted k
+Actual p, predicted dh
+Actual p, predicted w
+Actual p, predicted k
+Actual p, predicted k
+Actual p, predicted t
+Actual pau, predicted pau
+Actual pau, predicted sil
+Actual pau, predicted sil
+Actual pau, predicted sil
+Actual pau, predicted sil
+Actual pau, predicted sil
+Actual pcl, predicted sil
+Actual pcl, predicted tcl
+Actual pcl, predicted m
+Actual pcl, predicted sil
+Actual pcl, predicted sil
+Actual pcl, predicted kcl
+Actual pcl, predicted pcl
+Actual pcl, predicted sil
+Actual pcl, predicted sil
+Actual pcl, predicted pcl
+Actual pcl, predicted tcl
+Actual pcl, predicted pcl
+Actual q, predicted eh
+Actual q, predicted ae
+Actual q, predicted tcl
+Actual q, predicted q
+Actual q, predicted kcl
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted tcl
+Actual q, predicted q
+Actual q, predicted dcl
+Actual q, predicted ae
+Actual q, predicted q
+Actual q, predicted sil
+Actual q, predicted sil
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted ae
+Actual q, predicted ae
+Actual q, predicted q
+Actual q, predicted sil
+Actual q, predicted q
+Actual q, predicted ix
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted sil
+Actual q, predicted tcl
+Actual r, predicted r
+Actual r, predicted iy
+Actual r, predicted aa
+Actual r, predicted r
+Actual r, predicted er
+Actual r, predicted r
+Actual r, predicted eh
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted ux
+Actual r, predicted r
+Actual r, predicted ae
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted w
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted aa
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted ih
+Actual r, predicted aa
+Actual r, predicted iy
+Actual r, predicted r
+Actual r, predicted q
+Actual r, predicted ae
+Actual r, predicted ae
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual sh, predicted sh
+Actual sh, predicted sh
+Actual sh, predicted sh
+Actual sh, predicted s
+Actual sh, predicted sh
+Actual sh, predicted s
+Actual sh, predicted t
+Actual sh, predicted sh
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted tcl
+Actual sil, predicted sil
+Actual sil, predicted kcl
+Actual sil, predicted sil
+Actual sil, predicted tcl
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted tcl
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual t, predicted k
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted s
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted k
+Actual t, predicted s
+Actual t, predicted t
+Actual t, predicted s
+Actual t, predicted s
+Actual t, predicted f
+Actual t, predicted t
+Actual t, predicted s
+Actual t, predicted t
+Actual t, predicted k
+Actual t, predicted sh
+Actual t, predicted s
+Actual t, predicted s
+Actual t, predicted t
+Actual t, predicted s
+Actual t, predicted tcl
+Actual t, predicted t
+Actual t, predicted s
+Actual t, predicted t
+Actual tcl, predicted tcl
+Actual tcl, predicted tcl
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted tcl
+Actual tcl, predicted tcl
+Actual tcl, predicted s
+Actual tcl, predicted sil
+Actual tcl, predicted kcl
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted sil
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted dcl
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted s
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted s
+Actual tcl, predicted sil
+Actual tcl, predicted sil
+Actual tcl, predicted kcl
+Actual tcl, predicted kcl
+Actual th, predicted sil
+Actual th, predicted s
+Actual th, predicted s
+Actual th, predicted sil
+Actual th, predicted sil
+Actual th, predicted s
+Actual uh, predicted ix
+Actual uh, predicted ih
+Actual uh, predicted l
+Actual uh, predicted dcl
+Actual uh, predicted ow
+Actual uw, predicted ih
+Actual uw, predicted q
+Actual uw, predicted ix
+Actual uw, predicted l
+Actual uw, predicted ix
+Actual uw, predicted ix
+Actual uw, predicted ix
+Actual uw, predicted ax
+Actual uw, predicted ix
+Actual uw, predicted w
+Actual ux, predicted iy
+Actual ux, predicted ih
+Actual ux, predicted ix
+Actual ux, predicted ih
+Actual ux, predicted ih
+Actual ux, predicted iy
+Actual ux, predicted ix
+Actual ux, predicted ih
+Actual ux, predicted l
+Actual ux, predicted l
+Actual ux, predicted iy
+Actual v, predicted s
+Actual v, predicted axr
+Actual v, predicted sil
+Actual v, predicted z
+Actual v, predicted v
+Actual v, predicted sil
+Actual v, predicted ix
+Actual v, predicted dh
+Actual v, predicted f
+Actual v, predicted k
+Actual v, predicted n
+Actual v, predicted v
+Actual v, predicted ax
+Actual v, predicted s
+Actual v, predicted dh
+Actual w, predicted w
+Actual w, predicted l
+Actual w, predicted q
+Actual w, predicted kcl
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted ao
+Actual w, predicted w
+Actual w, predicted l
+Actual w, predicted ix
+Actual w, predicted ao
+Actual w, predicted eh
+Actual w, predicted q
+Actual w, predicted l
+Actual w, predicted q
+Actual w, predicted ao
+Actual w, predicted aa
+Actual w, predicted r
+Actual w, predicted w
+Actual w, predicted l
+Actual w, predicted ax
+Actual w, predicted l
+Actual w, predicted tcl
+Actual w, predicted r
+Actual w, predicted ix
+Actual y, predicted iy
+Actual y, predicted ix
+Actual y, predicted ih
+Actual y, predicted ih
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted z
+  Columns 1 through 13
+
+     6     3     0     1     0     0     0     1     0     0     0     0     0
+     0    24     0     0     0     0     0     0     0     0     0     0     0
+     1     5     2     0     0     1     0     1     0     0     0     0     0
+     5     1     0     5     0     0     0     0     0     0     0     0     0
+     2     2     0     0     0     0     0     0     0     0     0     0     0
+     2     4     0     0     0     5     1     0     0     0     0     0     0
+     1     0     0     0     0     0     3     0     0     0     0     0     0
+     4     5     0     0     0     0     0     6     0     0     0     0     0
+     0     1     0     0     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     2     0     0     5
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     3     0     0     0     0     0     0     0     0     0     1     1
+     0     1     0     0     0     0     0     0     0     1     0     0    12
+     1     0     0     0     0     0     0     0     0     0     0     0     1
+     0     1     0     0     0     1     1     0     0     0     0     0     0
+     3    13     0     1     0     0     0     0     0     0     0     0     0
+     0     0     0     2     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0     0     0     0     0     0
+     0     5     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     2     0     0     0     0     0     0     0     0     0     0     0
+     0     3     0     0     0     1     0     0     0     0     0     0     0
+     0     9     0     0     0     0     1     0     0     0     0     0     0
+     0     3     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     2
+     5     1     0     1     0     3     0     0     0     0     0     0     0
+     0     1     1     0     0     1     1     0     0     0     0     0     1
+     0     2     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     2     1     0     0     0     0     0     0     0     0     0     0
+     1     0     0     2     0     2     0     1     0     0     0     0     0
+     0     1     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     4     0     0     0     0     0     0     0     0     0     0     1
+     3     3     0     0     0     0     4     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     1     1     0     0     0     0     0     0
+     1     0     0     3     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 14 through 26
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     4     0     0     0     0     0     0     0     0     0     0
+     0     0     2     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     3     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     3     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     5     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     8     0     0
+     0     0     0     0     0     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     2     0     0     0     0     0     0     0     0     0     0
+     0     0     3     0     0     0     0     0     0     0     0     0     0
+     0     0     2     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     1     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     2     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 27 through 39
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     2     0     0     0     0     0     0     0     0
+     0     0     0     2     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     4     0     0     0     1     6     1     0     0     0
+     0     0     0     0     1     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     1     2     0     1     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     0     0     0     0     0     0     0     3     0     0     3     0     0
+     0     0     0     0     0     0     1     2     0     0     1     0     0
+     0     0     0     3     0     0     0     0     0     0     1     0     0
+     0     0     1     1     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     6     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     0     1     0     0     0     0     0     0     2     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     3     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0     0     0     0     0     0
+     0     0     1     1     6     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     1     1     1     0     0     0     0
+     0     0     0     0     0     0     0     7     0     0     2     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0     0     0     0     0     0
+     0     0     9     8    10     0     0     0     0     0     1     0     0
+     0     0     4    17     4     0     0     0     0     0     2     0     0
+     0     0     1    13    23     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0    18     0     0     0     0     0     0
+     0     0     0     0     0     0     0    16     0     0     0     0     0
+     0     0     1     2     1     0     0     0    27     0     1     0     0
+     0     0     0     0     1     0     0     0     1    14     7     0     0
+     0     0     1     3     1     0     0     0     1     5    28     0     0
+     0     0     0     0     1     0     0     1     0     1     3     0     0
+     0     0     0     1     0     0     0     0     0     1     1     0     0
+     0     0     0     1     0     0     0     0     4     0     0     0     0
+     0     0     0     3     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     5     1     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     1     0     0     0
+     0     0     0     1     0     0     0     1     0     0     0     0     0
+     0     0     1     0     2     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     3     0     0     0     0     0     0
+     0     0     0     0     0     0     0     7     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     1     0     0     0     0     1     0     0     0     0
+     0     0     1     5     0     0     0     0     1     0     0     0     0
+     0     0     4     2     3     0     0     0     2     0     0     0     0
+     0     0     0     1     0     0     1     0     0     0     1     0     0
+     0     0     0     2     0     0     0     1     5     0     0     0     0
+     0     0     2     1     1     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 40 through 52
+
+     0     0     0     0     0     1     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     1     3     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     1     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     2     5     0     0     0     0
+     0     0     0     0     0     0     0    16     1     1     2     1     0
+     0     0     0     0     0     0     0     1     0     1     0    11     0
+     0     0     0     0     0     2     0     3     0     5     2     1     0
+     0     0     0     0     0     1     1     0     0     0     0     0     0
+     2     0     0     0     0     0     2     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     1     0     7     0     4     0
+     0     0     0     0     0     0     4     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     5     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     3     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     1     0     1     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     5     0     0     0     0
+     0     0     0     0     0     0     0     5     1     3     1     0     0
+     0     0     0     0     0     0     0     0     0    10     0     6     0
+     1     0     0     0     0     1     0     1     0     0     0     0     0
+     0     0     0     0     0     0     1     0     0     2     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     2     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     1     0     0     1     0     0     1     0     0
+     0     0     0     1     0     0     0     0     0     5     0     0     0
+     0     0     0     0     3     0     0     0     0     5     0     2     0
+     0     0     0     0     0    13     0     0     0     4     0     3     0
+     0     0     0     0     0     1    16     0     0     0     0     0     0
+     0     0     0     0     0     0     0    42     0     0     0     0     0
+     0     0     0     0     0     0     0     2     5     0     1     0     0
+     0     0     0     1     0     0     0     0     0    55     0     3     0
+     0     0     0     0     0     0     0     9     1     0    13     1     0
+     0     0     0     0     0     0     0     3     0    14     0    15     0
+     0     0     0     0     0     0     0     3     0     3     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     2     0     2     0     0     0
+     0     0     0     0     0     3     2     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0    21     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 53 through 60
+
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     1     0     1     0     0     0
+     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     2     0     0     1     0
+     0     0     0     0     5     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     9     0
+     0     0     0     0     0     0     0     0
+
+Classification accuracy: 417 out of 1095 = 0.380822
+Elapsed time is 1944.445866 seconds.
+[Warning: The following error was caught while executing
+'internal.hotplug.EventSource' class destructor:
+Too many input arguments.] 
+[Warning: The following error was caught while executing 'asyncio.Channel' class
+destructor:
+Too many input arguments.] 
+[?1l>

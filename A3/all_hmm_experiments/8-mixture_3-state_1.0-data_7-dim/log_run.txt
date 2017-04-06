@@ -1,0 +1,1560 @@
+Executing: matlab -nodisplay -nosplash -r "myRunFunction('/u/cs401/speechdata/Testing', 'all_hmm_experiments/8-mixture_3-state_1.0-data_7-dim', 7); exit"
+[?1h=
+                            < M A T L A B (R) >
+                  Copyright 1984-2016 The MathWorks, Inc.
+                   R2016a (9.0.0.341360) 64-bit (glnxa64)
+                             February 11, 2016
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+[Warning: Function assert has the same name as a MATLAB builtin. We suggest you
+rename the function to avoid a potential name conflict.] 
+[> In path (line 109)
+  In addpath (line 88)
+  In myRunFunction (line 4)] 
+ALL TEST DATA
+    'sil'
+    'n'
+    'aw'
+    'hv'
+    'ih'
+    'r'
+    'ix'
+    'z'
+    'tcl'
+    't'
+    'uw'
+    'l'
+    'ey'
+    'm'
+    'aa'
+    'v'
+    'el'
+    'd'
+    'ao'
+    'q'
+    'eh'
+    'iy'
+    'dx'
+    'axr'
+    'ay'
+    'f'
+    'er'
+    's'
+    'pau'
+    'dh'
+    'ch'
+    'dcl'
+    'jh'
+    'en'
+    'ax'
+    'pcl'
+    'p'
+    'epi'
+    'ah'
+    'w'
+    'uh'
+    'ow'
+    'hh'
+    'ae'
+    'kcl'
+    'k'
+    'oy'
+    'gcl'
+    'g'
+    'sh'
+    'bcl'
+    'b'
+    'ng'
+    'ux'
+    'y'
+    'th'
+    'nx'
+    'em'
+
+ALL MODELS
+    'aa'
+    'ae'
+    'ah'
+    'ao'
+    'aw'
+    'ax'
+    'axr'
+    'ay'
+    'b'
+    'bcl'
+    'ch'
+    'd'
+    'dcl'
+    'dh'
+    'dx'
+    'eh'
+    'el'
+    'em'
+    'en'
+    'eng'
+    'epi'
+    'er'
+    'ey'
+    'f'
+    'g'
+    'gcl'
+    'hh'
+    'hv'
+    'ih'
+    'ix'
+    'iy'
+    'jh'
+    'k'
+    'kcl'
+    'l'
+    'm'
+    'n'
+    'ng'
+    'nx'
+    'ow'
+    'oy'
+    'p'
+    'pau'
+    'pcl'
+    'q'
+    'r'
+    's'
+    'sh'
+    'sil'
+    't'
+    'tcl'
+    'th'
+    'uh'
+    'uw'
+    'ux'
+    'v'
+    'w'
+    'y'
+    'z'
+    'zh'
+
+Actual aa, predicted er
+Actual aa, predicted r
+Actual aa, predicted ay
+Actual aa, predicted q
+Actual aa, predicted aa
+Actual aa, predicted aa
+Actual aa, predicted ay
+Actual aa, predicted aa
+Actual aa, predicted aa
+Actual aa, predicted ah
+Actual aa, predicted eh
+Actual aa, predicted aa
+Actual aa, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted eh
+Actual ae, predicted aa
+Actual ae, predicted ay
+Actual ae, predicted ay
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted ey
+Actual ae, predicted ae
+Actual ae, predicted ay
+Actual ae, predicted ay
+Actual ae, predicted aw
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted ae
+Actual ae, predicted ao
+Actual ae, predicted ae
+Actual ae, predicted eh
+Actual ae, predicted ih
+Actual ae, predicted ae
+Actual ae, predicted ae
+Actual ae, predicted ah
+Actual ah, predicted ah
+Actual ah, predicted ay
+Actual ah, predicted aw
+Actual ah, predicted ah
+Actual ah, predicted ae
+Actual ah, predicted ah
+Actual ah, predicted ah
+Actual ah, predicted ah
+Actual ah, predicted ax
+Actual ah, predicted axr
+Actual ah, predicted ae
+Actual ah, predicted ow
+Actual ah, predicted ay
+Actual ah, predicted ay
+Actual ah, predicted v
+Actual ah, predicted ae
+Actual ah, predicted ax
+Actual ao, predicted r
+Actual ao, predicted aa
+Actual ao, predicted aw
+Actual ao, predicted l
+Actual ao, predicted ao
+Actual ao, predicted aa
+Actual ao, predicted ow
+Actual ao, predicted ao
+Actual ao, predicted w
+Actual ao, predicted ao
+Actual ao, predicted oy
+Actual ao, predicted aa
+Actual aw, predicted ah
+Actual aw, predicted r
+Actual aw, predicted aa
+Actual aw, predicted r
+Actual ax, predicted m
+Actual ax, predicted q
+Actual ax, predicted ax
+Actual ax, predicted v
+Actual ax, predicted l
+Actual ax, predicted el
+Actual ax, predicted l
+Actual ax, predicted m
+Actual ax, predicted w
+Actual ax, predicted ah
+Actual ax, predicted er
+Actual ax, predicted m
+Actual ax, predicted dx
+Actual ax, predicted m
+Actual ax, predicted er
+Actual ax, predicted ah
+Actual ax, predicted v
+Actual ax, predicted aa
+Actual ax, predicted ao
+Actual ax, predicted ao
+Actual ax, predicted l
+Actual ax, predicted ix
+Actual ax, predicted eh
+Actual ax, predicted ax
+Actual ax, predicted aw
+Actual ax, predicted dcl
+Actual ax, predicted m
+Actual axr, predicted r
+Actual axr, predicted axr
+Actual axr, predicted dx
+Actual axr, predicted axr
+Actual axr, predicted dx
+Actual axr, predicted ow
+Actual axr, predicted axr
+Actual axr, predicted q
+Actual axr, predicted ax
+Actual axr, predicted r
+Actual ay, predicted ay
+Actual ay, predicted ae
+Actual ay, predicted r
+Actual ay, predicted ay
+Actual ay, predicted ae
+Actual ay, predicted ih
+Actual ay, predicted ay
+Actual ay, predicted aa
+Actual ay, predicted ix
+Actual ay, predicted eh
+Actual ay, predicted ae
+Actual ay, predicted ay
+Actual ay, predicted ay
+Actual ay, predicted aw
+Actual ay, predicted ae
+Actual b, predicted p
+Actual b, predicted ah
+Actual b, predicted l
+Actual b, predicted b
+Actual b, predicted b
+Actual b, predicted p
+Actual b, predicted uw
+Actual b, predicted uw
+Actual b, predicted ah
+Actual b, predicted iy
+Actual b, predicted p
+Actual b, predicted ow
+Actual b, predicted p
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted bcl
+Actual bcl, predicted m
+Actual bcl, predicted dcl
+Actual ch, predicted sh
+Actual ch, predicted t
+Actual ch, predicted ch
+Actual ch, predicted jh
+Actual ch, predicted sh
+Actual ch, predicted s
+Actual ch, predicted sh
+Actual d, predicted epi
+Actual d, predicted tcl
+Actual d, predicted dh
+Actual d, predicted s
+Actual d, predicted z
+Actual d, predicted s
+Actual d, predicted d
+Actual d, predicted k
+Actual d, predicted d
+Actual d, predicted z
+Actual d, predicted f
+Actual d, predicted d
+Actual d, predicted t
+Actual d, predicted s
+Actual d, predicted el
+Actual d, predicted ch
+Actual d, predicted t
+Actual d, predicted iy
+Actual d, predicted d
+Actual d, predicted th
+Actual d, predicted p
+Actual d, predicted d
+Actual d, predicted t
+Actual d, predicted s
+Actual d, predicted d
+Actual d, predicted t
+Actual d, predicted z
+Actual d, predicted t
+Actual d, predicted s
+Actual dcl, predicted tcl
+Actual dcl, predicted tcl
+Actual dcl, predicted bcl
+Actual dcl, predicted kcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted dcl
+Actual dcl, predicted dcl
+Actual dcl, predicted tcl
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted pcl
+Actual dcl, predicted tcl
+Actual dcl, predicted kcl
+Actual dcl, predicted gcl
+Actual dcl, predicted ng
+Actual dcl, predicted dx
+Actual dcl, predicted dcl
+Actual dcl, predicted kcl
+Actual dcl, predicted gcl
+Actual dcl, predicted bcl
+Actual dcl, predicted dcl
+Actual dcl, predicted dcl
+Actual dcl, predicted dcl
+Actual dcl, predicted tcl
+Actual dcl, predicted en
+Actual dcl, predicted tcl
+Actual dcl, predicted dcl
+Actual dcl, predicted tcl
+Actual dcl, predicted pcl
+Actual dcl, predicted dcl
+Actual dcl, predicted gcl
+Actual dcl, predicted pcl
+Actual dh, predicted n
+Actual dh, predicted n
+Actual dh, predicted s
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted v
+Actual dh, predicted gcl
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted g
+Actual dh, predicted dh
+Actual dh, predicted pcl
+Actual dh, predicted z
+Actual dh, predicted pau
+Actual dh, predicted sil
+Actual dh, predicted m
+Actual dh, predicted v
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dh, predicted dh
+Actual dx, predicted v
+Actual dx, predicted ux
+Actual dx, predicted dx
+Actual dx, predicted tcl
+Actual dx, predicted ae
+Actual dx, predicted dx
+Actual dx, predicted hv
+Actual dx, predicted ux
+Actual dx, predicted ix
+Actual eh, predicted ae
+Actual eh, predicted ix
+Actual eh, predicted ae
+Actual eh, predicted ih
+Actual eh, predicted eh
+Actual eh, predicted eh
+Actual eh, predicted ay
+Actual eh, predicted ay
+Actual eh, predicted ow
+Actual eh, predicted eh
+Actual eh, predicted ao
+Actual eh, predicted ay
+Actual eh, predicted eh
+Actual eh, predicted eh
+Actual eh, predicted ae
+Actual eh, predicted ae
+Actual eh, predicted eh
+Actual eh, predicted ae
+Actual eh, predicted ah
+Actual eh, predicted ae
+Actual eh, predicted aa
+Actual eh, predicted aa
+Actual eh, predicted oy
+Actual eh, predicted ay
+Actual eh, predicted ay
+Actual eh, predicted ey
+Actual eh, predicted ax
+Actual eh, predicted eh
+Actual eh, predicted eh
+Actual eh, predicted eh
+Actual el, predicted ow
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual el, predicted l
+Actual em, predicted m
+Actual en, predicted dcl
+Actual en, predicted ax
+Actual en, predicted n
+Actual en, predicted v
+Actual en, predicted n
+Actual epi, predicted sil
+Actual epi, predicted dh
+Actual epi, predicted pcl
+Actual epi, predicted epi
+Actual epi, predicted tcl
+Actual epi, predicted pau
+Actual epi, predicted pau
+Actual epi, predicted s
+Actual epi, predicted k
+Actual epi, predicted tcl
+Actual epi, predicted dcl
+Actual epi, predicted sil
+Actual epi, predicted epi
+Actual epi, predicted sh
+Actual epi, predicted dh
+Actual epi, predicted k
+Actual er, predicted r
+Actual er, predicted r
+Actual er, predicted er
+Actual er, predicted q
+Actual er, predicted eh
+Actual er, predicted ae
+Actual ey, predicted ey
+Actual ey, predicted iy
+Actual ey, predicted ey
+Actual ey, predicted ey
+Actual ey, predicted ix
+Actual ey, predicted ey
+Actual ey, predicted ih
+Actual ey, predicted ih
+Actual ey, predicted ae
+Actual ey, predicted ih
+Actual ey, predicted ih
+Actual ey, predicted q
+Actual ey, predicted eh
+Actual ey, predicted iy
+Actual f, predicted f
+Actual f, predicted dh
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted pau
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted s
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted f
+Actual f, predicted f
+Actual g, predicted v
+Actual g, predicted g
+Actual g, predicted z
+Actual g, predicted g
+Actual g, predicted gcl
+Actual g, predicted k
+Actual g, predicted k
+Actual g, predicted g
+Actual gcl, predicted dcl
+Actual gcl, predicted gcl
+Actual gcl, predicted kcl
+Actual gcl, predicted dcl
+Actual gcl, predicted kcl
+Actual gcl, predicted gcl
+Actual gcl, predicted kcl
+Actual gcl, predicted dcl
+Actual gcl, predicted w
+Actual gcl, predicted tcl
+Actual hh, predicted k
+Actual hh, predicted q
+Actual hh, predicted k
+Actual hv, predicted ix
+Actual hv, predicted y
+Actual hv, predicted q
+Actual hv, predicted hv
+Actual hv, predicted gcl
+Actual ih, predicted ey
+Actual ih, predicted ey
+Actual ih, predicted ow
+Actual ih, predicted ax
+Actual ih, predicted er
+Actual ih, predicted ux
+Actual ih, predicted ih
+Actual ih, predicted ih
+Actual ih, predicted eh
+Actual ih, predicted ey
+Actual ih, predicted eh
+Actual ih, predicted ey
+Actual ih, predicted eh
+Actual ih, predicted ih
+Actual ih, predicted ax
+Actual ih, predicted ih
+Actual ih, predicted eh
+Actual ih, predicted y
+Actual ih, predicted ih
+Actual ih, predicted ih
+Actual ih, predicted ix
+Actual ih, predicted ey
+Actual ih, predicted axr
+Actual ih, predicted ey
+Actual ih, predicted iy
+Actual ih, predicted ah
+Actual ih, predicted ih
+Actual ih, predicted ix
+Actual ih, predicted ah
+Actual ih, predicted ih
+Actual ih, predicted ih
+Actual ih, predicted iy
+Actual ih, predicted iy
+Actual ih, predicted ix
+Actual ix, predicted er
+Actual ix, predicted ey
+Actual ix, predicted ix
+Actual ix, predicted iy
+Actual ix, predicted ey
+Actual ix, predicted ey
+Actual ix, predicted iy
+Actual ix, predicted ae
+Actual ix, predicted q
+Actual ix, predicted q
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted ix
+Actual ix, predicted v
+Actual ix, predicted ae
+Actual ix, predicted ae
+Actual ix, predicted ix
+Actual ix, predicted oy
+Actual ix, predicted ux
+Actual ix, predicted ih
+Actual ix, predicted iy
+Actual ix, predicted ae
+Actual ix, predicted ih
+Actual ix, predicted ay
+Actual ix, predicted ix
+Actual ix, predicted ux
+Actual ix, predicted ih
+Actual ix, predicted ax
+Actual ix, predicted y
+Actual ix, predicted l
+Actual ix, predicted ax
+Actual ix, predicted ow
+Actual ix, predicted d
+Actual ix, predicted ix
+Actual ix, predicted ng
+Actual ix, predicted ix
+Actual ix, predicted eh
+Actual ix, predicted ax
+Actual ix, predicted iy
+Actual ix, predicted ix
+Actual ix, predicted th
+Actual ix, predicted eh
+Actual ix, predicted r
+Actual ix, predicted y
+Actual iy, predicted ih
+Actual iy, predicted y
+Actual iy, predicted dcl
+Actual iy, predicted y
+Actual iy, predicted ey
+Actual iy, predicted ih
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted y
+Actual iy, predicted ix
+Actual iy, predicted ih
+Actual iy, predicted ix
+Actual iy, predicted ux
+Actual iy, predicted ih
+Actual iy, predicted iy
+Actual iy, predicted ey
+Actual iy, predicted ey
+Actual iy, predicted y
+Actual iy, predicted r
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted ih
+Actual iy, predicted ux
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted y
+Actual iy, predicted iy
+Actual iy, predicted ix
+Actual iy, predicted ih
+Actual iy, predicted iy
+Actual iy, predicted ux
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted iy
+Actual iy, predicted ux
+Actual jh, predicted ch
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual jh, predicted sh
+Actual jh, predicted ch
+Actual k, predicted epi
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted t
+Actual k, predicted pau
+Actual k, predicted p
+Actual k, predicted k
+Actual k, predicted g
+Actual k, predicted q
+Actual k, predicted sh
+Actual k, predicted k
+Actual k, predicted sh
+Actual k, predicted k
+Actual k, predicted g
+Actual k, predicted k
+Actual k, predicted s
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted kcl
+Actual k, predicted d
+Actual k, predicted k
+Actual k, predicted k
+Actual k, predicted t
+Actual k, predicted sh
+Actual k, predicted sh
+Actual k, predicted s
+Actual k, predicted k
+Actual k, predicted k
+Actual kcl, predicted p
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted bcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted sil
+Actual kcl, predicted dcl
+Actual kcl, predicted pau
+Actual kcl, predicted q
+Actual kcl, predicted tcl
+Actual kcl, predicted kcl
+Actual kcl, predicted sil
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted hh
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted pau
+Actual kcl, predicted tcl
+Actual kcl, predicted sil
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted tcl
+Actual kcl, predicted kcl
+Actual kcl, predicted kcl
+Actual kcl, predicted pcl
+Actual kcl, predicted kcl
+Actual l, predicted uw
+Actual l, predicted ow
+Actual l, predicted w
+Actual l, predicted aa
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted el
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted n
+Actual l, predicted q
+Actual l, predicted aa
+Actual l, predicted ay
+Actual l, predicted ao
+Actual l, predicted ow
+Actual l, predicted l
+Actual l, predicted el
+Actual l, predicted l
+Actual l, predicted ah
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted ow
+Actual l, predicted l
+Actual l, predicted w
+Actual l, predicted l
+Actual l, predicted ix
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted ah
+Actual l, predicted ax
+Actual l, predicted ao
+Actual l, predicted ah
+Actual l, predicted ax
+Actual l, predicted l
+Actual l, predicted l
+Actual l, predicted ow
+Actual l, predicted ah
+Actual l, predicted m
+Actual l, predicted el
+Actual l, predicted ih
+Actual l, predicted ix
+Actual l, predicted l
+Actual l, predicted n
+Actual m, predicted m
+Actual m, predicted q
+Actual m, predicted dcl
+Actual m, predicted n
+Actual m, predicted ng
+Actual m, predicted n
+Actual m, predicted m
+Actual m, predicted ax
+Actual m, predicted bcl
+Actual m, predicted n
+Actual m, predicted v
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted gcl
+Actual m, predicted dx
+Actual m, predicted n
+Actual m, predicted ax
+Actual m, predicted n
+Actual m, predicted n
+Actual m, predicted dx
+Actual m, predicted n
+Actual m, predicted ux
+Actual m, predicted n
+Actual m, predicted m
+Actual m, predicted ax
+Actual m, predicted m
+Actual m, predicted ax
+Actual m, predicted m
+Actual m, predicted m
+Actual m, predicted m
+Actual n, predicted m
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted tcl
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted dx
+Actual n, predicted en
+Actual n, predicted n
+Actual n, predicted en
+Actual n, predicted dx
+Actual n, predicted n
+Actual n, predicted ao
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted tcl
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted ey
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted v
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted ih
+Actual n, predicted m
+Actual n, predicted n
+Actual n, predicted dx
+Actual n, predicted dx
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted ix
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted en
+Actual n, predicted n
+Actual n, predicted en
+Actual n, predicted ng
+Actual n, predicted n
+Actual n, predicted n
+Actual n, predicted n
+Actual ng, predicted n
+Actual ng, predicted n
+Actual ng, predicted n
+Actual ng, predicted axr
+Actual ng, predicted ng
+Actual ng, predicted ng
+Actual nx, predicted m
+Actual nx, predicted eh
+Actual nx, predicted er
+Actual nx, predicted oy
+Actual nx, predicted ay
+Actual nx, predicted n
+Actual nx, predicted el
+Actual ow, predicted ow
+Actual ow, predicted aa
+Actual ow, predicted ah
+Actual ow, predicted w
+Actual ow, predicted ow
+Actual ow, predicted w
+Actual ow, predicted ah
+Actual ow, predicted ae
+Actual ow, predicted ao
+Actual ow, predicted axr
+Actual ow, predicted ow
+Actual ow, predicted ax
+Actual ow, predicted ax
+Actual oy, predicted ah
+Actual oy, predicted ih
+Actual oy, predicted ow
+Actual oy, predicted l
+Actual oy, predicted ow
+Actual oy, predicted ow
+Actual p, predicted sh
+Actual p, predicted k
+Actual p, predicted b
+Actual p, predicted k
+Actual p, predicted p
+Actual p, predicted d
+Actual p, predicted p
+Actual p, predicted f
+Actual p, predicted b
+Actual p, predicted p
+Actual p, predicted p
+Actual p, predicted k
+Actual pau, predicted sil
+Actual pau, predicted sil
+Actual pau, predicted p
+Actual pau, predicted pcl
+Actual pau, predicted pau
+Actual pau, predicted sil
+Actual pcl, predicted sil
+Actual pcl, predicted tcl
+Actual pcl, predicted en
+Actual pcl, predicted dh
+Actual pcl, predicted pcl
+Actual pcl, predicted kcl
+Actual pcl, predicted pcl
+Actual pcl, predicted bcl
+Actual pcl, predicted epi
+Actual pcl, predicted pcl
+Actual pcl, predicted kcl
+Actual pcl, predicted tcl
+Actual q, predicted ae
+Actual q, predicted ae
+Actual q, predicted tcl
+Actual q, predicted q
+Actual q, predicted epi
+Actual q, predicted q
+Actual q, predicted ay
+Actual q, predicted q
+Actual q, predicted tcl
+Actual q, predicted q
+Actual q, predicted dcl
+Actual q, predicted ix
+Actual q, predicted ax
+Actual q, predicted pau
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted v
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted sil
+Actual q, predicted q
+Actual q, predicted eh
+Actual q, predicted q
+Actual q, predicted q
+Actual q, predicted d
+Actual q, predicted k
+Actual r, predicted ey
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted dx
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted dx
+Actual r, predicted aa
+Actual r, predicted r
+Actual r, predicted dx
+Actual r, predicted aw
+Actual r, predicted axr
+Actual r, predicted axr
+Actual r, predicted ae
+Actual r, predicted er
+Actual r, predicted axr
+Actual r, predicted r
+Actual r, predicted r
+Actual r, predicted aa
+Actual r, predicted r
+Actual r, predicted eh
+Actual r, predicted er
+Actual r, predicted axr
+Actual r, predicted axr
+Actual r, predicted er
+Actual r, predicted m
+Actual r, predicted ih
+Actual r, predicted aa
+Actual r, predicted ey
+Actual r, predicted ae
+Actual r, predicted axr
+Actual r, predicted ao
+Actual r, predicted ae
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted t
+Actual s, predicted z
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted z
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted f
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted f
+Actual s, predicted z
+Actual s, predicted t
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted sh
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted z
+Actual s, predicted t
+Actual s, predicted z
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual s, predicted s
+Actual sh, predicted sh
+Actual sh, predicted sh
+Actual sh, predicted ch
+Actual sh, predicted s
+Actual sh, predicted sh
+Actual sh, predicted sh
+Actual sh, predicted ch
+Actual sh, predicted ch
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted tcl
+Actual sil, predicted sil
+Actual sil, predicted kcl
+Actual sil, predicted sil
+Actual sil, predicted tcl
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted tcl
+Actual sil, predicted epi
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pcl
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pcl
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted sil
+Actual sil, predicted pau
+Actual t, predicted k
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted d
+Actual t, predicted s
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted t
+Actual t, predicted p
+Actual t, predicted d
+Actual t, predicted s
+Actual t, predicted f
+Actual t, predicted t
+Actual t, predicted d
+Actual t, predicted t
+Actual t, predicted d
+Actual t, predicted jh
+Actual t, predicted t
+Actual t, predicted s
+Actual t, predicted t
+Actual t, predicted k
+Actual t, predicted sil
+Actual t, predicted t
+Actual t, predicted th
+Actual t, predicted t
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted gcl
+Actual tcl, predicted pcl
+Actual tcl, predicted pau
+Actual tcl, predicted pau
+Actual tcl, predicted gcl
+Actual tcl, predicted tcl
+Actual tcl, predicted tcl
+Actual tcl, predicted tcl
+Actual tcl, predicted z
+Actual tcl, predicted pcl
+Actual tcl, predicted kcl
+Actual tcl, predicted kcl
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted kcl
+Actual tcl, predicted kcl
+Actual tcl, predicted pau
+Actual tcl, predicted dcl
+Actual tcl, predicted sil
+Actual tcl, predicted tcl
+Actual tcl, predicted kcl
+Actual tcl, predicted dcl
+Actual tcl, predicted p
+Actual tcl, predicted pcl
+Actual tcl, predicted f
+Actual tcl, predicted kcl
+Actual tcl, predicted tcl
+Actual tcl, predicted tcl
+Actual tcl, predicted sil
+Actual tcl, predicted sil
+Actual tcl, predicted kcl
+Actual tcl, predicted b
+Actual tcl, predicted tcl
+Actual tcl, predicted pau
+Actual tcl, predicted kcl
+Actual tcl, predicted sil
+Actual th, predicted pcl
+Actual th, predicted f
+Actual th, predicted z
+Actual th, predicted dh
+Actual th, predicted dh
+Actual th, predicted dh
+Actual uh, predicted ix
+Actual uh, predicted ae
+Actual uh, predicted el
+Actual uh, predicted dx
+Actual uh, predicted l
+Actual uw, predicted w
+Actual uw, predicted ux
+Actual uw, predicted dh
+Actual uw, predicted ix
+Actual uw, predicted ih
+Actual uw, predicted ix
+Actual uw, predicted uw
+Actual uw, predicted uw
+Actual uw, predicted n
+Actual uw, predicted w
+Actual ux, predicted n
+Actual ux, predicted ey
+Actual ux, predicted iy
+Actual ux, predicted ix
+Actual ux, predicted ih
+Actual ux, predicted iy
+Actual ux, predicted iy
+Actual ux, predicted ih
+Actual ux, predicted uw
+Actual ux, predicted iy
+Actual ux, predicted ux
+Actual v, predicted f
+Actual v, predicted v
+Actual v, predicted v
+Actual v, predicted z
+Actual v, predicted v
+Actual v, predicted bcl
+Actual v, predicted v
+Actual v, predicted v
+Actual v, predicted f
+Actual v, predicted aa
+Actual v, predicted v
+Actual v, predicted v
+Actual v, predicted v
+Actual v, predicted v
+Actual v, predicted f
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted q
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted m
+Actual w, predicted w
+Actual w, predicted ao
+Actual w, predicted ay
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted oy
+Actual w, predicted r
+Actual w, predicted w
+Actual w, predicted l
+Actual w, predicted l
+Actual w, predicted el
+Actual w, predicted w
+Actual w, predicted w
+Actual w, predicted m
+Actual y, predicted iy
+Actual y, predicted iy
+Actual y, predicted ih
+Actual y, predicted ux
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted s
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+Actual z, predicted z
+  Columns 1 through 13
+
+     5     1     1     0     0     0     0     2     0     0     0     0     0
+     1    11     1     1     1     0     0     4     0     0     0     0     0
+     0     3     5     0     1     2     1     3     0     0     0     0     0
+     3     0     0     3     1     0     0     0     0     0     0     0     0
+     1     0     1     0     0     0     0     0     0     0     0     0     0
+     1     0     2     2     1     2     0     0     0     0     0     0     1
+     0     0     0     0     0     1     3     0     0     0     0     0     0
+     1     4     0     0     1     0     0     5     0     0     0     0     0
+     0     0     2     0     0     0     0     0     2     0     0     0     0
+     0     0     0     0     0     0     0     0     0     8     0     0     1
+     0     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     0     0     0     1     6     0
+     0     0     0     0     0     0     0     0     0     2     0     0    10
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     0
+     2     6     1     1     0     1     0     5     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     1     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     3
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     2     0     0     2     1     0     0     0     0     0     0
+     0     5     0     0     0     3     0     1     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     0     0     0     0     0     0     0     0     2     0     0
+     0     0     0     0     0     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     1     0     0     1
+     2     0     4     2     0     2     0     1     0     0     0     0     0
+     0     0     0     0     0     4     0     0     0     1     0     0     1
+     0     0     0     1     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0
+     1     1     2     1     0     2     1     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     2     0     0     1     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     1     0     0     0
+     0     2     0     0     0     1     0     1     0     0     0     1     1
+     3     3     0     1     1     0     8     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     3     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     4     0
+     0     0     0     0     0     0     0     0     1     0     0     0     2
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     1     0     0     0
+     0     0     0     1     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 14 through 26
+
+     0     0     1     0     0     0     0     0     1     0     0     0     0
+     0     0     9     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     1     1     0     0     0     0     2     0     0     0     0
+     0     2     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     1     0     0     0     1     0     0     1     0     0
+     0     1     0     0     0     1     0     0     0     0     0     0     3
+    10     0     0     0     0     0     0     0     0     0     0     1     1
+     0     2     0     0     0     0     0     0     0     0     0     0     0
+     0     0     9     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     2     0     0     0     0     0     0     2     0     0     0     0     0
+     0     0     1     0     0     0     0     0     1     0     0     0     0
+     0     0     1     0     0     0     0     0     0     4     0     0     0
+     1     0     0     0     0     0     0     0     0     0    12     0     0
+     0     0     0     0     0     0     0     0     0     0     0     3     1
+     0     0     0     0     0     0     0     0     0     0     0     0     2
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     1
+     0     0     4     0     0     0     0     0     1     6     0     0     0
+     0     0     2     0     0     0     0     0     1     3     0     0     0
+     0     0     0     0     0     0     0     0     0     3     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     2     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     3     0     0     0     0     0     0     0     0     0
+     0     2     0     0     0     0     0     0     0     0     0     0     1
+     0     4     0     0     0     4     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     1     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     1     0     1     0     0     0     0     0
+     0     0     1     0     0     0     0     1     0     0     0     0     0
+     0     3     1     0     0     0     0     0     3     2     0     0     0
+     0     0     0     0     0     0     0     0     0     0     2     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     0     0     0     1     0     2
+     3     0     0     0     0     0     0     0     0     0     1     0     0
+     0     1     0     1     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     3     0     0
+     0     0     0     1     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 27 through 39
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0     3     5     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     1     0     0     0     0     0     0     0     0     0
+     0     0     0     0     1     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     1     0     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     3     0     0     0     1     0
+     0     0     0     0     0     0     0     0     0     1     2     0     0
+     0     1     0     1     0     0     0     0     0     0     0     0     0
+     0     0     1     1     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     8     0     0     0     0
+     0     0     0     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     2     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     4     1     2     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     0     0     0     0     0     0     0     3     0     0     0     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     0     1     0     1     0     0     0     0     0     0     0     0     0
+     0     0     9     3     3     0     0     0     0     0     0     0     0
+     0     0     3     8     4     0     0     0     1     0     0     1     0
+     0     0     6     4    19     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0    12     1     0     0     0     0     0
+     1     0     0     0     0     0     0    17     0     0     0     0     0
+     0     0     1     2     0     0     0     0    18     1     2     0     0
+     0     0     0     0     0     0     0     0     0    10     8     1     0
+     0     0     1     1     0     0     0     0     0     5    25     1     0
+     0     0     0     0     0     0     0     0     0     0     3     2     0
+     0     0     0     0     0     0     0     0     0     1     1     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     3     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     2     0     0     0     0     0
+     0     0     0     1     0     0     1     0     0     0     0     0     0
+     0     0     1     0     0     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     1     2     0     0     0     0     0     0
+     0     0     0     0     0     0     0    10     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0     1     0     0     0     0
+     0     0     1     2     0     0     0     0     0     0     1     0     0
+     0     0     2     1     4     0     0     0     0     0     1     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     2     2     0     0     0
+     0     0     1     0     2     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 40 through 52
+
+     0     0     0     0     0     1     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     1     1     0     0     0     0     1     0     0     0     0     0     0
+     0     0     0     0     0     0     2     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     1     0     0     0     0     1     2     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0     0     0     0     0     0
+     1     0     4     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     1     3     0     1     0     0
+     0     0     1     0     0     0     0     5     0     0     5     1     1
+     0     0     0     0     3     0     0     0     0     0     0     9     0
+     0     0     0     1     1     0     0     1     0     1     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     1     0
+     1     1     0     0     0     0     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     2     1     0     0     1     1     2     0     2     0
+     0     0     0     0     0     1     2     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     1     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     1     0     0     0     0     0     0     0     0     0     0     0     0
+     1     1     0     0     0     2     1     0     0     0     0     0     1
+     0     0     0     0     0     0     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     4     0     0     0     0
+     0     0     1     1     0     1     0     2     4     0     2     0     0
+     0     0     1     2     1     1     0     0     0     3     0     7     0
+     4     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     2     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     0     0     0     0     0     0     0     0
+     3     0     0     0     0     0     0     0     0     0     0     0     0
+     3     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     4     0     0     0     0     0     1     0     0     0     0
+     0     0     1     1     1     0     0     0     0     3     0     0     0
+     0     0     0     0     3     0     0     0     0     1     0     2     0
+     0     0     0     1     0    13     0     0     0     1     0     2     0
+     0     0     0     0     0     0     7     0     0     0     0     0     0
+     0     0     0     0     0     0     0    27     1     0     3     0     0
+     0     0     0     0     0     0     0     1     4     0     0     0     0
+     0     0     0     7     2     0     0     0     0    46     0     3     0
+     0     0     1     0     0     0     0     3     0     1    14     0     1
+     0     0     1     4     3     0     0     0     0     5     0    10     0
+     0     0     0     0     1     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     1     0     0     0     1     1     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0    10     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 53 through 60
+
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0
+     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     2     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     2     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     3     0
+     0     0     0     0     0     0     0     0
+     0     0     0     2     0     0     1     0
+     0     0     2     1     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     1     0
+     0     0     0     0     1     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     1     0     0
+     0     0     1     0     0     1     0     0
+     0     0     2     1     0     2     0     0
+     0     0     4     0     0     5     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     1     0     0     2     0     0     0
+     0     0     1     1     0     0     0     0
+     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     2     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     1     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0    10     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     1     0
+     0     0     0     0     0     0     0     0
+     0     2     1     0     2     0     0     0
+     0     1     1     0     0     0     0     0
+     0     0     0     9     0     0     1     0
+     0     0     0     0    15     0     0     0
+     0     0     1     0     0     0     0     0
+     0     0     0     0     0     0    20     0
+     0     0     0     0     0     0     0     0
+
+Classification accuracy: 406 out of 1095 = 0.370776
+Elapsed time is 1903.185336 seconds.
+[Warning: The following error was caught while executing
+'internal.hotplug.EventSource' class destructor:
+Too many input arguments.] 
+[Warning: The following error was caught while executing 'asyncio.Channel' class
+destructor:
+Too many input arguments.] 
+[?1l>
