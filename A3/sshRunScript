@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Values chosen for parameters:
+# M = [8, 4]
+# Q = [3, 2]
+# data_frac = [1.0, 0.5]
+# dims = [14, 7]
+
+ssh b3175-01 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 8 3 1.0 7
+ssh b3175-04 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 8 3 0.5 7
+ssh b3175-07 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 8 2 1.0 7
+ssh b3175-09 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 8 2 0.5 7
+ssh b3175-12 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 4 3 1.0 7
+ssh b3175-14 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 4 3 0.5 7
+ssh b3175-16 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 4 2 1.0 7
+ssh b3175-18 screen -dm -S hmmExperiment ~/csc401/csc401/A3/hmmExperimentRunScript 4 2 0.5 7

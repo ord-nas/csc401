@@ -1,0 +1,19 @@
+#!/bin/bash
+
+M="$1"
+Q="$2"
+data_frac="$3"
+dims="$4"
+
+cd /h/u15/c6/01/youngsan/csc401/csc401/A3/
+
+dir_output="all_hmm_experiments/${M}-mixture_${Q}-state_${data_frac}-data_${dims}-dim"
+
+{
+    run_cmd="$(printf "myRunFunction('/u/cs401/speechdata/Testing', '%s', %s);" "$dir_output" "$dims")"
+
+    overall_cmd="matlab -nodisplay -nosplash -r \"$run_cmd exit\""
+
+    echo "Executing: $overall_cmd"
+    eval "$overall_cmd" 
+} | tee -a "$dir_output/log_run.txt"

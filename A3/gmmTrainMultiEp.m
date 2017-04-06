@@ -1,4 +1,4 @@
-function gmms = gmmTrain( dir_train, max_iter, epsilon, M, quiet, train_other )
+function [gmms_array, total_iters] = gmmTrainMultiEp( dir_train, max_iter, epsilon, M, quiet )
 % gmmTain
 %
 %  inputs:  dir_train  : a string pointing to the high-level
@@ -7,7 +7,6 @@ function gmms = gmmTrain( dir_train, max_iter, epsilon, M, quiet, train_other )
 %           epsilon    : minimum improvement for iteration (float)
 %           M          : number of Gaussians/mixture (integer)
 %           quiet      : optional boolean to suppress output
-%           train_other: optional boolean to train a "none of the above" model
 %
 %  output:  gmms       : a 1xN cell array. The i^th element is a structure
 %                        with this structure:
@@ -20,14 +19,11 @@ function gmms = gmmTrain( dir_train, max_iter, epsilon, M, quiet, train_other )
 
 if nargin < 5
     quiet = false;
-    train_other = false;
-elseif nargin < 6
-    train_other = false;
 end
 
+total_iters = zeros(1, length(epsilon));
 speakers = dir(dir_train);
 counter = 1;
-all_speaker_data = [];
 for s=1:length(speakers)
     if strcmp(speakers(s).name, '.') || strcmp(speakers(s).name, '..')
         % dir gives us '.' and '..' directory entries, which we don't want
@@ -46,28 +42,16 @@ for s=1:length(speakers)
         fprintf('Training model for speaker %s with data of size %d x %d\n', ...
                 name, size(all_data, 1), size(all_data, 2));
     end
-    [gmm, L] = gmmEM(all_data, max_iter, epsilon, M);
-    if ~quiet
-        fprintf('    Final log likelihood: %f\n', L);
+    [gmms, Ls, iters] = gmmEMMultiEp(all_data, max_iter, epsilon, M);
+    for i=1:length(epsilon)
+        if ~quiet
+            fprintf('    Final log likelihood ep=%f: %f\n', epsilon(i), ...
+                    Ls{i});
+        end
+        gmms{i}.name = name;
+        total_iters(i) = total_iters(i) + iters{i};
     end
-    gmm.name = name;
-    gmms{counter} = gmm;
-    counter = counter + 1;
-    if train_other
-        all_speaker_data = [all_speaker_data; all_data];
-    end
-end
-
-if train_other
-    if ~quiet
-        fprintf('Training "other" model with data of size %d x %d\n', ...
-                size(all_speaker_data, 1), size(all_speaker_data, 2));
-    end
-    [gmm, L] = gmmEM(all_speaker_data, max_iter, epsilon, M);
-    if ~quiet
-        fprintf('    Final log likelihood: %f\n', L);
-    end
-    gmm.name = 'OTHER';
-    gmms{counter} = gmm;
+    gmms_array{counter} = gmms;
+    
     counter = counter + 1;
 end

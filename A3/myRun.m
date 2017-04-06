@@ -5,5 +5,6 @@ warning('off', 'MATLAB:nargchk:deprecated'); % For strsplit
 dir_test = '/u/cs401/speechdata/Testing';
 % TODO FIXME
 dir_phonemes = 'initial_phoneme_models';
+dims = 14;
 
-myRunFunction(dir_test, dir_phonemes);
+myRunFunction(dir_test, dir_phonemes, dims);

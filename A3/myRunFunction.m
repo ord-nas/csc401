@@ -1,4 +1,10 @@
-function myRunFunction(dir_test, dir_phonemes)
+function myRunFunction(dir_test, dir_phonemes, dims)
+  % TODO FIXME
+  % First add BNT to our path
+  addpath(genpath('/u/cs401/A3_ASR/code/FullBNT-1.0.7'));
+  warning('off', 'MATLAB:nargchk:deprecated'); % For strsplit
+
+    
   tic; % Time how long this script takes to run
 
   % Now extract all the testing data
@@ -11,6 +17,8 @@ function myRunFunction(dir_test, dir_phonemes)
       % Read in both the .phn lines and the .mfcc samples
       phoneme_lines = textread(filepath, '%s', 'delimiter', '\n');
       mfcc_data = dlmread([pathstr, filesep, name, '.mfcc']);
+      % Don't necessarily use all the dimensions of the data
+      mfcc_data = mfcc_data(:, 1:dims);
       N = size(mfcc_data, 1);
       for i=1:length(phoneme_lines)
           % Parse the phoneme line

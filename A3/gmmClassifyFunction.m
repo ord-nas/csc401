@@ -4,6 +4,9 @@ function accuracy = gmmClassifyFunction(dir_test, dir_output, gmms, label_file, 
   accuracy = 0;
   answers = struct();
   if nargin >= 4 && ~isempty(label_file)
+      for i=1:length(gmms)
+          known_speakers.(gmms{i}.name) = true;
+      end
       lines = textread(label_file, '%s', 'delimiter', '\n');
       % Ignore the header line
       lines = lines(2:end);
@@ -11,14 +14,19 @@ function accuracy = gmmClassifyFunction(dir_test, dir_output, gmms, label_file, 
       for i=1:length(lines)
           words = strsplit(':', lines{i});
           sample_name = ['unkn_', regexprep(words{1}, ' ', '')];
-          answers.(sample_name) = regexprep(words{2}, ' ', '');
+          answer = regexprep(words{2}, ' ', '');
+          if isfield(known_speakers, answer)
+              answers.(sample_name) = answer;
+          else
+              answers.(sample_name) = 'OTHER';
+          end
       end
   end
   
   if nargin < 5
       quiet = false;
   end
-    
+  
   % Make the output directory if it doesn't alreay exist
   if ~exist(dir_output,'dir')
       mkdir(dir_output);
@@ -83,6 +91,9 @@ function accuracy = gmmClassifyFunction(dir_test, dir_output, gmms, label_file, 
           max_possible_correct = max_possible_correct + 1;
           guess = gmms{I(1)}.name;
           actual = answers.(name);
+          if ~quiet
+              fprintf('Actual: %s, predicted: %s\n', actual, guess);
+          end
           if strcmp(guess, actual)
               correct_classifications = correct_classifications + 1;
           end

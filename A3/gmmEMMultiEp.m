@@ -1,4 +1,4 @@
-function [gmm, L] = gmmEM( data, max_iter, epsilon, M )
+function [gmms, Ls, iters] = gmmEMMultiEp( data, max_iter, epsilon, M )
 % gmmEM
 %
 %  inputs:  data       : matrix of training data
@@ -29,6 +29,8 @@ function [gmm, L] = gmmEM( data, max_iter, epsilon, M )
   %    gmm.cov(:,:,m) = diag(rand(1,d));
   %end
   
+  current_ep = 1;
+  
   % Do EM algorithm
   previous_L = -Inf;
   for iter=1:max_iter
@@ -41,17 +43,33 @@ function [gmm, L] = gmmEM( data, max_iter, epsilon, M )
       [gmm, L] = em_step(gmm, data);
       %disp(L);
       % Detect convergence
-      if L - previous_L < epsilon
-          break
+      if L - previous_L < epsilon(current_ep)
+          %fprintf('saving model because improvement less than %d\n', epsilon(current_ep));
+          gmms{current_ep} = gmm;
+          Ls{current_ep} = L;
+          iters{current_ep} = iter;
+          current_ep = current_ep + 1;
+          if current_ep > length(epsilon)
+              break
+          end
       end
       previous_L = L;
   end
+  
+  for i=current_ep:length(epsilon)
+      %fprintf('saving model for ep=%d because reached max iter\n', epsilon(i));
+      gmms{i} = gmm;
+      Ls{i} = L;
+      iters{i} = max_iter;
+  end
 
   % Expand covariances to full matrix form
-  short_form_cov = gmm.cov;
-  gmm.cov = zeros(d,d,M);
-  for m=1:M
-      gmm.cov(:,:,m) = diag(short_form_cov(:, m));
+  for i=1:length(gmms)
+      short_form_cov = gmms{i}.cov;
+      gmms{i}.cov = zeros(d,d,M);
+      for m=1:M
+          gmms{i}.cov(:,:,m) = diag(short_form_cov(:, m));
+      end
   end
 end
   
